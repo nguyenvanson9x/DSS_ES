@@ -1,0 +1,10 @@
+D:\DSS\DTO\bin\Debug\DTO.dll
+D:\DSS\DTO\bin\Debug\DTO.pdb
+D:\DSS\DTO\obj\Debug\ResolveAssemblyReference.cache
+D:\DSS\DTO\obj\Debug\DTO.dll
+D:\DSS\DTO\obj\Debug\DTO.pdb
+D:\NguyenVanSon\Coding\DSS\DTO\bin\Debug\DTO.dll
+D:\NguyenVanSon\Coding\DSS\DTO\bin\Debug\DTO.pdb
+D:\NguyenVanSon\Coding\DSS\DTO\obj\Debug\ResolveAssemblyReference.cache
+D:\NguyenVanSon\Coding\DSS\DTO\obj\Debug\DTO.dll
+D:\NguyenVanSon\Coding\DSS\DTO\obj\Debug\DTO.pdb

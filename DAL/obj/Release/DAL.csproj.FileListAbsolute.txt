@@ -1,0 +1,14 @@
+D:\DSS\DAL\obj\Release\ResolveAssemblyReference.cache
+D:\DSS\DAL\bin\Release\DAL.dll
+D:\DSS\DAL\bin\Release\DAL.pdb
+D:\DSS\DAL\bin\Release\DTO.dll
+D:\DSS\DAL\bin\Release\DTO.pdb
+D:\DSS\DAL\obj\Release\DAL.dll
+D:\DSS\DAL\obj\Release\DAL.pdb
+D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\DAL.dll
+D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\DAL.pdb
+D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\DTO.dll
+D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\DTO.pdb
+D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\ResolveAssemblyReference.cache
+D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\DAL.dll
+D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\DAL.pdb
