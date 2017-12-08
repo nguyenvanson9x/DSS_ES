@@ -9,17 +9,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frmTuVan_Truong : Form
+    public partial class frmDanhSachTruong : Form
     {
-        public frmTuVan_Truong()
+        public frmDanhSachTruong()
         {
             InitializeComponent();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            frmDanhSachTruong frm = new frmDanhSachTruong();
-            frm.ShowDialog();
+            Close();
         }
     }
 }

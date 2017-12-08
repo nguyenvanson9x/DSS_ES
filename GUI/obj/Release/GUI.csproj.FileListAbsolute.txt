@@ -45,3 +45,4 @@ D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmTuVan_Truong.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDiemChuan.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmQuanLy.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmTuVan_Nganh.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDanhSachTruong.resources

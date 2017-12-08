@@ -60,6 +60,12 @@
     <Compile Include="frm1.Designer.cs">
       <DependentUpon>frm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDanhSachTruong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachTruong.Designer.cs">
+      <DependentUpon>frmDanhSachTruong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDiemChuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm1.resx">
       <DependentUpon>frm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachTruong.resx">
+      <DependentUpon>frmDanhSachTruong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDiemChuan.resx">
       <DependentUpon>frmDiemChuan.cs</DependentUpon>
