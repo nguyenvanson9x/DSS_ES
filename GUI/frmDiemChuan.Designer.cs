@@ -103,34 +103,36 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSearch.Location = new System.Drawing.Point(401, 335);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(104, 28);
+            this.btnSearch.Size = new System.Drawing.Size(120, 45);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // cbTinh
             // 
-            this.cbTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTinh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinh.FormattingEnabled = true;
             this.cbTinh.Items.AddRange(new object[] {
             "--Tỉnh / TP--",
             "An Giang"});
             this.cbTinh.Location = new System.Drawing.Point(401, 250);
             this.cbTinh.Name = "cbTinh";
-            this.cbTinh.Size = new System.Drawing.Size(211, 28);
+            this.cbTinh.Size = new System.Drawing.Size(211, 29);
             this.cbTinh.TabIndex = 7;
             this.cbTinh.Text = "--Tỉnh / TP--";
             // 
             // lbSearchFor
             // 
             this.lbSearchFor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbSearchFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSearchFor.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSearchFor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
             this.lbSearchFor.Location = new System.Drawing.Point(397, 203);
             this.lbSearchFor.Name = "lbSearchFor";
@@ -141,7 +143,7 @@
             // 
             // cbSort
             // 
-            this.cbSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSort.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSort.FormattingEnabled = true;
             this.cbSort.Items.AddRange(new object[] {
             "-Sắp xếp theo-",
@@ -149,14 +151,14 @@
             "Không theo thứ tự ABC"});
             this.cbSort.Location = new System.Drawing.Point(401, 142);
             this.cbSort.Name = "cbSort";
-            this.cbSort.Size = new System.Drawing.Size(211, 28);
+            this.cbSort.Size = new System.Drawing.Size(211, 29);
             this.cbSort.TabIndex = 5;
             this.cbSort.Text = "-Sắp xếp theo-";
             // 
             // lbSort
             // 
             this.lbSort.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSort.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
             this.lbSort.Location = new System.Drawing.Point(397, 94);
             this.lbSort.Name = "lbSort";
@@ -170,9 +172,9 @@
             this.listTruong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)));
             this.listTruong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listTruong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listTruong.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listTruong.FormattingEnabled = true;
-            this.listTruong.ItemHeight = 20;
+            this.listTruong.ItemHeight = 21;
             this.listTruong.Items.AddRange(new object[] {
             "fdsfds",
             "fds",
@@ -207,7 +209,7 @@
             "ẻ"});
             this.listTruong.Location = new System.Drawing.Point(13, 78);
             this.listTruong.Name = "listTruong";
-            this.listTruong.Size = new System.Drawing.Size(362, 442);
+            this.listTruong.Size = new System.Drawing.Size(362, 422);
             this.listTruong.TabIndex = 3;
             // 
             // pnSearch
@@ -223,7 +225,7 @@
             // lbSearch
             // 
             this.lbSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSearch.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
             this.lbSearch.Location = new System.Drawing.Point(9, 18);
             this.lbSearch.Name = "lbSearch";
@@ -290,7 +292,7 @@
             // lbName
             // 
             this.lbName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
             this.lbName.Location = new System.Drawing.Point(116, 37);
             this.lbName.Name = "lbName";
@@ -302,7 +304,7 @@
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(25, 37);
             this.label1.Name = "label1";

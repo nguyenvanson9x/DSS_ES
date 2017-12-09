@@ -11,15 +11,9 @@ namespace GUI
 {
     public partial class frm1 : Form
     {
-        private Button[] buttons = new Button[5];
         public frm1()
         {
             InitializeComponent();
-            buttons[0] = btnDiemChuan;
-            buttons[1] = btnQuanLy;
-            buttons[2] = btnTuVan_Nganh;
-            buttons[3] = btnTuVan_Truong;
-            buttons[4] = btnCauHinh;
         }
 
         private void btnTuVan_Nganh_Click(object sender, EventArgs e)
@@ -73,11 +67,20 @@ namespace GUI
             int r_click = 3, g_click = 169, b_click = 244;
             //normal: 79, 195, 247
             // click: 3, 169, 244
-            foreach(Button button in buttons)
-                if (button.Name.Equals(btn.Name))
-                    button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(r_click)))), ((int)(((byte)(g_click)))), ((int)(((byte)(b_click)))));
-                else
-                    button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(r_default)))), ((int)(((byte)(g_default)))), ((int)(((byte)(b_default)))));
+            foreach (Control c in this.tbNav.Controls)
+            {
+                try
+                {
+                    Button button = (Button)c;
+                    if (button.Name.Equals(btn.Name))
+                        button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(r_click)))), ((int)(((byte)(g_click)))), ((int)(((byte)(b_click)))));
+                    else
+                        button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(r_default)))), ((int)(((byte)(g_default)))), ((int)(((byte)(b_default)))));
+                }
+                catch (Exception e)
+                {
+                }
+            }
         }
     }
 }

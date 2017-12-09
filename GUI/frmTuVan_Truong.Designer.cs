@@ -73,65 +73,65 @@
             // lbChuyenNganh
             // 
             this.lbChuyenNganh.AutoSize = true;
-            this.lbChuyenNganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChuyenNganh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbChuyenNganh.Location = new System.Drawing.Point(350, 77);
             this.lbChuyenNganh.Name = "lbChuyenNganh";
-            this.lbChuyenNganh.Size = new System.Drawing.Size(168, 20);
+            this.lbChuyenNganh.Size = new System.Drawing.Size(163, 23);
             this.lbChuyenNganh.TabIndex = 0;
             this.lbChuyenNganh.Text = "Chọn chuyên ngành";
             // 
             // lbTongDiem
             // 
             this.lbTongDiem.AutoSize = true;
-            this.lbTongDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTongDiem.Location = new System.Drawing.Point(350, 171);
             this.lbTongDiem.Name = "lbTongDiem";
-            this.lbTongDiem.Size = new System.Drawing.Size(135, 20);
+            this.lbTongDiem.Size = new System.Drawing.Size(137, 23);
             this.lbTongDiem.TabIndex = 1;
             this.lbTongDiem.Text = "Nhập tổng điểm";
             // 
             // lbTinhThanh
             // 
             this.lbTinhThanh.AutoSize = true;
-            this.lbTinhThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTinhThanh.Location = new System.Drawing.Point(350, 276);
             this.lbTinhThanh.Name = "lbTinhThanh";
-            this.lbTinhThanh.Size = new System.Drawing.Size(94, 20);
+            this.lbTinhThanh.Size = new System.Drawing.Size(94, 23);
             this.lbTinhThanh.TabIndex = 2;
             this.lbTinhThanh.Text = "Tỉnh thành";
             // 
             // cbChuyenNganh
             // 
-            this.cbChuyenNganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChuyenNganh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChuyenNganh.FormattingEnabled = true;
             this.cbChuyenNganh.Location = new System.Drawing.Point(655, 77);
             this.cbChuyenNganh.Name = "cbChuyenNganh";
-            this.cbChuyenNganh.Size = new System.Drawing.Size(270, 28);
+            this.cbChuyenNganh.Size = new System.Drawing.Size(270, 29);
             this.cbChuyenNganh.TabIndex = 3;
             // 
             // cbTinhThanh
             // 
-            this.cbTinhThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinhThanh.FormattingEnabled = true;
             this.cbTinhThanh.Location = new System.Drawing.Point(655, 276);
             this.cbTinhThanh.Name = "cbTinhThanh";
-            this.cbTinhThanh.Size = new System.Drawing.Size(270, 28);
+            this.cbTinhThanh.Size = new System.Drawing.Size(270, 29);
             this.cbTinhThanh.TabIndex = 4;
             // 
             // txtTongDiem
             // 
-            this.txtTongDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongDiem.Location = new System.Drawing.Point(655, 171);
             this.txtTongDiem.Name = "txtTongDiem";
-            this.txtTongDiem.Size = new System.Drawing.Size(270, 26);
+            this.txtTongDiem.Size = new System.Drawing.Size(270, 29);
             this.txtTongDiem.TabIndex = 5;
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(146)))), ((int)(((byte)(28)))));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSearch.Location = new System.Drawing.Point(547, 407);
             this.btnSearch.Name = "btnSearch";

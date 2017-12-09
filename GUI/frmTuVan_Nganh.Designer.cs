@@ -73,78 +73,78 @@
             // lnTongDiem
             // 
             this.lnTongDiem.AutoSize = true;
-            this.lnTongDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnTongDiem.Location = new System.Drawing.Point(370, 154);
             this.lnTongDiem.Name = "lnTongDiem";
-            this.lnTongDiem.Size = new System.Drawing.Size(135, 20);
+            this.lnTongDiem.Size = new System.Drawing.Size(137, 23);
             this.lnTongDiem.TabIndex = 0;
             this.lnTongDiem.Text = "Nhập tổng điểm";
             // 
             // lbTinhThanh
             // 
             this.lbTinhThanh.AutoSize = true;
-            this.lbTinhThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTinhThanh.Location = new System.Drawing.Point(370, 237);
             this.lbTinhThanh.Name = "lbTinhThanh";
-            this.lbTinhThanh.Size = new System.Drawing.Size(108, 20);
+            this.lbTinhThanh.Size = new System.Drawing.Size(108, 23);
             this.lbTinhThanh.TabIndex = 1;
             this.lbTinhThanh.Text = "Tỉnh / Thành";
             // 
             // cbTinhThanh
             // 
-            this.cbTinhThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinhThanh.FormattingEnabled = true;
             this.cbTinhThanh.Location = new System.Drawing.Point(532, 234);
             this.cbTinhThanh.Name = "cbTinhThanh";
-            this.cbTinhThanh.Size = new System.Drawing.Size(217, 28);
+            this.cbTinhThanh.Size = new System.Drawing.Size(217, 29);
             this.cbTinhThanh.TabIndex = 2;
             // 
             // txtTongDiem
             // 
-            this.txtTongDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongDiem.Location = new System.Drawing.Point(532, 151);
             this.txtTongDiem.Name = "txtTongDiem";
-            this.txtTongDiem.Size = new System.Drawing.Size(217, 26);
+            this.txtTongDiem.Size = new System.Drawing.Size(217, 29);
             this.txtTongDiem.TabIndex = 3;
             // 
             // btnTongDiem
             // 
-            this.btnTongDiem.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnTongDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTongDiem.FlatAppearance.BorderSize = 0;
             this.btnTongDiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTongDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTongDiem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTongDiem.Location = new System.Drawing.Point(791, 142);
             this.btnTongDiem.Name = "btnTongDiem";
-            this.btnTongDiem.Size = new System.Drawing.Size(114, 45);
+            this.btnTongDiem.Size = new System.Drawing.Size(120, 45);
             this.btnTongDiem.TabIndex = 4;
             this.btnTongDiem.Text = "Tham khảo";
             this.btnTongDiem.UseVisualStyleBackColor = false;
             // 
             // btnTinhThanh
             // 
-            this.btnTinhThanh.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnTinhThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTinhThanh.FlatAppearance.BorderSize = 0;
             this.btnTinhThanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTinhThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinhThanh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTinhThanh.Location = new System.Drawing.Point(791, 225);
             this.btnTinhThanh.Name = "btnTinhThanh";
-            this.btnTinhThanh.Size = new System.Drawing.Size(114, 45);
+            this.btnTinhThanh.Size = new System.Drawing.Size(120, 45);
             this.btnTinhThanh.TabIndex = 5;
             this.btnTinhThanh.Text = "Tham khảo";
             this.btnTinhThanh.UseVisualStyleBackColor = false;
             // 
             // btnTuVan
             // 
-            this.btnTuVan.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnTuVan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTuVan.FlatAppearance.BorderSize = 0;
             this.btnTuVan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTuVan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuVan.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuVan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTuVan.Location = new System.Drawing.Point(580, 353);
+            this.btnTuVan.Location = new System.Drawing.Point(577, 353);
             this.btnTuVan.Name = "btnTuVan";
-            this.btnTuVan.Size = new System.Drawing.Size(114, 45);
+            this.btnTuVan.Size = new System.Drawing.Size(120, 45);
             this.btnTuVan.TabIndex = 6;
             this.btnTuVan.Text = "Tư vấn";
             this.btnTuVan.UseVisualStyleBackColor = false;

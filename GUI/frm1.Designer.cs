@@ -119,7 +119,7 @@
             this.btnDiemChuan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnDiemChuan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnDiemChuan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDiemChuan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiemChuan.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiemChuan.ForeColor = System.Drawing.Color.Black;
             this.btnDiemChuan.Image = global::GUI.Properties.Resources.if_education_school_learn_study_10_2125348;
             this.btnDiemChuan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -144,7 +144,7 @@
             this.btnCauHinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnCauHinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnCauHinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCauHinh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCauHinh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCauHinh.ForeColor = System.Drawing.Color.Black;
             this.btnCauHinh.Image = global::GUI.Properties.Resources.if_education_school_learn_study_19_2125357;
             this.btnCauHinh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -169,7 +169,7 @@
             this.btnTuVan_Truong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTuVan_Truong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTuVan_Truong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTuVan_Truong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuVan_Truong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuVan_Truong.ForeColor = System.Drawing.Color.Black;
             this.btnTuVan_Truong.Image = global::GUI.Properties.Resources.if_education_school_learn_study_06_2125344;
             this.btnTuVan_Truong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -194,7 +194,7 @@
             this.btnQuanLy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnQuanLy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnQuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLy.ForeColor = System.Drawing.Color.Black;
             this.btnQuanLy.Image = global::GUI.Properties.Resources.if_education_school_learn_study_18_2125356;
             this.btnQuanLy.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -219,7 +219,7 @@
             this.btnTuVan_Nganh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTuVan_Nganh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTuVan_Nganh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTuVan_Nganh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuVan_Nganh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuVan_Nganh.ForeColor = System.Drawing.Color.Black;
             this.btnTuVan_Nganh.Image = global::GUI.Properties.Resources.if_education_school_learn_study_02_2125360;
             this.btnTuVan_Nganh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
