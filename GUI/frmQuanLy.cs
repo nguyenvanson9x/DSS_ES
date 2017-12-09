@@ -35,6 +35,11 @@ namespace GUI
 
         }
 
+        private void frmQuanLy_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void add_form_to_panel(Form f)
         {
             // Do not modify this function
@@ -71,6 +76,5 @@ namespace GUI
                 }
             }
         }
-
     }
 }

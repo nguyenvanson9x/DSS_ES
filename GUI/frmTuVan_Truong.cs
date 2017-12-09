@@ -26,5 +26,10 @@ namespace GUI
         {
 
         }
+
+        private void frmTuVan_Truong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

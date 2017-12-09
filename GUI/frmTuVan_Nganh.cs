@@ -35,5 +35,10 @@ namespace GUI
         {
 
         }
+
+        private void frmTuVan_Nganh_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

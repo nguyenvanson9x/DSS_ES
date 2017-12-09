@@ -176,6 +176,7 @@
             this.Padding = new System.Windows.Forms.Padding(3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTuVan_Truong";
+            this.Load += new System.EventHandler(this.frmTuVan_Truong_Load);
             this.pnContainer.ResumeLayout(false);
             this.pnContainer.PerformLayout();
             this.ResumeLayout(false);

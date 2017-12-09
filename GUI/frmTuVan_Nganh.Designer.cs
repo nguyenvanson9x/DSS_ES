@@ -196,6 +196,7 @@
             this.Name = "frmTuVan_Nganh";
             this.Padding = new System.Windows.Forms.Padding(3);
             this.Text = "frmTuVan_Nganh";
+            this.Load += new System.EventHandler(this.frmTuVan_Nganh_Load);
             this.pnContainer.ResumeLayout(false);
             this.pnContainer.PerformLayout();
             this.ResumeLayout(false);
