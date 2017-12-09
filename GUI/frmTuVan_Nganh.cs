@@ -28,7 +28,8 @@ namespace GUI
 
         private void btnTuVan_Click(object sender, EventArgs e)
         {
-
+            frmDanhSachNganh frm = new frmDanhSachNganh();
+            frm.ShowDialog();
         }
 
         private void btnHelp_Click(object sender, EventArgs e)

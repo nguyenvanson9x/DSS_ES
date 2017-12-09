@@ -46,3 +46,4 @@ D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmQuanLy.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmTuVan_Nganh.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDanhSachTruong.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmCauHinh.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDanhSachNganh.resources
