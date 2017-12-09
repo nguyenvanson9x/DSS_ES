@@ -73,9 +73,17 @@ namespace GUI
                 {
                     Button button = (Button)c;
                     if (button.Name.Equals(btn.Name))
+                    {
                         button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(r_click)))), ((int)(((byte)(g_click)))), ((int)(((byte)(b_click)))));
+                        button.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        button.ForeColor = System.Drawing.Color.White;
+                    }
                     else
+                    {
                         button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(r_default)))), ((int)(((byte)(g_default)))), ((int)(((byte)(b_default)))));
+                        button.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        button.ForeColor = System.Drawing.Color.Black;
+                    }
                 }
                 catch (Exception e)
                 {
