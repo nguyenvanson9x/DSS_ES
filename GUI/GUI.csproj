@@ -178,6 +178,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -204,6 +205,39 @@
       <Project>{92BB5D25-6510-495A-AE5E-E85CDB67DA64}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon_sets_school_outline_hand_drawn_iconfinder-01_2087709 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon_sets_school_outline_hand_drawn_iconfinder-01_2087709.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon_sets_school_outline_hand_drawn_iconfinder-09_2087691.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon_sets_school_outline_hand_drawn_iconfinder-23_2087695.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon_sets_school_outline_hand_drawn_iconfinder-26_2087684.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon_sets_school_outline_hand_drawn_iconfinder-21_2087703.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-10_2125348.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-06_2125344.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-02_2125360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-18_2125356.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-19_2125357.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

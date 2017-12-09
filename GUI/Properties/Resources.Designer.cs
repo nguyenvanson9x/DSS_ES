@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GUI.Properties
-{
-
-
+namespace GUI.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,118 @@ namespace GUI.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "2.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GUI.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_education_school_learn_study_02_2125360 {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-02_2125360", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_education_school_learn_study_06_2125344 {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-06_2125344", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_education_school_learn_study_10_2125348 {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-10_2125348", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_education_school_learn_study_18_2125356 {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-18_2125356", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_education_school_learn_study_19_2125357 {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-19_2125357", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_sets_school_outline_hand_drawn_iconfinder_01_2087709 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon_sets_school_outline_hand_drawn_iconfinder-01_2087709", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_sets_school_outline_hand_drawn_iconfinder_01_2087709__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_icon_sets_school_outline_hand_drawn_iconfinder-01_2087709 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_sets_school_outline_hand_drawn_iconfinder_09_2087691 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon_sets_school_outline_hand_drawn_iconfinder-09_2087691", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_sets_school_outline_hand_drawn_iconfinder_21_2087703 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon_sets_school_outline_hand_drawn_iconfinder-21_2087703", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_sets_school_outline_hand_drawn_iconfinder_23_2087695 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon_sets_school_outline_hand_drawn_iconfinder-23_2087695", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_sets_school_outline_hand_drawn_iconfinder_26_2087684 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon_sets_school_outline_hand_drawn_iconfinder-26_2087684", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
