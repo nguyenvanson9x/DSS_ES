@@ -87,7 +87,7 @@
             // 
             // pnLeft
             // 
-            this.pnLeft.BackColor = System.Drawing.SystemColors.Control;
+            this.pnLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pnLeft.Controls.Add(this.btnSearch);
             this.pnLeft.Controls.Add(this.cbTinh);
             this.pnLeft.Controls.Add(this.lbSearchFor);
@@ -246,7 +246,7 @@
             // 
             // pnRight
             // 
-            this.pnRight.BackColor = System.Drawing.SystemColors.Control;
+            this.pnRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pnRight.Controls.Add(this.dgv);
             this.pnRight.Controls.Add(this.lbName);
             this.pnRight.Controls.Add(this.label1);

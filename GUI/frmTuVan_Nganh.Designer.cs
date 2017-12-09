@@ -56,6 +56,7 @@
             // 
             // pnContainer
             // 
+            this.pnContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pnContainer.Controls.Add(this.btnTuVan);
             this.pnContainer.Controls.Add(this.btnTinhThanh);
             this.pnContainer.Controls.Add(this.btnTongDiem);

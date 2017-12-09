@@ -56,6 +56,7 @@
             // 
             // pnContainer
             // 
+            this.pnContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pnContainer.Controls.Add(this.btnSearch);
             this.pnContainer.Controls.Add(this.txtTongDiem);
             this.pnContainer.Controls.Add(this.cbTinhThanh);

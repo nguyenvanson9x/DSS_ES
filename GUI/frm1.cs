@@ -63,15 +63,15 @@ namespace GUI
 
         private void change_color(Button btn)
         {
+            // Do not modify this function
             int r_default = 79, g_default = 195, b_default = 247;
             int r_click = 3, g_click = 169, b_click = 244;
             //normal: 79, 195, 247
             // click: 3, 169, 244
-            foreach (Control c in this.tbNav.Controls)
+            foreach (Control button in this.tbNav.Controls)
             {
-                try
+                if (button is Button)
                 {
-                    Button button = (Button)c;
                     if (button.Name.Equals(btn.Name))
                     {
                         button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(r_click)))), ((int)(((byte)(g_click)))), ((int)(((byte)(b_click)))));
@@ -84,9 +84,6 @@ namespace GUI
                         button.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         button.ForeColor = System.Drawing.Color.Black;
                     }
-                }
-                catch (Exception e)
-                {
                 }
             }
         }
