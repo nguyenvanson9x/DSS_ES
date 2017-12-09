@@ -7,7 +7,6 @@ D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\BUS.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\DAL.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\DTO.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\ResolveAssemblyReference.cache
-D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.CauHinh.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmHuongDan.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmQuanLyTruong.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmQuanLyTuyenSinh.resources
@@ -20,3 +19,11 @@ D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.exe
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frm1.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmCauHinh.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmDanhSachNganh.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmDanhSachTruong.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmDiemChuan.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmQuanLy.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmTuVan_Nganh.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmTuVan_Truong.resources
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\App.config

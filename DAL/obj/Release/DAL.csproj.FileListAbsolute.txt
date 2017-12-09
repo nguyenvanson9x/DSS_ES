@@ -12,3 +12,5 @@ D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\DTO.pdb
 D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\ResolveAssemblyReference.cache
 D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\DAL.dll
 D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\DAL.pdb
+D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\DAL.dll.config
+D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\App.config

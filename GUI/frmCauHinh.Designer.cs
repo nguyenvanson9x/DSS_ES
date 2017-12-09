@@ -35,14 +35,14 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtCSDL = new System.Windows.Forms.TextBox();
             this.txtMayChu = new System.Windows.Forms.TextBox();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnKiemTra = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.lbDB = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbMayChu = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnKiemTra = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.pnContainer.SuspendLayout();
             this.pnInfo.SuspendLayout();
             this.SuspendLayout();
@@ -123,6 +123,7 @@
             this.txtCSDL.Name = "txtCSDL";
             this.txtCSDL.Size = new System.Drawing.Size(187, 27);
             this.txtCSDL.TabIndex = 8;
+            this.txtCSDL.Text = "DSS_ES";
             // 
             // txtMayChu
             // 
@@ -133,6 +134,63 @@
             this.txtMayChu.Name = "txtMayChu";
             this.txtMayChu.Size = new System.Drawing.Size(187, 27);
             this.txtMayChu.TabIndex = 7;
+            this.txtMayChu.Text = ".\\SQLEXPRESS";
+            // 
+            // lbDB
+            // 
+            this.lbDB.AutoSize = true;
+            this.lbDB.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDB.Location = new System.Drawing.Point(66, 110);
+            this.lbDB.Name = "lbDB";
+            this.lbDB.Size = new System.Drawing.Size(110, 22);
+            this.lbDB.TabIndex = 3;
+            this.lbDB.Text = "Cơ sở dữ liệu";
+            // 
+            // lbPassword
+            // 
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.Location = new System.Drawing.Point(66, 222);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(83, 22);
+            this.lbPassword.TabIndex = 2;
+            this.lbPassword.Text = "Mật khẩu";
+            // 
+            // lbUsername
+            // 
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsername.Location = new System.Drawing.Point(66, 166);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(121, 22);
+            this.lbUsername.TabIndex = 1;
+            this.lbUsername.Text = "Tên đăng nhập";
+            // 
+            // lbMayChu
+            // 
+            this.lbMayChu.AutoSize = true;
+            this.lbMayChu.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMayChu.Location = new System.Drawing.Point(66, 54);
+            this.lbMayChu.Name = "lbMayChu";
+            this.lbMayChu.Size = new System.Drawing.Size(76, 22);
+            this.lbMayChu.TabIndex = 0;
+            this.lbMayChu.Text = "Máy chủ";
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Image = global::GUI.Properties.Resources.if_question_2625632__1_;
+            this.btnHelp.Location = new System.Drawing.Point(1229, 24);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(33, 33);
+            this.btnHelp.TabIndex = 4;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnHuy
             // 
@@ -192,62 +250,6 @@
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // lbDB
-            // 
-            this.lbDB.AutoSize = true;
-            this.lbDB.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDB.Location = new System.Drawing.Point(66, 110);
-            this.lbDB.Name = "lbDB";
-            this.lbDB.Size = new System.Drawing.Size(110, 22);
-            this.lbDB.TabIndex = 3;
-            this.lbDB.Text = "Cơ sở dữ liệu";
-            // 
-            // lbPassword
-            // 
-            this.lbPassword.AutoSize = true;
-            this.lbPassword.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPassword.Location = new System.Drawing.Point(66, 222);
-            this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(83, 22);
-            this.lbPassword.TabIndex = 2;
-            this.lbPassword.Text = "Mật khẩu";
-            // 
-            // lbUsername
-            // 
-            this.lbUsername.AutoSize = true;
-            this.lbUsername.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsername.Location = new System.Drawing.Point(66, 166);
-            this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(121, 22);
-            this.lbUsername.TabIndex = 1;
-            this.lbUsername.Text = "Tên đăng nhập";
-            // 
-            // lbMayChu
-            // 
-            this.lbMayChu.AutoSize = true;
-            this.lbMayChu.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMayChu.Location = new System.Drawing.Point(66, 54);
-            this.lbMayChu.Name = "lbMayChu";
-            this.lbMayChu.Size = new System.Drawing.Size(76, 22);
-            this.lbMayChu.TabIndex = 0;
-            this.lbMayChu.Text = "Máy chủ";
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.Image = global::GUI.Properties.Resources.if_question_2625632__1_;
-            this.btnHelp.Location = new System.Drawing.Point(1229, 24);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(33, 33);
-            this.btnHelp.TabIndex = 4;
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // frmCauHinh
             // 

@@ -6,11 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using DAL;
 namespace GUI
 {
     public partial class frmCauHinh : Form
     {
+        private DBConnect db = new DBConnect();
         public frmCauHinh()
         {
             InitializeComponent();
@@ -18,12 +19,13 @@ namespace GUI
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
+            db.DataSource = txtMayChu.Text;
+            db.DataBase = txtCSDL.Text;
         }
 
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(db.DataBase);
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
