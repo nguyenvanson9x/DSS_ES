@@ -27,3 +27,4 @@ D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmQuanLy.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmTuVan_Nganh.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmTuVan_Truong.resources
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\App.config
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\GUI.exe.config

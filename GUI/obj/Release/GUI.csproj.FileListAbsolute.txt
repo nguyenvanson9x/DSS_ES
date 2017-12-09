@@ -48,3 +48,4 @@ D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDanhSachTruong.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmCauHinh.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDanhSachNganh.resources
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\App.config
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\GUI.exe.config

@@ -11,7 +11,7 @@ namespace GUI
 {
     public partial class frmCauHinh : Form
     {
-        private DBConnect db = new DBConnect();
+        //private DBConnect db = new DBConnect();
         public frmCauHinh()
         {
             InitializeComponent();
@@ -19,13 +19,14 @@ namespace GUI
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            db.DataSource = txtMayChu.Text;
-            db.DataBase = txtCSDL.Text;
+            DBConnect.EditAppSetting("datasource", txtMayChu.Text);
+            DBConnect.EditAppSetting("database", txtCSDL.Text);
+            DBConnect.EditAppSetting("username", txtUsername.Text);
+            DBConnect.EditAppSetting("password", txtPassword.Text);
         }
 
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(db.DataBase);
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

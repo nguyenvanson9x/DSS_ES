@@ -9,22 +9,23 @@ namespace DAL
 {
     public class DBConnect
     {
+        private static Configuration config;
         private string datasource, database, username, password;
         protected SqlConnection _conn;
         public DBConnect()
         {
-            database = "DSS_ES";
-            datasource = @".\SQLEXPRESS";
+            database = "";
+            datasource = "";
             username = "";
             password = "";
             _conn = GetDBConnection();
         }
         public SqlConnection GetDBConnection()
         {
-            //datasource = ConfigurationManager.AppSettings["datasource"];
-            //database = ConfigurationManager.AppSettings["database"];
-            //username = ConfigurationManager.AppSettings["username"];
-            //password = ConfigurationManager.AppSettings["password"];
+            datasource = ConfigurationManager.AppSettings["datasource"];
+            database = ConfigurationManager.AppSettings["database"];
+            username = ConfigurationManager.AppSettings["username"];
+            password = ConfigurationManager.AppSettings["password"];
 
             if (username.Equals("") && password.Equals(""))
                 return DBSQLServerUtils.GetDBConnection(datasource, database);
@@ -32,6 +33,31 @@ namespace DAL
                 return DBSQLServerUtils.GetDBConnection(datasource, database, username, password);
 
         }
+
+        public static void EditAppSetting(string key, string value)
+        {
+            config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings[key].Value = value;
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+        }
+
+        public static void AddAppSetting(string key, string value)
+        {
+            config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings.Add(key, value);
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+        }
+
+        public static void RemoveAppSetting(string key)
+        {
+            config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings.Remove(key);
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+        }
+
         public string DataSource
         {
             get

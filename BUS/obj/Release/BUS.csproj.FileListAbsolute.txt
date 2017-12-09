@@ -16,4 +16,3 @@ D:\NguyenVanSon\Coding\DSS\BUS\bin\Release\DTO.pdb
 D:\NguyenVanSon\Coding\DSS\BUS\obj\Release\ResolveAssemblyReference.cache
 D:\NguyenVanSon\Coding\DSS\BUS\obj\Release\BUS.dll
 D:\NguyenVanSon\Coding\DSS\BUS\obj\Release\BUS.pdb
-D:\NguyenVanSon\Coding\DSS\BUS\bin\Release\App.config
