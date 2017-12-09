@@ -16,6 +16,11 @@ namespace GUI
             InitializeComponent();
         }
 
+        private void frm1_Load(object sender, EventArgs e)
+        {
+            btnTuVan_Nganh_Click(sender, e);
+        }
+
         private void btnTuVan_Nganh_Click(object sender, EventArgs e)
         {
             change_color(btnTuVan_Nganh);
@@ -87,5 +92,7 @@ namespace GUI
                 }
             }
         }
+
+
     }
 }
