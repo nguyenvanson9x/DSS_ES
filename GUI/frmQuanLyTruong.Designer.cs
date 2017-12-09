@@ -72,7 +72,7 @@
             this.clTenTruong,
             this.clDiaChi,
             this.clWebsite});
-            this.dgvResult.Location = new System.Drawing.Point(36, 134);
+            this.dgvResult.Location = new System.Drawing.Point(36, 163);
             this.dgvResult.Margin = new System.Windows.Forms.Padding(0);
             this.dgvResult.MultiSelect = false;
             this.dgvResult.Name = "dgvResult";
@@ -81,7 +81,7 @@
             this.dgvResult.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvResult.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvResult.Size = new System.Drawing.Size(880, 346);
+            this.dgvResult.Size = new System.Drawing.Size(886, 346);
             this.dgvResult.TabIndex = 11;
             this.dgvResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResult_CellContentClick);
             // 
@@ -233,6 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(954, 511);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.label4);
@@ -247,7 +248,7 @@
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.dgvResult);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(960, 540);
             this.Name = "frmQuanLyTruong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
