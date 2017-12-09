@@ -21,5 +21,10 @@ namespace GUI
             frmDanhSachTruong frm = new frmDanhSachTruong();
             frm.ShowDialog();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

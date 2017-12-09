@@ -46,6 +46,7 @@
             this.DiemChuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbName = new System.Windows.Forms.Label();
             this.lbTruong = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.tbContainer.SuspendLayout();
             this.pnLeft.SuspendLayout();
@@ -194,7 +195,7 @@
             "hẻ",
             "fg",
             "ẻ"});
-            this.listTruong.Location = new System.Drawing.Point(13, 78);
+            this.listTruong.Location = new System.Drawing.Point(13, 99);
             this.listTruong.Name = "listTruong";
             this.listTruong.Size = new System.Drawing.Size(362, 422);
             this.listTruong.TabIndex = 3;
@@ -259,7 +260,7 @@
             this.dgv.Location = new System.Drawing.Point(29, 129);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(595, 397);
+            this.dgv.Size = new System.Drawing.Size(595, 392);
             this.dgv.TabIndex = 7;
             // 
             // MaNganh
@@ -301,6 +302,22 @@
             this.lbTruong.Text = "Trường: ";
             this.lbTruong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Image = global::GUI.Properties.Resources.if_question_2625632__1_;
+            this.btnHelp.Location = new System.Drawing.Point(1229, 24);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(33, 33);
+            this.btnHelp.TabIndex = 2;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
@@ -327,6 +344,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1274, 621);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.tbContainer);
             this.Controls.Add(this.lbTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -365,5 +383,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiemChuan;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

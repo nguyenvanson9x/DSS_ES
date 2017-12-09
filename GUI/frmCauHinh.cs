@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class CauHinh : Form
+    public partial class frmCauHinh : Form
     {
-        public CauHinh()
+        public frmCauHinh()
         {
             InitializeComponent();
         }
@@ -27,6 +27,11 @@ namespace GUI
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
         {
 
         }

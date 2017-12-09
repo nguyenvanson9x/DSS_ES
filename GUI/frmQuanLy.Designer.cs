@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.pnContainer = new System.Windows.Forms.Panel();
-            this.lbTitle = new System.Windows.Forms.Label();
             this.tbContainer = new System.Windows.Forms.TableLayoutPanel();
             this.tbButton = new System.Windows.Forms.TableLayoutPanel();
-            this.btnTruong = new System.Windows.Forms.Button();
             this.btnTuyenSinh = new System.Windows.Forms.Button();
+            this.btnTruong = new System.Windows.Forms.Button();
             this.pnSubSystem = new System.Windows.Forms.Panel();
+            this.lbTitle = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.pnContainer.SuspendLayout();
             this.tbContainer.SuspendLayout();
             this.tbButton.SuspendLayout();
@@ -42,6 +43,7 @@
             // 
             // pnContainer
             // 
+            this.pnContainer.Controls.Add(this.btnHelp);
             this.pnContainer.Controls.Add(this.tbContainer);
             this.pnContainer.Controls.Add(this.lbTitle);
             this.pnContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -49,20 +51,6 @@
             this.pnContainer.Name = "pnContainer";
             this.pnContainer.Size = new System.Drawing.Size(1268, 615);
             this.pnContainer.TabIndex = 0;
-            // 
-            // lbTitle
-            // 
-            this.lbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.lbTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(0, 0);
-            this.lbTitle.Margin = new System.Windows.Forms.Padding(0);
-            this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(1268, 80);
-            this.lbTitle.TabIndex = 1;
-            this.lbTitle.Text = "QUẢN LÝ THÔNG TIN";
-            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbContainer
             // 
@@ -103,30 +91,6 @@
             this.tbButton.Size = new System.Drawing.Size(291, 535);
             this.tbButton.TabIndex = 0;
             // 
-            // btnTruong
-            // 
-            this.btnTruong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTruong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnTruong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTruong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTruong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTruong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTruong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTruong.ForeColor = System.Drawing.Color.Black;
-            this.btnTruong.Image = global::GUI.Properties.Resources.if_education_school_learn_study_06_2125344;
-            this.btnTruong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTruong.Location = new System.Drawing.Point(0, 107);
-            this.btnTruong.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTruong.Name = "btnTruong";
-            this.btnTruong.Size = new System.Drawing.Size(291, 107);
-            this.btnTruong.TabIndex = 2;
-            this.btnTruong.Text = "Thông tin Trường";
-            this.btnTruong.UseVisualStyleBackColor = false;
-            this.btnTruong.Click += new System.EventHandler(this.btnTruong_Click);
-            // 
             // btnTuyenSinh
             // 
             this.btnTuyenSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -151,6 +115,30 @@
             this.btnTuyenSinh.UseVisualStyleBackColor = false;
             this.btnTuyenSinh.Click += new System.EventHandler(this.btnTuyenSinh_Click);
             // 
+            // btnTruong
+            // 
+            this.btnTruong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTruong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnTruong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTruong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTruong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTruong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTruong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTruong.ForeColor = System.Drawing.Color.Black;
+            this.btnTruong.Image = global::GUI.Properties.Resources.if_education_school_learn_study_06_2125344;
+            this.btnTruong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTruong.Location = new System.Drawing.Point(0, 107);
+            this.btnTruong.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTruong.Name = "btnTruong";
+            this.btnTruong.Size = new System.Drawing.Size(291, 107);
+            this.btnTruong.TabIndex = 2;
+            this.btnTruong.Text = "Thông tin Trường";
+            this.btnTruong.UseVisualStyleBackColor = false;
+            this.btnTruong.Click += new System.EventHandler(this.btnTruong_Click);
+            // 
             // pnSubSystem
             // 
             this.pnSubSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -160,6 +148,36 @@
             this.pnSubSystem.Name = "pnSubSystem";
             this.pnSubSystem.Size = new System.Drawing.Size(977, 535);
             this.pnSubSystem.TabIndex = 1;
+            // 
+            // lbTitle
+            // 
+            this.lbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.lbTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.ForeColor = System.Drawing.Color.White;
+            this.lbTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(0);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(1268, 80);
+            this.lbTitle.TabIndex = 1;
+            this.lbTitle.Text = "QUẢN LÝ THÔNG TIN";
+            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Image = global::GUI.Properties.Resources.if_question_2625632__1_;
+            this.btnHelp.Location = new System.Drawing.Point(1229, 24);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(33, 33);
+            this.btnHelp.TabIndex = 4;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // frmQuanLy
             // 
@@ -189,5 +207,6 @@
         private System.Windows.Forms.Button btnTruong;
         private System.Windows.Forms.Button btnTuyenSinh;
         private System.Windows.Forms.Panel pnSubSystem;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

@@ -48,11 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CauHinh.cs">
+    <Compile Include="frmCauHinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CauHinh.Designer.cs">
-      <DependentUpon>CauHinh.cs</DependentUpon>
+    <Compile Include="frmCauHinh.Designer.cs">
+      <DependentUpon>frmCauHinh.cs</DependentUpon>
     </Compile>
     <Compile Include="frm1.cs">
       <SubType>Form</SubType>
@@ -128,8 +128,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CauHinh.resx">
-      <DependentUpon>CauHinh.cs</DependentUpon>
+    <EmbeddedResource Include="frmCauHinh.resx">
+      <DependentUpon>frmCauHinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm1.resx">
       <DependentUpon>frm1.cs</DependentUpon>
@@ -256,6 +256,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_list_107210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_question_2625632.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_question_2625632 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class CauHinh
+    partial class frmCauHinh
     {
         /// <summary>
         /// Required designer variable.
@@ -31,17 +31,18 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.pnContainer = new System.Windows.Forms.Panel();
             this.pnInfo = new System.Windows.Forms.Panel();
-            this.lbMayChu = new System.Windows.Forms.Label();
-            this.lbUsername = new System.Windows.Forms.Label();
-            this.lbPassword = new System.Windows.Forms.Label();
-            this.lbDB = new System.Windows.Forms.Label();
-            this.txtMayChu = new System.Windows.Forms.TextBox();
-            this.txtCSDL = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtCSDL = new System.Windows.Forms.TextBox();
+            this.txtMayChu = new System.Windows.Forms.TextBox();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnKiemTra = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.lbDB = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
+            this.lbUsername = new System.Windows.Forms.Label();
+            this.lbMayChu = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.pnContainer.SuspendLayout();
             this.pnInfo.SuspendLayout();
             this.SuspendLayout();
@@ -93,65 +94,15 @@
             this.pnInfo.Size = new System.Drawing.Size(510, 400);
             this.pnInfo.TabIndex = 0;
             // 
-            // lbMayChu
+            // txtPassword
             // 
-            this.lbMayChu.AutoSize = true;
-            this.lbMayChu.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMayChu.Location = new System.Drawing.Point(66, 54);
-            this.lbMayChu.Name = "lbMayChu";
-            this.lbMayChu.Size = new System.Drawing.Size(76, 22);
-            this.lbMayChu.TabIndex = 0;
-            this.lbMayChu.Text = "Máy chủ";
-            // 
-            // lbUsername
-            // 
-            this.lbUsername.AutoSize = true;
-            this.lbUsername.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsername.Location = new System.Drawing.Point(66, 166);
-            this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(121, 22);
-            this.lbUsername.TabIndex = 1;
-            this.lbUsername.Text = "Tên đăng nhập";
-            // 
-            // lbPassword
-            // 
-            this.lbPassword.AutoSize = true;
-            this.lbPassword.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPassword.Location = new System.Drawing.Point(66, 222);
-            this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(83, 22);
-            this.lbPassword.TabIndex = 2;
-            this.lbPassword.Text = "Mật khẩu";
-            // 
-            // lbDB
-            // 
-            this.lbDB.AutoSize = true;
-            this.lbDB.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDB.Location = new System.Drawing.Point(66, 110);
-            this.lbDB.Name = "lbDB";
-            this.lbDB.Size = new System.Drawing.Size(110, 22);
-            this.lbDB.TabIndex = 3;
-            this.lbDB.Text = "Cơ sở dữ liệu";
-            // 
-            // txtMayChu
-            // 
-            this.txtMayChu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMayChu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMayChu.Location = new System.Drawing.Point(257, 52);
-            this.txtMayChu.Name = "txtMayChu";
-            this.txtMayChu.Size = new System.Drawing.Size(187, 27);
-            this.txtMayChu.TabIndex = 7;
-            // 
-            // txtCSDL
-            // 
-            this.txtCSDL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCSDL.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSDL.Location = new System.Drawing.Point(257, 108);
-            this.txtCSDL.Name = "txtCSDL";
-            this.txtCSDL.Size = new System.Drawing.Size(187, 27);
-            this.txtCSDL.TabIndex = 8;
+            this.txtPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(257, 220);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(187, 27);
+            this.txtPassword.TabIndex = 10;
             // 
             // txtUsername
             // 
@@ -163,20 +114,31 @@
             this.txtUsername.Size = new System.Drawing.Size(187, 27);
             this.txtUsername.TabIndex = 9;
             // 
-            // txtPassword
+            // txtCSDL
             // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.txtCSDL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(257, 220);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(187, 27);
-            this.txtPassword.TabIndex = 10;
+            this.txtCSDL.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCSDL.Location = new System.Drawing.Point(257, 108);
+            this.txtCSDL.Name = "txtCSDL";
+            this.txtCSDL.Size = new System.Drawing.Size(187, 27);
+            this.txtCSDL.TabIndex = 8;
+            // 
+            // txtMayChu
+            // 
+            this.txtMayChu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMayChu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMayChu.Location = new System.Drawing.Point(257, 52);
+            this.txtMayChu.Name = "txtMayChu";
+            this.txtMayChu.Size = new System.Drawing.Size(187, 27);
+            this.txtMayChu.TabIndex = 7;
             // 
             // btnHuy
             // 
             this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FlatAppearance.BorderSize = 0;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,6 +158,7 @@
             // 
             this.btnKiemTra.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnKiemTra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnKiemTra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKiemTra.FlatAppearance.BorderSize = 0;
             this.btnKiemTra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKiemTra.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,6 +177,7 @@
             // btnLuu
             // 
             this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -229,17 +193,74 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // CauHinh
+            // lbDB
+            // 
+            this.lbDB.AutoSize = true;
+            this.lbDB.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDB.Location = new System.Drawing.Point(66, 110);
+            this.lbDB.Name = "lbDB";
+            this.lbDB.Size = new System.Drawing.Size(110, 22);
+            this.lbDB.TabIndex = 3;
+            this.lbDB.Text = "Cơ sở dữ liệu";
+            // 
+            // lbPassword
+            // 
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.Location = new System.Drawing.Point(66, 222);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(83, 22);
+            this.lbPassword.TabIndex = 2;
+            this.lbPassword.Text = "Mật khẩu";
+            // 
+            // lbUsername
+            // 
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsername.Location = new System.Drawing.Point(66, 166);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(121, 22);
+            this.lbUsername.TabIndex = 1;
+            this.lbUsername.Text = "Tên đăng nhập";
+            // 
+            // lbMayChu
+            // 
+            this.lbMayChu.AutoSize = true;
+            this.lbMayChu.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMayChu.Location = new System.Drawing.Point(66, 54);
+            this.lbMayChu.Name = "lbMayChu";
+            this.lbMayChu.Size = new System.Drawing.Size(76, 22);
+            this.lbMayChu.TabIndex = 0;
+            this.lbMayChu.Text = "Máy chủ";
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Image = global::GUI.Properties.Resources.if_question_2625632__1_;
+            this.btnHelp.Location = new System.Drawing.Point(1229, 24);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(33, 33);
+            this.btnHelp.TabIndex = 4;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // frmCauHinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1274, 621);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.pnContainer);
             this.Controls.Add(this.lbTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(960, 540);
-            this.Name = "CauHinh";
+            this.Name = "frmCauHinh";
             this.Padding = new System.Windows.Forms.Padding(3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cấu hình hệ thống";
@@ -266,5 +287,6 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtCSDL;
         private System.Windows.Forms.TextBox txtMayChu;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

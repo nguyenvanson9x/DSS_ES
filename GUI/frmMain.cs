@@ -26,7 +26,7 @@ namespace GUI
 
         private void btnCauHinh_Click(object sender, EventArgs e)
         {
-            CauHinh frmCauHinh = new CauHinh();
+            frmCauHinh frmCauHinh = new frmCauHinh();
             frmCauHinh.Show();
         }
     }

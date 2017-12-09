@@ -25,5 +25,10 @@ namespace GUI
         {
 
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

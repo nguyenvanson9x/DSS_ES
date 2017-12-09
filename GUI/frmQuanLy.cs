@@ -30,6 +30,11 @@ namespace GUI
             add_form_to_panel(frm);
         }
 
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void add_form_to_panel(Form f)
         {
             // Do not modify this function
@@ -66,5 +71,6 @@ namespace GUI
                 }
             }
         }
+
     }
 }

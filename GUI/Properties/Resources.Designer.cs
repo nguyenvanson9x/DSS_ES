@@ -172,6 +172,20 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap if_question_2625632 {
+            get {
+                object obj = ResourceManager.GetObject("if_question_2625632", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_question_2625632__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_question_2625632 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_User_Interface_48_2044240 {
             get {
                 object obj = ResourceManager.GetObject("if_User_Interface-48_2044240", resourceCulture);

@@ -47,7 +47,7 @@ namespace GUI
         private void btnCauHinh_Click(object sender, EventArgs e)
         {
             change_color(btnCauHinh);
-            CauHinh frm = new CauHinh();
+            frmCauHinh frm = new frmCauHinh();
             add_form_to_panel(frm);
         }
 

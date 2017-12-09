@@ -30,7 +30,6 @@ D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\BUS.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\DAL.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\DTO.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\ResolveAssemblyReference.cache
-D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.CauHinh.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmHuongDan.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmQuanLyTruong.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmQuanLyTuyenSinh.resources
@@ -46,3 +45,4 @@ D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDiemChuan.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmQuanLy.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmTuVan_Nganh.resources
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmDanhSachTruong.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmCauHinh.resources
