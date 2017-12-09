@@ -15,5 +15,20 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btnTongDiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTinhThanh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTuVan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

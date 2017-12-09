@@ -15,5 +15,15 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmDiemChuan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

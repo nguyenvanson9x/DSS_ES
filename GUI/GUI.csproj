@@ -239,6 +239,24 @@
   <ItemGroup>
     <None Include="Resources\if_education-school-learn-study-19_2125357.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_User_Interface-48_2044240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_circle-check_430087.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_circle-check_430087 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_editor-undo-arrow-outline-stroke_763321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-ios7-search_211818.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_list_107210.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

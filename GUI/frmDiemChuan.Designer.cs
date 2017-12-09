@@ -31,7 +31,6 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.tbContainer = new System.Windows.Forms.TableLayoutPanel();
             this.pnLeft = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.cbTinh = new System.Windows.Forms.ComboBox();
             this.lbSearchFor = new System.Windows.Forms.Label();
             this.cbSort = new System.Windows.Forms.ComboBox();
@@ -46,7 +45,8 @@
             this.TenNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiemChuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTruong = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.tbContainer.SuspendLayout();
             this.pnLeft.SuspendLayout();
             this.pnSearch.SuspendLayout();
@@ -60,29 +60,29 @@
             this.lbTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbTitle.Location = new System.Drawing.Point(3, 3);
             this.lbTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(1274, 80);
+            this.lbTitle.Size = new System.Drawing.Size(1268, 80);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "TRA ĐIỂM CHUẨN ĐẠI HỌC NĂM 2017 CHÍNH XÁC";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbContainer
             // 
-            this.tbContainer.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tbContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.tbContainer.ColumnCount = 2;
             this.tbContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tbContainer.Controls.Add(this.pnLeft, 0, 0);
             this.tbContainer.Controls.Add(this.pnRight, 1, 0);
             this.tbContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbContainer.Location = new System.Drawing.Point(0, 80);
+            this.tbContainer.Location = new System.Drawing.Point(3, 83);
             this.tbContainer.Margin = new System.Windows.Forms.Padding(0);
             this.tbContainer.Name = "tbContainer";
             this.tbContainer.RowCount = 1;
             this.tbContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tbContainer.Size = new System.Drawing.Size(1274, 541);
+            this.tbContainer.Size = new System.Drawing.Size(1268, 535);
             this.tbContainer.TabIndex = 1;
             // 
             // pnLeft
@@ -96,25 +96,11 @@
             this.pnLeft.Controls.Add(this.listTruong);
             this.pnLeft.Controls.Add(this.pnSearch);
             this.pnLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnLeft.Location = new System.Drawing.Point(3, 3);
+            this.pnLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnLeft.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.pnLeft.Name = "pnLeft";
-            this.pnLeft.Size = new System.Drawing.Size(631, 535);
+            this.pnLeft.Size = new System.Drawing.Size(633, 535);
             this.pnLeft.TabIndex = 0;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearch.Location = new System.Drawing.Point(401, 335);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(120, 45);
-            this.btnSearch.TabIndex = 8;
-            this.btnSearch.Text = "Tìm kiếm";
-            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // cbTinh
             // 
@@ -123,7 +109,7 @@
             this.cbTinh.Items.AddRange(new object[] {
             "--Tỉnh / TP--",
             "An Giang"});
-            this.cbTinh.Location = new System.Drawing.Point(401, 250);
+            this.cbTinh.Location = new System.Drawing.Point(404, 250);
             this.cbTinh.Name = "cbTinh";
             this.cbTinh.Size = new System.Drawing.Size(211, 29);
             this.cbTinh.TabIndex = 7;
@@ -133,8 +119,9 @@
             // 
             this.lbSearchFor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbSearchFor.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSearchFor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
-            this.lbSearchFor.Location = new System.Drawing.Point(397, 203);
+            this.lbSearchFor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbSearchFor.Location = new System.Drawing.Point(400, 203);
+            this.lbSearchFor.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.lbSearchFor.Name = "lbSearchFor";
             this.lbSearchFor.Size = new System.Drawing.Size(215, 35);
             this.lbSearchFor.TabIndex = 6;
@@ -149,18 +136,18 @@
             "-Sắp xếp theo-",
             "Thứ tự ABC",
             "Không theo thứ tự ABC"});
-            this.cbSort.Location = new System.Drawing.Point(401, 142);
+            this.cbSort.Location = new System.Drawing.Point(404, 142);
             this.cbSort.Name = "cbSort";
             this.cbSort.Size = new System.Drawing.Size(211, 29);
             this.cbSort.TabIndex = 5;
-            this.cbSort.Text = "-Sắp xếp theo-";
+            this.cbSort.Text = "--Sắp xếp theo--";
             // 
             // lbSort
             // 
             this.lbSort.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbSort.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
-            this.lbSort.Location = new System.Drawing.Point(397, 94);
+            this.lbSort.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbSort.Location = new System.Drawing.Point(400, 94);
             this.lbSort.Name = "lbSort";
             this.lbSort.Size = new System.Drawing.Size(215, 35);
             this.lbSort.TabIndex = 4;
@@ -219,14 +206,14 @@
             this.pnSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSearch.Location = new System.Drawing.Point(0, 0);
             this.pnSearch.Name = "pnSearch";
-            this.pnSearch.Size = new System.Drawing.Size(631, 72);
+            this.pnSearch.Size = new System.Drawing.Size(633, 72);
             this.pnSearch.TabIndex = 2;
             // 
             // lbSearch
             // 
             this.lbSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbSearch.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
+            this.lbSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbSearch.Location = new System.Drawing.Point(9, 18);
             this.lbSearch.Name = "lbSearch";
             this.lbSearch.Size = new System.Drawing.Size(175, 35);
@@ -249,11 +236,12 @@
             this.pnRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pnRight.Controls.Add(this.dgv);
             this.pnRight.Controls.Add(this.lbName);
-            this.pnRight.Controls.Add(this.label1);
+            this.pnRight.Controls.Add(this.lbTruong);
             this.pnRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnRight.Location = new System.Drawing.Point(640, 3);
+            this.pnRight.Location = new System.Drawing.Point(635, 0);
+            this.pnRight.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.pnRight.Name = "pnRight";
-            this.pnRight.Size = new System.Drawing.Size(631, 535);
+            this.pnRight.Size = new System.Drawing.Size(633, 535);
             this.pnRight.TabIndex = 1;
             // 
             // dgv
@@ -271,7 +259,7 @@
             this.dgv.Location = new System.Drawing.Point(29, 129);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(593, 397);
+            this.dgv.Size = new System.Drawing.Size(595, 397);
             this.dgv.TabIndex = 7;
             // 
             // MaNganh
@@ -301,29 +289,51 @@
             this.lbName.Text = "Đại học Bách khoa Hà Nội";
             this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // lbTruong
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(25, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 35);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Trường: ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTruong.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTruong.ForeColor = System.Drawing.Color.Black;
+            this.lbTruong.Location = new System.Drawing.Point(25, 37);
+            this.lbTruong.Name = "lbTruong";
+            this.lbTruong.Size = new System.Drawing.Size(85, 35);
+            this.lbTruong.TabIndex = 5;
+            this.lbTruong.Text = "Trường: ";
+            this.lbTruong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSearch.Image = global::GUI.Properties.Resources.if_icon_ios7_search_211818;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(438, 338);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(140, 45);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // frmDiemChuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1274, 621);
             this.Controls.Add(this.tbContainer);
             this.Controls.Add(this.lbTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDiemChuan";
+            this.Padding = new System.Windows.Forms.Padding(3);
             this.Text = "frmDiemChuan";
+            this.Load += new System.EventHandler(this.frmDiemChuan_Load);
             this.tbContainer.ResumeLayout(false);
             this.pnLeft.ResumeLayout(false);
             this.pnSearch.ResumeLayout(false);
@@ -349,7 +359,7 @@
         private System.Windows.Forms.Label lbSearchFor;
         private System.Windows.Forms.ComboBox cbTinh;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTruong;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNganh;

@@ -45,9 +45,9 @@
             this.pnContainer.Controls.Add(this.tbContainer);
             this.pnContainer.Controls.Add(this.lbTitle);
             this.pnContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnContainer.Location = new System.Drawing.Point(0, 0);
+            this.pnContainer.Location = new System.Drawing.Point(3, 3);
             this.pnContainer.Name = "pnContainer";
-            this.pnContainer.Size = new System.Drawing.Size(1274, 621);
+            this.pnContainer.Size = new System.Drawing.Size(1268, 615);
             this.pnContainer.TabIndex = 0;
             // 
             // lbTitle
@@ -59,7 +59,7 @@
             this.lbTitle.Location = new System.Drawing.Point(0, 0);
             this.lbTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(1274, 80);
+            this.lbTitle.Size = new System.Drawing.Size(1268, 80);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "QUẢN LÝ THÔNG TIN";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,7 +77,7 @@
             this.tbContainer.Name = "tbContainer";
             this.tbContainer.RowCount = 1;
             this.tbContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tbContainer.Size = new System.Drawing.Size(1274, 541);
+            this.tbContainer.Size = new System.Drawing.Size(1268, 535);
             this.tbContainer.TabIndex = 2;
             // 
             // tbButton
@@ -100,7 +100,7 @@
             this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tbButton.Size = new System.Drawing.Size(293, 541);
+            this.tbButton.Size = new System.Drawing.Size(291, 535);
             this.tbButton.TabIndex = 0;
             // 
             // btnTruong
@@ -118,10 +118,10 @@
             this.btnTruong.ForeColor = System.Drawing.Color.Black;
             this.btnTruong.Image = global::GUI.Properties.Resources.if_education_school_learn_study_06_2125344;
             this.btnTruong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTruong.Location = new System.Drawing.Point(0, 108);
+            this.btnTruong.Location = new System.Drawing.Point(0, 107);
             this.btnTruong.Margin = new System.Windows.Forms.Padding(0);
             this.btnTruong.Name = "btnTruong";
-            this.btnTruong.Size = new System.Drawing.Size(293, 108);
+            this.btnTruong.Size = new System.Drawing.Size(291, 107);
             this.btnTruong.TabIndex = 2;
             this.btnTruong.Text = "Thông tin Trường";
             this.btnTruong.UseVisualStyleBackColor = false;
@@ -142,10 +142,10 @@
             this.btnTuyenSinh.ForeColor = System.Drawing.Color.Black;
             this.btnTuyenSinh.Image = global::GUI.Properties.Resources.if_education_school_learn_study_02_2125360;
             this.btnTuyenSinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTuyenSinh.Location = new System.Drawing.Point(0, 216);
+            this.btnTuyenSinh.Location = new System.Drawing.Point(0, 214);
             this.btnTuyenSinh.Margin = new System.Windows.Forms.Padding(0);
             this.btnTuyenSinh.Name = "btnTuyenSinh";
-            this.btnTuyenSinh.Size = new System.Drawing.Size(293, 108);
+            this.btnTuyenSinh.Size = new System.Drawing.Size(291, 107);
             this.btnTuyenSinh.TabIndex = 3;
             this.btnTuyenSinh.Text = "Thông tin Tuyển sinh";
             this.btnTuyenSinh.UseVisualStyleBackColor = false;
@@ -153,21 +153,24 @@
             // 
             // pnSubSystem
             // 
+            this.pnSubSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pnSubSystem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnSubSystem.Location = new System.Drawing.Point(296, 3);
+            this.pnSubSystem.Location = new System.Drawing.Point(291, 0);
+            this.pnSubSystem.Margin = new System.Windows.Forms.Padding(0);
             this.pnSubSystem.Name = "pnSubSystem";
-            this.pnSubSystem.Size = new System.Drawing.Size(975, 535);
+            this.pnSubSystem.Size = new System.Drawing.Size(977, 535);
             this.pnSubSystem.TabIndex = 1;
             // 
             // frmQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1274, 621);
             this.Controls.Add(this.pnContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmQuanLy";
+            this.Padding = new System.Windows.Forms.Padding(3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuanLy";
             this.pnContainer.ResumeLayout(false);

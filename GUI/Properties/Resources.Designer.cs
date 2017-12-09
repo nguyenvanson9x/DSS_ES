@@ -60,6 +60,27 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap if_circle_check_430087 {
+            get {
+                object obj = ResourceManager.GetObject("if_circle-check_430087", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_circle_check_430087__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_circle-check_430087 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_editor_undo_arrow_outline_stroke_763321 {
+            get {
+                object obj = ResourceManager.GetObject("if_editor-undo-arrow-outline-stroke_763321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_education_school_learn_study_02_2125360 {
             get {
                 object obj = ResourceManager.GetObject("if_education-school-learn-study-02_2125360", resourceCulture);
@@ -91,6 +112,13 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap if_education_school_learn_study_19_2125357 {
             get {
                 object obj = ResourceManager.GetObject("if_education-school-learn-study-19_2125357", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_ios7_search_211818 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon-ios7-search_211818", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +161,20 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap if_icon_sets_school_outline_hand_drawn_iconfinder_26_2087684 {
             get {
                 object obj = ResourceManager.GetObject("if_icon_sets_school_outline_hand_drawn_iconfinder-26_2087684", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_list_107210 {
+            get {
+                object obj = ResourceManager.GetObject("if_list_107210", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_User_Interface_48_2044240 {
+            get {
+                object obj = ResourceManager.GetObject("if_User_Interface-48_2044240", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
