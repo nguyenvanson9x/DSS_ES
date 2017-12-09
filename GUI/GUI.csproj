@@ -103,24 +103,6 @@
     <Compile Include="frmQuanLyTuyenSinh.Designer.cs">
       <DependentUpon>frmQuanLyTuyenSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmThongTinTruong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThongTinTruong.Designer.cs">
-      <DependentUpon>frmThongTinTruong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmThongTinTuyenSinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThongTinTuyenSinh.Designer.cs">
-      <DependentUpon>frmThongTinTuyenSinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTuVan_Nganh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,15 +144,6 @@
     <EmbeddedResource Include="frmQuanLyTuyenSinh.resx">
       <DependentUpon>frmQuanLyTuyenSinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmThongTinTruong.resx">
-      <DependentUpon>frmThongTinTruong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmThongTinTuyenSinh.resx">
-      <DependentUpon>frmThongTinTuyenSinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTuVan_Nganh.resx">
       <DependentUpon>frmTuVan_Nganh.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,9 +154,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTuVan.resx">
-      <DependentUpon>frmTuVan.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -198,12 +168,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="frmTuVan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTuVan.Designer.cs">
-      <DependentUpon>frmTuVan.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

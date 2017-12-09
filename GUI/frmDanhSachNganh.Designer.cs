@@ -288,6 +288,7 @@
             this.Name = "frmDanhSachNganh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDanhSachNganh";
+            this.Load += new System.EventHandler(this.frmDanhSachNganh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.pnDetail.ResumeLayout(false);
             this.pnDetail.PerformLayout();
