@@ -11,9 +11,24 @@ namespace GUI
 {
     public partial class frmHuongDan : Form
     {
+        public string content = "";
+        public string title = "";
+
         public frmHuongDan()
         {
             InitializeComponent();
+            
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void frmHuongDan_Load(object sender, EventArgs e)
+        {
+            txtContent.Text = content;
+            lb.Text = title;
         }
     }
 }

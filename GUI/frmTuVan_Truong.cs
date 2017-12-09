@@ -24,7 +24,10 @@ namespace GUI
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-
+            frmHuongDan frm = new frmHuongDan();
+            frm.title = "";
+            frm.content = "Line 1\r\nLine 2\r\nLine 3";
+            frm.ShowDialog();
         }
 
         private void frmTuVan_Truong_Load(object sender, EventArgs e)
