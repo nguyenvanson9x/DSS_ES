@@ -7,19 +7,20 @@ namespace DTO
 {
     public class DTO_Truong
     {
-        private string maTruong, tenTruong, diaChi, website;
+        private string maTruong, tenTruong, diaChi, website, tinhThanh, dvChuQuan;
 
         public DTO_Truong()
         {
         }
 
-        public DTO_Truong(string ma_truong, string ten_truong, string dia_chi, string website)
+        public DTO_Truong(string ma_truong, string ten_truong, string dia_chi, string website, string tinh_thanh, string dv_chu_quan)
         {
             this.maTruong = ma_truong;
             this.tenTruong = ten_truong;
             this.diaChi = dia_chi;
             this.website = website;
-
+            this.tinhThanh = tinh_thanh;
+            this.dvChuQuan = dv_chu_quan;
         }
 
         public string MaTruong
@@ -64,6 +65,28 @@ namespace DTO
             set
             {
                 website = value;
+            }
+        }
+        public string TinhThanh
+        {
+            get
+            {
+                return tinhThanh;
+            }
+            set
+            {
+                tinhThanh = value;
+            }
+        }
+        public string DVChuquan
+        {
+            get
+            {
+                return dvChuQuan;
+            }
+            set
+            {
+                dvChuQuan = value;
             }
         }
     }
