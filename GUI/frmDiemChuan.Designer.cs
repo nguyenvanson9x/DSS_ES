@@ -126,16 +126,13 @@
             // 
             // cbTinh
             // 
+            this.cbTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTinh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinh.FormattingEnabled = true;
-            this.cbTinh.Items.AddRange(new object[] {
-            "--Tỉnh / TP--",
-            "An Giang"});
             this.cbTinh.Location = new System.Drawing.Point(404, 250);
             this.cbTinh.Name = "cbTinh";
             this.cbTinh.Size = new System.Drawing.Size(211, 29);
             this.cbTinh.TabIndex = 7;
-            this.cbTinh.Text = "--Tỉnh / TP--";
             // 
             // lbSearchFor
             // 
@@ -147,11 +144,12 @@
             this.lbSearchFor.Name = "lbSearchFor";
             this.lbSearchFor.Size = new System.Drawing.Size(215, 35);
             this.lbSearchFor.TabIndex = 6;
-            this.lbSearchFor.Text = "Tìm kiếm theo";
+            this.lbSearchFor.Text = "Tìm kiếm theo Tỉnh / TP";
             this.lbSearchFor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cbSort
             // 
+            this.cbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSort.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSort.FormattingEnabled = true;
             this.cbSort.Items.AddRange(new object[] {
@@ -162,7 +160,7 @@
             this.cbSort.Name = "cbSort";
             this.cbSort.Size = new System.Drawing.Size(211, 29);
             this.cbSort.TabIndex = 5;
-            this.cbSort.Text = "--Sắp xếp theo--";
+            this.cbSort.SelectedIndexChanged += new System.EventHandler(this.cbSortClick);
             // 
             // lbSort
             // 
@@ -184,42 +182,11 @@
             this.listTruong.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listTruong.FormattingEnabled = true;
             this.listTruong.ItemHeight = 21;
-            this.listTruong.Items.AddRange(new object[] {
-            "fdsfds",
-            "fds",
-            "f",
-            "sd",
-            "fsd",
-            "f",
-            "sd",
-            "fsd",
-            "f",
-            "sd",
-            "f",
-            "sdf",
-            "sd",
-            "f",
-            "sd",
-            "fd",
-            "sf",
-            "sdf",
-            "ds",
-            "f",
-            "dsf",
-            "ds",
-            "fds",
-            "f",
-            "sdf",
-            "ds",
-            "",
-            "fg",
-            "hẻ",
-            "fg",
-            "ẻ"});
             this.listTruong.Location = new System.Drawing.Point(13, 99);
             this.listTruong.Name = "listTruong";
             this.listTruong.Size = new System.Drawing.Size(362, 422);
             this.listTruong.TabIndex = 3;
+            this.listTruong.SelectedIndexChanged += new System.EventHandler(this.listTruongClick);
             // 
             // pnSearch
             // 
@@ -268,6 +235,7 @@
             // 
             // dgv
             // 
+            this.dgv.AllowUserToAddRows = false;
             this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
@@ -278,24 +246,27 @@
             this.MaNganh,
             this.TenNganh,
             this.DiemChuan});
-            this.dgv.Location = new System.Drawing.Point(3, 129);
+            this.dgv.Location = new System.Drawing.Point(9, 99);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(621, 392);
+            this.dgv.Size = new System.Drawing.Size(621, 422);
             this.dgv.TabIndex = 7;
             // 
             // MaNganh
             // 
+            this.MaNganh.DataPropertyName = "MaNganh";
             this.MaNganh.HeaderText = "Mã ngành";
             this.MaNganh.Name = "MaNganh";
             // 
             // TenNganh
             // 
+            this.TenNganh.DataPropertyName = "TenChuyenNganh";
             this.TenNganh.HeaderText = "Tên ngành";
             this.TenNganh.Name = "TenNganh";
             // 
             // DiemChuan
             // 
+            this.DiemChuan.DataPropertyName = "DiemChuan";
             this.DiemChuan.HeaderText = "Điểm chuẩn";
             this.DiemChuan.Name = "DiemChuan";
             // 
@@ -304,11 +275,10 @@
             this.lbName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbName.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
-            this.lbName.Location = new System.Drawing.Point(116, 37);
+            this.lbName.Location = new System.Drawing.Point(114, 18);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(338, 35);
             this.lbName.TabIndex = 6;
-            this.lbName.Text = "Đại học Bách khoa Hà Nội";
             this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbTruong
@@ -316,7 +286,7 @@
             this.lbTruong.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTruong.ForeColor = System.Drawing.Color.Black;
-            this.lbTruong.Location = new System.Drawing.Point(25, 37);
+            this.lbTruong.Location = new System.Drawing.Point(23, 18);
             this.lbTruong.Name = "lbTruong";
             this.lbTruong.Size = new System.Drawing.Size(85, 35);
             this.lbTruong.TabIndex = 5;
@@ -381,9 +351,9 @@
         private System.Windows.Forms.Label lbTruong;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiemChuan;
-        private System.Windows.Forms.Button btnHelp;
     }
 }

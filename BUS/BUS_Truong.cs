@@ -56,5 +56,11 @@ namespace BUS
         {
             return dal.queryNganh(ChuyenNganh, TongDiem);
         }
+
+        public string getDataCol(string text)
+        {
+
+            return dal.getDataCol(text);
+        }
     }
 }

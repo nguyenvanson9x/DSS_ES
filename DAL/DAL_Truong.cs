@@ -92,5 +92,32 @@ namespace DAL
             }
             return sql;
         }
+
+        public string getDataCol(string text)
+        {
+            string result = "";
+            try
+            {
+                _conn.Open();
+                string SQL = String.Format("Select MaTruong From Truong Where TenTruong=N'" + text + "';");
+                Console.Write(SQL);
+                SqlCommand cmd = new SqlCommand(SQL, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    result = reader.GetString(0);
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+
+            return result;
+        }
     }
 }
