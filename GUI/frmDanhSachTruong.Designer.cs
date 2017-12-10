@@ -64,6 +64,7 @@
             this.dgv.RowHeadersVisible = false;
             this.dgv.Size = new System.Drawing.Size(960, 309);
             this.dgv.TabIndex = 8;
+            this.dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_RowEnter);
             // 
             // MaTruong
             // 

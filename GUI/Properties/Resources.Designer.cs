@@ -88,9 +88,23 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap if_education_school_learn_study_02_2125360__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-02_2125360 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_education_school_learn_study_06_2125344 {
             get {
                 object obj = ResourceManager.GetObject("if_education-school-learn-study-06_2125344", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_education_school_learn_study_06_2125344__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-06_2125344 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -102,6 +116,13 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap if_education_school_learn_study_10_2125348__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-10_2125348 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_education_school_learn_study_18_2125356 {
             get {
                 object obj = ResourceManager.GetObject("if_education-school-learn-study-18_2125356", resourceCulture);
@@ -109,9 +130,23 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap if_education_school_learn_study_18_2125356__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-18_2125356 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_education_school_learn_study_19_2125357 {
             get {
                 object obj = ResourceManager.GetObject("if_education-school-learn-study-19_2125357", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_education_school_learn_study_19_2125357__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_education-school-learn-study-19_2125357 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

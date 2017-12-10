@@ -52,5 +52,11 @@ namespace GUI
                 bus.myclose();
             }
         }
+
+        private void dgv_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            lbChuyenNganh.Text = dgv[4, row].Value.ToString();
+        }
     }
 }

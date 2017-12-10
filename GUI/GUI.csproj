@@ -244,6 +244,21 @@
     </None>
     <None Include="Resources\if_question_2625632 %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-18_2125356 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-02_2125360 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-06_2125344 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-10_2125348 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_education-school-learn-study-19_2125357 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
