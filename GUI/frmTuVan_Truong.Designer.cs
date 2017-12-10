@@ -30,14 +30,15 @@
         {
             this.lbTitle = new System.Windows.Forms.Label();
             this.pnContainer = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.txtTongDiem = new System.Windows.Forms.TextBox();
             this.cbTinhThanh = new System.Windows.Forms.ComboBox();
             this.cbChuyenNganh = new System.Windows.Forms.ComboBox();
             this.lbTinhThanh = new System.Windows.Forms.Label();
             this.lbTongDiem = new System.Windows.Forms.Label();
             this.lbChuyenNganh = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.pnContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@
             // pnContainer
             // 
             this.pnContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.pnContainer.Controls.Add(this.btnReset);
             this.pnContainer.Controls.Add(this.btnSearch);
             this.pnContainer.Controls.Add(this.txtTongDiem);
             this.pnContainer.Controls.Add(this.cbTinhThanh);
@@ -71,62 +73,6 @@
             this.pnContainer.Size = new System.Drawing.Size(1268, 535);
             this.pnContainer.TabIndex = 2;
             // 
-            // txtTongDiem
-            // 
-            this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongDiem.Location = new System.Drawing.Point(607, 171);
-            this.txtTongDiem.Name = "txtTongDiem";
-            this.txtTongDiem.Size = new System.Drawing.Size(270, 29);
-            this.txtTongDiem.TabIndex = 5;
-            // 
-            // cbTinhThanh
-            // 
-            this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTinhThanh.FormattingEnabled = true;
-            this.cbTinhThanh.Location = new System.Drawing.Point(607, 276);
-            this.cbTinhThanh.Name = "cbTinhThanh";
-            this.cbTinhThanh.Size = new System.Drawing.Size(270, 29);
-            this.cbTinhThanh.TabIndex = 4;
-            // 
-            // cbChuyenNganh
-            // 
-            this.cbChuyenNganh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbChuyenNganh.FormattingEnabled = true;
-            this.cbChuyenNganh.Location = new System.Drawing.Point(607, 77);
-            this.cbChuyenNganh.Name = "cbChuyenNganh";
-            this.cbChuyenNganh.Size = new System.Drawing.Size(270, 29);
-            this.cbChuyenNganh.TabIndex = 3;
-            // 
-            // lbTinhThanh
-            // 
-            this.lbTinhThanh.AutoSize = true;
-            this.lbTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTinhThanh.Location = new System.Drawing.Point(392, 276);
-            this.lbTinhThanh.Name = "lbTinhThanh";
-            this.lbTinhThanh.Size = new System.Drawing.Size(94, 23);
-            this.lbTinhThanh.TabIndex = 2;
-            this.lbTinhThanh.Text = "Tỉnh thành";
-            // 
-            // lbTongDiem
-            // 
-            this.lbTongDiem.AutoSize = true;
-            this.lbTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongDiem.Location = new System.Drawing.Point(392, 171);
-            this.lbTongDiem.Name = "lbTongDiem";
-            this.lbTongDiem.Size = new System.Drawing.Size(137, 23);
-            this.lbTongDiem.TabIndex = 1;
-            this.lbTongDiem.Text = "Nhập tổng điểm";
-            // 
-            // lbChuyenNganh
-            // 
-            this.lbChuyenNganh.AutoSize = true;
-            this.lbChuyenNganh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChuyenNganh.Location = new System.Drawing.Point(392, 77);
-            this.lbChuyenNganh.Name = "lbChuyenNganh";
-            this.lbChuyenNganh.Size = new System.Drawing.Size(163, 23);
-            this.lbChuyenNganh.TabIndex = 0;
-            this.lbChuyenNganh.Text = "Chọn chuyên ngành";
-            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
@@ -137,7 +83,7 @@
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSearch.Image = global::GUI.Properties.Resources.if_icon_ios7_search_211818;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(547, 407);
+            this.btnSearch.Location = new System.Drawing.Point(575, 407);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(180, 50);
             this.btnSearch.TabIndex = 6;
@@ -145,6 +91,62 @@
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtTongDiem
+            // 
+            this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongDiem.Location = new System.Drawing.Point(575, 171);
+            this.txtTongDiem.Name = "txtTongDiem";
+            this.txtTongDiem.Size = new System.Drawing.Size(302, 29);
+            this.txtTongDiem.TabIndex = 5;
+            // 
+            // cbTinhThanh
+            // 
+            this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTinhThanh.FormattingEnabled = true;
+            this.cbTinhThanh.Location = new System.Drawing.Point(575, 276);
+            this.cbTinhThanh.Name = "cbTinhThanh";
+            this.cbTinhThanh.Size = new System.Drawing.Size(302, 29);
+            this.cbTinhThanh.TabIndex = 4;
+            // 
+            // cbChuyenNganh
+            // 
+            this.cbChuyenNganh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChuyenNganh.FormattingEnabled = true;
+            this.cbChuyenNganh.Location = new System.Drawing.Point(575, 77);
+            this.cbChuyenNganh.Name = "cbChuyenNganh";
+            this.cbChuyenNganh.Size = new System.Drawing.Size(302, 29);
+            this.cbChuyenNganh.TabIndex = 3;
+            // 
+            // lbTinhThanh
+            // 
+            this.lbTinhThanh.AutoSize = true;
+            this.lbTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTinhThanh.Location = new System.Drawing.Point(461, 277);
+            this.lbTinhThanh.Name = "lbTinhThanh";
+            this.lbTinhThanh.Size = new System.Drawing.Size(94, 23);
+            this.lbTinhThanh.TabIndex = 2;
+            this.lbTinhThanh.Text = "Tỉnh thành";
+            // 
+            // lbTongDiem
+            // 
+            this.lbTongDiem.AutoSize = true;
+            this.lbTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongDiem.Location = new System.Drawing.Point(418, 172);
+            this.lbTongDiem.Name = "lbTongDiem";
+            this.lbTongDiem.Size = new System.Drawing.Size(137, 23);
+            this.lbTongDiem.TabIndex = 1;
+            this.lbTongDiem.Text = "Nhập tổng điểm";
+            // 
+            // lbChuyenNganh
+            // 
+            this.lbChuyenNganh.AutoSize = true;
+            this.lbChuyenNganh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChuyenNganh.Location = new System.Drawing.Point(392, 78);
+            this.lbChuyenNganh.Name = "lbChuyenNganh";
+            this.lbChuyenNganh.Size = new System.Drawing.Size(163, 23);
+            this.lbChuyenNganh.TabIndex = 0;
+            this.lbChuyenNganh.Text = "Chọn chuyên ngành";
             // 
             // btnHelp
             // 
@@ -161,6 +163,25 @@
             this.btnHelp.TabIndex = 3;
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReset.Image = global::GUI.Properties.Resources.if_editor_undo_arrow_outline_stroke_763321;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(761, 407);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(116, 50);
+            this.btnReset.TabIndex = 7;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // frmTuVan_Truong
             // 
@@ -195,5 +216,6 @@
         private System.Windows.Forms.ComboBox cbChuyenNganh;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Button btnReset;
     }
 }

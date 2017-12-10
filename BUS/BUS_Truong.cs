@@ -46,5 +46,15 @@ namespace BUS
         {
             dal.xoa(MaTruong);
         }
+
+        public string queryTruong(string ChuyenNganh, string TongDiem, string TinhThanh)
+        {
+            return dal.queryTruong(ChuyenNganh, TongDiem, TinhThanh);
+        }
+
+        public string queryNganh(string ChuyenNganh, string TongDiem)
+        {
+            return dal.queryNganh(ChuyenNganh, TongDiem);
+        }
     }
 }

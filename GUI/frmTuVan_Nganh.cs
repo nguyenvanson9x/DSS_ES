@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace GUI
 {
@@ -15,29 +17,51 @@ namespace GUI
         {
             InitializeComponent();
         }
-
+        BUS_Truong bus = new BUS_Truong();
         private void btnTongDiem_Click(object sender, EventArgs e)
         {
             frmDanhSachNganh frm = new frmDanhSachNganh();
             frm.selected = 1;
-            if (!txtTongDiem.Text.Equals(""))
+            if (txtTongDiem.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập tổng điểm");
+            }
+            else {
                 frm.TongDiem = Int32.Parse(txtTongDiem.Text);
-            frm.ShowDialog();
+                frm.ShowDialog();
+            }
         }
 
         private void btnTinhThanh_Click(object sender, EventArgs e)
         {
             frmDanhSachNganh frm = new frmDanhSachNganh();
             frm.selected = 2;
-            frm.KhuVuc = cbTinhThanh.SelectedItem.ToString();
-            frm.ShowDialog();
+            if (cbTinhThanh.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn tên tỉnh thành");
+            }
+            else
+            {
+                frm.KhuVuc = cbTinhThanh.Text;
+                frm.ShowDialog(); 
+            }
+            
         }
 
         private void btnTuVan_Click(object sender, EventArgs e)
         {
             frmDanhSachNganh frm = new frmDanhSachNganh();
             frm.selected = 3;
-            frm.ShowDialog();
+            if (cbTinhThanh.Text == ""||txtTongDiem.Text=="")
+            {
+                MessageBox.Show("Vui lòng không để trống dữ liệu");
+            }
+            else
+            {
+                frm.TongDiem = Int32.Parse(txtTongDiem.Text);
+                frm.KhuVuc = cbTinhThanh.Text;
+                frm.ShowDialog();
+            }
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -50,7 +74,13 @@ namespace GUI
 
         private void frmTuVan_Nganh_Load(object sender, EventArgs e)
         {
+            bus.myconnect();
 
+            string sqlTinhThanh = "select distinct truong.TinhThanh from truong";
+            cbTinhThanh.DataSource = bus.getTruong(sqlTinhThanh);
+            cbTinhThanh.DisplayMember = "TinhThanh";
+            cbTinhThanh.SelectedIndex = -1;
         }
+
     }
 }

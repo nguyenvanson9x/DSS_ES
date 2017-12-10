@@ -16,3 +16,12 @@ D:\NguyenVanSon\Coding\DSS\BUS\bin\Debug\DTO.pdb
 D:\NguyenVanSon\Coding\DSS\BUS\obj\Debug\ResolveAssemblyReference.cache
 D:\NguyenVanSon\Coding\DSS\BUS\obj\Debug\BUS.dll
 D:\NguyenVanSon\Coding\DSS\BUS\obj\Debug\BUS.pdb
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\bin\Debug\BUS.dll
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\bin\Debug\BUS.pdb
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\bin\Debug\DAL.dll
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\bin\Debug\DTO.dll
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\bin\Debug\DAL.pdb
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\bin\Debug\DTO.pdb
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\obj\Debug\ResolveAssemblyReference.cache
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\obj\Debug\BUS.dll
+E:\YEAR3\Learning\Hệ thống\Doing\BUS\obj\Debug\BUS.pdb

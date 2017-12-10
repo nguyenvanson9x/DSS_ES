@@ -240,6 +240,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Resources\if_question_2625632 %281%29.png" />
   </ItemGroup>

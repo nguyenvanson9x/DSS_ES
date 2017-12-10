@@ -48,5 +48,49 @@ namespace DAL
             SqlCommand scm = new SqlCommand(sql, _conn);
             scm.ExecuteNonQuery();
         }
+
+        public string queryTruong(string ChuyenNganh, string TongDiem, string TinhThanh)
+        {
+            string sql = "select tuyensinh.MaTruong, tuyensinh.MaNganh, tuyensinh.DiemChuan" +
+                ", truong.TenTruong" +
+                ", NhomNganh.TenChuyenNganh " +
+                "from tuyensinh, truong, NhomNganh, chuyennganh " +
+                "where (tuyensinh.MaTruong = truong.MaTruong) " +
+                "and (NhomNganh.NhomNganh = chuyennganh.NhomNganh) " +
+                "and (chuyennganh.MaNganh = tuyensinh.MaNganh) ";
+
+            if (!String.IsNullOrEmpty(TinhThanh))
+            {
+                sql += "and (truong.TinhThanh LIKE N'%" + TinhThanh + "') ";
+            }
+            if (!String.IsNullOrEmpty(TongDiem))
+            {
+                sql += "and (tuyensinh.DiemChuan <= " + TongDiem + ") ";
+            }
+            if (!String.IsNullOrEmpty(ChuyenNganh))
+            {
+                sql += "and (NhomNganh.TenChuyenNganh LIKE N'%" + ChuyenNganh + "') ";
+            }
+            return sql;
+        }
+
+        public string queryNganh(string TongDiem, string TinhThanh)
+        {
+            string sql = "select tuyensinh.MaNganh, NhomNganh.TenChuyenNganh, truong.TenTruong, tuyensinh.DiemChuan, truong.DiaChi " +
+                "from tuyensinh, truong, NhomNganh, chuyennganh " +
+                "where (tuyensinh.MaTruong = truong.MaTruong) " +
+                "and (NhomNganh.NhomNganh = chuyennganh.NhomNganh) " +
+                "and (chuyennganh.MaNganh = tuyensinh.MaNganh) ";
+
+            if (!String.IsNullOrEmpty(TinhThanh))
+            {
+                sql += "and (truong.TinhThanh LIKE N'%" + TinhThanh + "') ";
+            }
+            if (!String.IsNullOrEmpty(TongDiem))
+            {
+                sql += "and (tuyensinh.DiemChuan <= " + TongDiem + ") ";
+            }
+            return sql;
+        }
     }
 }

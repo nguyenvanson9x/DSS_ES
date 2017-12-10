@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace GUI
 {
@@ -19,7 +21,7 @@ namespace GUI
         {
             InitializeComponent();
         }
-
+        BUS_Truong bus = new BUS_Truong();
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
@@ -37,15 +39,65 @@ namespace GUI
 
         private void load_tu_van()
         {
-            
+            try
+            {
+                dgv.DataSource = bus.getTruong(bus.queryNganh(TongDiem.ToString(), KhuVuc));
+                if (dgv.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm được dữ liệu phù hợp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            finally
+            {
+                bus.myclose();
+            }
         }
 
         private void load_khu_vuc(string KhuVuc)
         {
+            try
+            {
+                dgv.DataSource = bus.getTruong(bus.queryNganh("", KhuVuc));
+                if (dgv.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm được dữ liệu phù hợp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            finally
+            {
+                bus.myclose();
+            }
         }
 
         private void load_tong_diem(int TongDiem)
         {
+            try
+            {
+                dgv.DataSource = bus.getTruong(bus.queryNganh(TongDiem.ToString(),""));
+                if (dgv.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm được dữ liệu phù hợp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            finally
+            {
+                bus.myclose();
+            }
         }
     }
 }
