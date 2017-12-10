@@ -99,5 +99,14 @@ namespace GUI
                 bus.myclose();
             }
         }
+
+        private void dgv_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            lbTenNganh.Text = dgv[1, row].Value.ToString();
+            lbDiemChuan.Text = dgv[3, row].Value.ToString();
+            lbTenTruong.Text = dgv[2, row].Value.ToString();
+            lbDiaChi.Text = dgv[4, row].Value.ToString();
+        }
     }
 }
