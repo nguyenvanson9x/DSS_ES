@@ -202,9 +202,8 @@
             this.lbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDiaChi.Location = new System.Drawing.Point(145, 159);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(57, 20);
+            this.lbDiaChi.Size = new System.Drawing.Size(0, 20);
             this.lbDiaChi.TabIndex = 7;
-            this.lbDiaChi.Text = "Địa chỉ";
             // 
             // lbTenTruong
             // 
@@ -212,9 +211,8 @@
             this.lbTenTruong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenTruong.Location = new System.Drawing.Point(145, 112);
             this.lbTenTruong.Name = "lbTenTruong";
-            this.lbTenTruong.Size = new System.Drawing.Size(86, 20);
+            this.lbTenTruong.Size = new System.Drawing.Size(0, 20);
             this.lbTenTruong.TabIndex = 6;
-            this.lbTenTruong.Text = "Tên trường";
             // 
             // lbDiemChuan
             // 
@@ -222,9 +220,8 @@
             this.lbDiemChuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDiemChuan.Location = new System.Drawing.Point(145, 65);
             this.lbDiemChuan.Name = "lbDiemChuan";
-            this.lbDiemChuan.Size = new System.Drawing.Size(94, 20);
+            this.lbDiemChuan.Size = new System.Drawing.Size(0, 20);
             this.lbDiemChuan.TabIndex = 5;
-            this.lbDiemChuan.Text = "Điểm chuẩn";
             // 
             // lbTenNganh
             // 
@@ -232,9 +229,8 @@
             this.lbTenNganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenNganh.Location = new System.Drawing.Point(145, 18);
             this.lbTenNganh.Name = "lbTenNganh";
-            this.lbTenNganh.Size = new System.Drawing.Size(85, 20);
+            this.lbTenNganh.Size = new System.Drawing.Size(0, 20);
             this.lbTenNganh.TabIndex = 4;
-            this.lbTenNganh.Text = "Tên ngành";
             // 
             // label4
             // 

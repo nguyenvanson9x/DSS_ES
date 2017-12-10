@@ -78,6 +78,8 @@
             this.btnTuVan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTuVan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTuVan.FlatAppearance.BorderSize = 0;
+            this.btnTuVan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.btnTuVan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
             this.btnTuVan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTuVan.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuVan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -85,7 +87,7 @@
             this.btnTuVan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTuVan.Location = new System.Drawing.Point(569, 353);
             this.btnTuVan.Name = "btnTuVan";
-            this.btnTuVan.Size = new System.Drawing.Size(130, 45);
+            this.btnTuVan.Size = new System.Drawing.Size(135, 45);
             this.btnTuVan.TabIndex = 6;
             this.btnTuVan.Text = "Tư vấn";
             this.btnTuVan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -97,14 +99,16 @@
             this.btnTinhThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTinhThanh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTinhThanh.FlatAppearance.BorderSize = 0;
+            this.btnTinhThanh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.btnTinhThanh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
             this.btnTinhThanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinhThanh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTinhThanh.Image = ((System.Drawing.Image)(resources.GetObject("btnTinhThanh.Image")));
             this.btnTinhThanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTinhThanh.Location = new System.Drawing.Point(791, 225);
+            this.btnTinhThanh.Location = new System.Drawing.Point(791, 229);
             this.btnTinhThanh.Name = "btnTinhThanh";
-            this.btnTinhThanh.Size = new System.Drawing.Size(150, 45);
+            this.btnTinhThanh.Size = new System.Drawing.Size(139, 35);
             this.btnTinhThanh.TabIndex = 5;
             this.btnTinhThanh.Text = "Tham khảo";
             this.btnTinhThanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -116,14 +120,16 @@
             this.btnTongDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTongDiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTongDiem.FlatAppearance.BorderSize = 0;
+            this.btnTongDiem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.btnTongDiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
             this.btnTongDiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTongDiem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTongDiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTongDiem.Image")));
             this.btnTongDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTongDiem.Location = new System.Drawing.Point(791, 142);
+            this.btnTongDiem.Location = new System.Drawing.Point(791, 146);
             this.btnTongDiem.Name = "btnTongDiem";
-            this.btnTongDiem.Size = new System.Drawing.Size(150, 45);
+            this.btnTongDiem.Size = new System.Drawing.Size(139, 35);
             this.btnTongDiem.TabIndex = 4;
             this.btnTongDiem.Text = "Tham khảo";
             this.btnTongDiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -140,6 +146,7 @@
             // 
             // cbTinhThanh
             // 
+            this.cbTinhThanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinhThanh.FormattingEnabled = true;
             this.cbTinhThanh.Items.AddRange(new object[] {
@@ -148,7 +155,6 @@
             this.cbTinhThanh.Name = "cbTinhThanh";
             this.cbTinhThanh.Size = new System.Drawing.Size(217, 29);
             this.cbTinhThanh.TabIndex = 2;
-            this.cbTinhThanh.Text = "--Tỉnh / TP--";
             // 
             // lbTinhThanh
             // 

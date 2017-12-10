@@ -23,10 +23,7 @@ namespace GUI
             DBConnect.EditAppSetting("database", txtCSDL.Text);
             DBConnect.EditAppSetting("username", txtUsername.Text);
             DBConnect.EditAppSetting("password", txtPassword.Text);
-        }
-
-        private void btnKiemTra_Click(object sender, EventArgs e)
-        {
+            MessageBox.Show(this, "Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

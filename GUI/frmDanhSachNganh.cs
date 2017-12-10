@@ -20,6 +20,7 @@ namespace GUI
         public frmDanhSachNganh()
         {
             InitializeComponent();
+            pnDetail.Visible = false;
         }
         BUS_Truong bus = new BUS_Truong();
         private void btnClose_Click(object sender, EventArgs e)
@@ -102,6 +103,7 @@ namespace GUI
 
         private void dgv_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
+            pnDetail.Visible = true;
             int row = e.RowIndex;
             lbTenNganh.Text = dgv[1, row].Value.ToString();
             lbDiemChuan.Text = dgv[3, row].Value.ToString();
