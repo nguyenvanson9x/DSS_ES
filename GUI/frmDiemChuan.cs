@@ -24,26 +24,13 @@ namespace GUI
         {
             string truong = txtSearch.Text;
             string tinh = cbTinh.GetItemText(cbTinh.SelectedItem);
-            string SQL = "";
-            if (String.Compare(truong, "") != 0 && tinh != "--Tỉnh / TP--")
+            List<string> list = bus.searchListTruong(truong, tinh);
+            listTruong.Items.Clear();
+            foreach (string li in list)
             {
-                SQL = String.Format("Select TenTruong From Truong Where (TenTruong LIKE N'%" + truong + "') AND (TinhThanh=N'" + tinh + "');");
+                listTruong.Items.Add(li);
             }
-            else if (String.Compare(truong, "") == 0 && tinh != "--Tỉnh / TP--")
-            {
-                SQL = String.Format("Select TenTruong From Truong Where TinhThanh=N'" + tinh + "';");
-            }
-            else if (String.Compare(truong, "") != 0 && tinh == "--Tỉnh / TP--")
-            {
-                SQL = String.Format("Select TenTruong From Truong Where TenTruong LIKE N'%" + truong + "';");
-            }
-            else
-            {
-                SQL = String.Format("Select TenTruong From Truong ORDER BY TenTruong ;");
-            }
-            listTruong.DataSource = bus.getTruong(SQL);
-            listTruong.DisplayMember = "TenTruong";
-            listTruong.SelectedIndex = -1;
+
             txtSearch.ResetText();
             cbTinh.ResetText();
             cbTinh.SelectedText = "--Tỉnh / TP--";
@@ -51,7 +38,7 @@ namespace GUI
 
         private void frmDiemChuan_Load(object sender, EventArgs e)
         {
-            getListTruong("");
+            getListTruong();
             getListTinh();
         }
 
@@ -62,21 +49,13 @@ namespace GUI
             frm.content = "Line 1\r\nLine 2\r\nLine 3\r";
             frm.ShowDialog();
         }
-        private void getListTruong(string value)
+        private void getListTruong()
         {
-            string SQL = "";
-            if (String.Compare(value, String.Format("Không theo thứ tự ABC")) == 0)
+            List<string> list = bus.getListTruong();
+            foreach (string li in list)
             {
-                SQL = String.Format("Select TenTruong AS Name From Truong ORDER BY TenTruong DESC;");
+                listTruong.Items.Add(li);
             }
-            else
-            {
-                SQL = String.Format("Select TenTruong AS Name From Truong ORDER BY TenTruong ;");
-            }
-            listTruong.DataSource = bus.getTruong(SQL);
-            listTruong.DisplayMember = "TenTruong";
-            listTruong.ValueMember = "Name";
-            listTruong.SelectedIndex = -1;
         }
 
         private void listTruongClick(object sender, EventArgs e)
@@ -97,8 +76,27 @@ namespace GUI
         private void cbSortClick(object sender, EventArgs e)
         {
             string text = cbSort.SelectedItem.ToString();
-            getListTruong(text);
+            int num_items = listTruong.Items.Count;
+            string[] arr = new string[num_items];
+            for (int i = 0; i < num_items; i++)
+            {
+                arr[i] = listTruong.Items[i].ToString();
+            }
+            if (String.Compare(text, String.Format("Không theo thứ tự ABC")) == 0)
+            {
+                Array.Sort(arr);
+            }
+            else
+            {
+                Array.Reverse(arr);
+            }
+            listTruong.Items.Clear();
+            foreach (string s in arr)
+            {
+                listTruong.Items.Add(s);
+            }
         }
+
         private void getListTinh()
         {
             string SQL = "Select DISTINCT TinhThanh From Truong";

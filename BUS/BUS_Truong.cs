@@ -62,5 +62,19 @@ namespace BUS
 
             return dal.getDataCol(text);
         }
+        public List<string> getListTruong()
+        {
+
+            return dal.getListTruong();
+        }
+        public List<string> getListTinh()
+        {
+
+            return dal.getListTinh();
+        }
+        public List<string> searchListTruong(string truong, string tinh)
+        {
+            return dal.searchListTruong(truong, tinh);
+        }
     }
 }

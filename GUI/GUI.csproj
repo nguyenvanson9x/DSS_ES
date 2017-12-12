@@ -103,6 +103,12 @@
     <Compile Include="frmQuanLyTuyenSinh.Designer.cs">
       <DependentUpon>frmQuanLyTuyenSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThemDuLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemDuLieu.Designer.cs">
+      <DependentUpon>frmThemDuLieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTuVan_Nganh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyTuyenSinh.resx">
       <DependentUpon>frmQuanLyTuyenSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemDuLieu.resx">
+      <DependentUpon>frmThemDuLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTuVan_Nganh.resx">
       <DependentUpon>frmTuVan_Nganh.cs</DependentUpon>
@@ -258,6 +267,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_education-school-learn-study-19_2125357 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_notes_add_103660.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_microsoft_office_excel_1784856 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_microsoft_office_excel_1784856 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_microsoft_office_excel_1784856 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-42-note-add_315164.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

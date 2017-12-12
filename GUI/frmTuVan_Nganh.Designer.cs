@@ -85,7 +85,7 @@
             this.btnTuVan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTuVan.Image = global::GUI.Properties.Resources.if_icon_ios7_search_211818;
             this.btnTuVan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTuVan.Location = new System.Drawing.Point(569, 353);
+            this.btnTuVan.Location = new System.Drawing.Point(370, 353);
             this.btnTuVan.Name = "btnTuVan";
             this.btnTuVan.Size = new System.Drawing.Size(135, 45);
             this.btnTuVan.TabIndex = 6;
@@ -96,6 +96,7 @@
             // 
             // btnTinhThanh
             // 
+            this.btnTinhThanh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTinhThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTinhThanh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTinhThanh.FlatAppearance.BorderSize = 0;
@@ -117,6 +118,7 @@
             // 
             // btnTongDiem
             // 
+            this.btnTongDiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTongDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnTongDiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTongDiem.FlatAppearance.BorderSize = 0;
@@ -138,6 +140,8 @@
             // 
             // txtTongDiem
             // 
+            this.txtTongDiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongDiem.Location = new System.Drawing.Point(532, 151);
             this.txtTongDiem.Name = "txtTongDiem";
@@ -146,6 +150,8 @@
             // 
             // cbTinhThanh
             // 
+            this.cbTinhThanh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTinhThanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinhThanh.FormattingEnabled = true;

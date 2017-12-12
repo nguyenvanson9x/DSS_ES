@@ -35,7 +35,6 @@
             this.clTenTruong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clWebsite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_them = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.txtMaTruong = new System.Windows.Forms.TextBox();
@@ -112,17 +111,6 @@
             this.clWebsite.HeaderText = "Website";
             this.clWebsite.Name = "clWebsite";
             this.clWebsite.ReadOnly = true;
-            // 
-            // btn_them
-            // 
-            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.Location = new System.Drawing.Point(541, 92);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(121, 33);
-            this.btn_them.TabIndex = 12;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.UseVisualStyleBackColor = true;
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_sua
             // 
@@ -234,7 +222,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(954, 511);
+            this.ClientSize = new System.Drawing.Size(960, 540);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -246,7 +234,6 @@
             this.Controls.Add(this.txtMaTruong);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_sua);
-            this.Controls.Add(this.btn_them);
             this.Controls.Add(this.dgvResult);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(960, 540);
@@ -263,7 +250,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvResult;
-        private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaTruong;

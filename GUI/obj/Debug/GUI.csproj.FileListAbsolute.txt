@@ -54,3 +54,29 @@ E:\YEAR3\Learning\Hệ thống\Doing\GUI\obj\Debug\GUI.Properties.Resources.reso
 E:\YEAR3\Learning\Hệ thống\Doing\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 E:\YEAR3\Learning\Hệ thống\Doing\GUI\obj\Debug\GUI.exe
 E:\YEAR3\Learning\Hệ thống\Doing\GUI\obj\Debug\GUI.pdb
+D:\GIT\DSS_ES\GUI\bin\Debug\App.config
+D:\GIT\DSS_ES\GUI\bin\Debug\GUI.exe.config
+D:\GIT\DSS_ES\GUI\bin\Debug\GUI.exe
+D:\GIT\DSS_ES\GUI\bin\Debug\GUI.pdb
+D:\GIT\DSS_ES\GUI\bin\Debug\BUS.dll
+D:\GIT\DSS_ES\GUI\bin\Debug\DAL.dll
+D:\GIT\DSS_ES\GUI\bin\Debug\DTO.dll
+D:\GIT\DSS_ES\GUI\bin\Debug\BUS.pdb
+D:\GIT\DSS_ES\GUI\bin\Debug\DAL.pdb
+D:\GIT\DSS_ES\GUI\bin\Debug\DTO.pdb
+D:\GIT\DSS_ES\GUI\obj\Debug\ResolveAssemblyReference.cache
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmCauHinh.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frm1.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmDanhSachNganh.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmDanhSachTruong.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmDiemChuan.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmHuongDan.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmQuanLy.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmQuanLyTruong.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmQuanLyTuyenSinh.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmTuVan_Nganh.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.frmTuVan_Truong.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.exe
+D:\GIT\DSS_ES\GUI\obj\Debug\GUI.pdb

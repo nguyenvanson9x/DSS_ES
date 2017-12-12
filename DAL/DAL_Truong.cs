@@ -93,6 +93,71 @@ namespace DAL
             return sql;
         }
 
+        public List<string> getListTruong()
+        {
+            List<string> list = new List<string>();
+            try
+            {
+                _conn.Open();
+                string SQL = String.Format("Select TenTruong From Truong ORDER BY TenTruong ASC;");
+
+                SqlCommand cmd = new SqlCommand(SQL, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    list.Add(reader.GetString(0));
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return list;
+        }
+        public List<string> searchListTruong(string truong, string tinh)
+        {
+            List<string> list = new List<string>();
+            try
+            {
+                _conn.Open();
+                string SQL = "";
+                if (String.Compare(truong, "") != 0 && tinh != "--Tỉnh / TP--")
+                {
+                    SQL = String.Format("Select TenTruong From Truong Where (TenTruong LIKE N'%" + truong + "') AND (TinhThanh=N'" + tinh + "');");
+                }
+                else if (String.Compare(truong, "") == 0 && tinh != "--Tỉnh / TP--")
+                {
+                    SQL = String.Format("Select TenTruong From Truong Where TinhThanh=N'" + tinh + "';");
+                }
+                else if (String.Compare(truong, "") != 0 && tinh == "--Tỉnh / TP--")
+                {
+                    SQL = String.Format("Select TenTruong From Truong Where TenTruong LIKE N'%" + truong + "';");
+                }
+                else
+                {
+                    SQL = String.Format("Select TenTruong From Truong ORDER BY TenTruong ;");
+                }
+                SqlCommand cmd = new SqlCommand(SQL, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    list.Add(reader.GetString(0));
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return list;
+        }
         public string getDataCol(string text)
         {
             string result = "";
@@ -118,6 +183,32 @@ namespace DAL
             }
 
             return result;
+        }
+        public List<string> getListTinh()
+        {
+
+            List<string> list = new List<string>();
+            list.Add("--Tỉnh / TP--");
+            try
+            {
+                _conn.Open();
+                string SQL = "Select DISTINCT TinhThanh From Truong";
+                SqlCommand cmd = new SqlCommand(SQL, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    list.Add(reader.GetString(0));
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return list;
         }
     }
 }

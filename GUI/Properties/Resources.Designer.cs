@@ -151,6 +151,13 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap if_icon_42_note_add_315164 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon-42-note-add_315164", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_icon_ios7_search_211818 {
             get {
                 object obj = ResourceManager.GetObject("if_icon-ios7-search_211818", resourceCulture);
@@ -203,6 +210,34 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap if_list_107210 {
             get {
                 object obj = ResourceManager.GetObject("if_list_107210", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_microsoft_office_excel_1784856__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_microsoft_office_excel_1784856 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_microsoft_office_excel_1784856__2_ {
+            get {
+                object obj = ResourceManager.GetObject("if_microsoft_office_excel_1784856 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_microsoft_office_excel_1784856__3_ {
+            get {
+                object obj = ResourceManager.GetObject("if_microsoft_office_excel_1784856 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_notes_add_103660 {
+            get {
+                object obj = ResourceManager.GetObject("if_notes_add_103660", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

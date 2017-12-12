@@ -25,3 +25,12 @@ E:\YEAR3\Learning\Hệ thống\Doing\BUS\bin\Debug\DTO.pdb
 E:\YEAR3\Learning\Hệ thống\Doing\BUS\obj\Debug\ResolveAssemblyReference.cache
 E:\YEAR3\Learning\Hệ thống\Doing\BUS\obj\Debug\BUS.dll
 E:\YEAR3\Learning\Hệ thống\Doing\BUS\obj\Debug\BUS.pdb
+D:\GIT\DSS_ES\BUS\bin\Debug\BUS.dll
+D:\GIT\DSS_ES\BUS\bin\Debug\BUS.pdb
+D:\GIT\DSS_ES\BUS\bin\Debug\DAL.dll
+D:\GIT\DSS_ES\BUS\bin\Debug\DTO.dll
+D:\GIT\DSS_ES\BUS\bin\Debug\DAL.pdb
+D:\GIT\DSS_ES\BUS\bin\Debug\DTO.pdb
+D:\GIT\DSS_ES\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\GIT\DSS_ES\BUS\obj\Debug\BUS.dll
+D:\GIT\DSS_ES\BUS\obj\Debug\BUS.pdb

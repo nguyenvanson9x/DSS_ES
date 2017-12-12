@@ -12,3 +12,10 @@ D:\NguyenVanSon\Coding\DSS\DAL\bin\Release\DTO.pdb
 D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\ResolveAssemblyReference.cache
 D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\DAL.dll
 D:\NguyenVanSon\Coding\DSS\DAL\obj\Release\DAL.pdb
+D:\GIT\DSS_ES\DAL\bin\Release\DAL.dll
+D:\GIT\DSS_ES\DAL\bin\Release\DAL.pdb
+D:\GIT\DSS_ES\DAL\bin\Release\DTO.dll
+D:\GIT\DSS_ES\DAL\bin\Release\DTO.pdb
+D:\GIT\DSS_ES\DAL\obj\Release\ResolveAssemblyReference.cache
+D:\GIT\DSS_ES\DAL\obj\Release\DAL.dll
+D:\GIT\DSS_ES\DAL\obj\Release\DAL.pdb

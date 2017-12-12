@@ -136,7 +136,6 @@
             // 
             // lbSearchFor
             // 
-            this.lbSearchFor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbSearchFor.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSearchFor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbSearchFor.Location = new System.Drawing.Point(400, 203);
@@ -164,7 +163,6 @@
             // 
             // lbSort
             // 
-            this.lbSort.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbSort.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSort.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbSort.Location = new System.Drawing.Point(400, 94);
@@ -283,7 +281,6 @@
             // 
             // lbTruong
             // 
-            this.lbTruong.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTruong.ForeColor = System.Drawing.Color.Black;
             this.lbTruong.Location = new System.Drawing.Point(23, 18);

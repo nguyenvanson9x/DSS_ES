@@ -79,5 +79,12 @@ namespace GUI
                 }
             }
         }
+
+        private void btnThemDuLieu_Click(object sender, EventArgs e)
+        {
+            change_color(btnThemDuLieu);
+            frmThemDuLieu frm = new frmThemDuLieu();
+            add_form_to_panel(frm);
+        }
     }
 }

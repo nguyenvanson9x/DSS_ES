@@ -85,7 +85,7 @@
             this.btnReset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnReset.Image = global::GUI.Properties.Resources.if_editor_undo_arrow_outline_stroke_763321;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(695, 407);
+            this.btnReset.Location = new System.Drawing.Point(618, 403);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(100, 50);
             this.btnReset.TabIndex = 7;
@@ -106,7 +106,7 @@
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSearch.Image = global::GUI.Properties.Resources.if_icon_ios7_search_211818;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(473, 407);
+            this.btnSearch.Location = new System.Drawing.Point(396, 403);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(180, 50);
             this.btnSearch.TabIndex = 6;
@@ -117,6 +117,8 @@
             // 
             // txtTongDiem
             // 
+            this.txtTongDiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongDiem.Location = new System.Drawing.Point(575, 171);
             this.txtTongDiem.Name = "txtTongDiem";
@@ -125,6 +127,8 @@
             // 
             // cbTinhThanh
             // 
+            this.cbTinhThanh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTinhThanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinhThanh.FormattingEnabled = true;
@@ -135,6 +139,8 @@
             // 
             // cbChuyenNganh
             // 
+            this.cbChuyenNganh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.cbChuyenNganh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChuyenNganh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChuyenNganh.FormattingEnabled = true;
@@ -147,7 +153,7 @@
             // 
             this.lbTinhThanh.AutoSize = true;
             this.lbTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTinhThanh.Location = new System.Drawing.Point(461, 277);
+            this.lbTinhThanh.Location = new System.Drawing.Point(392, 277);
             this.lbTinhThanh.Name = "lbTinhThanh";
             this.lbTinhThanh.Size = new System.Drawing.Size(94, 23);
             this.lbTinhThanh.TabIndex = 2;
@@ -157,7 +163,7 @@
             // 
             this.lbTongDiem.AutoSize = true;
             this.lbTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongDiem.Location = new System.Drawing.Point(418, 172);
+            this.lbTongDiem.Location = new System.Drawing.Point(392, 172);
             this.lbTongDiem.Name = "lbTongDiem";
             this.lbTongDiem.Size = new System.Drawing.Size(137, 23);
             this.lbTongDiem.TabIndex = 1;
