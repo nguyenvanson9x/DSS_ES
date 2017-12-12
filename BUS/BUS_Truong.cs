@@ -42,11 +42,6 @@ namespace BUS
             dal.sua(MaTruong, TenTruong, DiaChi, Website);
         }
 
-        public void xoa(string MaTruong)
-        {
-            dal.xoa(MaTruong);
-        }
-
         public string queryTruong(string ChuyenNganh, string TongDiem, string TinhThanh)
         {
             return dal.queryTruong(ChuyenNganh, TongDiem, TinhThanh);
@@ -57,15 +52,20 @@ namespace BUS
             return dal.queryNganh(ChuyenNganh, TongDiem);
         }
 
+        public void xoa(string MaTruong)
+        {
+            dal.xoa(MaTruong);
+        }
+
+        public List<string> getListTruong() 
+        {
+            
+            return dal.getListTruong();
+        }
         public string getDataCol(string text)
         {
 
             return dal.getDataCol(text);
-        }
-        public List<string> getListTruong()
-        {
-
-            return dal.getListTruong();
         }
         public List<string> getListTinh()
         {

@@ -60,6 +60,13 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap add_property_78_3 {
+            get {
+                object obj = ResourceManager.GetObject("add_property-78-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_circle_check_430087 {
             get {
                 object obj = ResourceManager.GetObject("if_circle-check_430087", resourceCulture);
@@ -147,6 +154,13 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap if_education_school_learn_study_19_2125357__1_ {
             get {
                 object obj = ResourceManager.GetObject("if_education-school-learn-study-19_2125357 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap if_icon_111_search_314384 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon-111-search_314384", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

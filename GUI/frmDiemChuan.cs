@@ -15,6 +15,7 @@ namespace GUI
     public partial class frmDiemChuan : Form
     {
         private BUS_Truong bus = new BUS_Truong();
+        private BindingSource source1 = new BindingSource();
         public frmDiemChuan()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace GUI
         {
             string truong = txtSearch.Text;
             string tinh = cbTinh.GetItemText(cbTinh.SelectedItem);
-            List<string> list = bus.searchListTruong(truong, tinh);
+            List<string> list = bus.searchListTruong(truong,tinh);
             listTruong.Items.Clear();
             foreach (string li in list)
             {
@@ -45,8 +46,10 @@ namespace GUI
         private void btnHelp_Click(object sender, EventArgs e)
         {
             frmHuongDan frm = new frmHuongDan();
-            frm.title = "";
-            frm.content = "Line 1\r\nLine 2\r\nLine 3\r";
+            frm.title = "Cách xem điểm chuẩn ngành CNTT của các trường ĐH năm 2017";
+            string text1 = "Cách 1: Tìm kiếm theo tên trường đại học:\r\n\t- Nhập tên trường cần tìm kiếm vào ô 'Chọn trường'.\r\n\t- Nhấn 'Tìm Kiếm' để hiển thị kết quả.\r\n\t- Kích chọn Trường cần xem để xem chi tiết.\r\n";
+            string text2 = "Cách 2: Tìm kiếm theo tỉnh thành:\r\n\t- Chọn tỉnh thành cần tìm ở mục 'Tìm kiếm theo tỉnh thành'\r\n\t- Nhấn 'Tìm Kiếm' để hiển thị kết quả.\r\n\t- Kích chọn Trường cần xem để xem chi tiết.\r\n";
+            frm.content =text1+text2;
             frm.ShowDialog();
         }
         private void getListTruong()
@@ -67,9 +70,9 @@ namespace GUI
                 "from tuyensinh, truong, NhomNganh, chuyennganh " +
                 "where (tuyensinh.MaTruong = truong.MaTruong) " +
                 "and (NhomNganh.NhomNganh = chuyennganh.NhomNganh) " +
-                "and (chuyennganh.MaNganh = tuyensinh.MaNganh) and (truong.MaTruong='" + matruong + "')"
+                "and (chuyennganh.MaNganh = tuyensinh.MaNganh) and (truong.MaTruong='"+matruong+"')"
                 ;
-
+           
             dgv.DataSource = bus.getTruong(sql);
         }
 
@@ -82,13 +85,13 @@ namespace GUI
             {
                 arr[i] = listTruong.Items[i].ToString();
             }
-            if (String.Compare(text, String.Format("Không theo thứ tự ABC")) == 0)
+            if (String.Compare(text, String.Format("Không theo thứ tự ABC"))==0)
             {
-                Array.Sort(arr);
+                Array.Reverse(arr);
             }
             else
             {
-                Array.Reverse(arr);
+                Array.Sort(arr);
             }
             listTruong.Items.Clear();
             foreach (string s in arr)
@@ -99,11 +102,35 @@ namespace GUI
 
         private void getListTinh()
         {
-            string SQL = "Select DISTINCT TinhThanh From Truong";
-            cbTinh.DataSource = bus.getTruong(SQL);
-            cbTinh.DisplayMember = "TinhThanh";
-            cbTinh.SelectedIndex = -1;
-            cbTinh.SelectedText = "--Tỉnh / TP--";
+            List<string> list = bus.getListTinh();
+            foreach (string li in list)
+            {
+                cbTinh.Items.Add(li);
+            }
+        }
+
+        private void txtChanged(object sender, EventArgs e)
+        {
+            string truong = txtSearch.Text;
+            string tinh = cbTinh.Text;
+            List<string> list = bus.searchListTruong(truong, tinh);
+            listTruong.Items.Clear();
+            foreach (string li in list)
+            {
+                listTruong.Items.Add(li);
+            }
+        }
+
+        private void cbTinhChanged(object sender, EventArgs e)
+        {
+            string truong = txtSearch.Text;
+            string tinh = cbTinh.GetItemText(cbTinh.SelectedItem);
+            List<string> list = bus.searchListTruong(truong, tinh);
+            listTruong.Items.Clear();
+            foreach (string li in list)
+            {
+                listTruong.Items.Add(li);
+            }
         }
 
     }

@@ -16,7 +16,14 @@ namespace BUS
         {
             return dalTuyenSinh.getTuyenSinh();
         }
-
+        public DataTable search(string text)
+        {
+            return dalTuyenSinh.searchData(text);
+        }
+        public bool excuteSQL(string SQL)
+        {
+            return dalTuyenSinh.excuteSQL(SQL);
+        }
         public bool themTuyenSinh(DTO_TuyenSinh tv)
         {
             return dalTuyenSinh.themTuyenSinh(tv);

@@ -92,10 +92,9 @@ namespace DAL
             }
             return sql;
         }
-
         public List<string> getListTruong()
         {
-            List<string> list = new List<string>();
+            List<string> list=new List<string>();
             try
             {
                 _conn.Open();
@@ -118,16 +117,16 @@ namespace DAL
             }
             return list;
         }
-        public List<string> searchListTruong(string truong, string tinh)
+        public List<string> searchListTruong(string truong,string tinh)
         {
             List<string> list = new List<string>();
             try
             {
                 _conn.Open();
                 string SQL = "";
-                if (String.Compare(truong, "") != 0 && tinh != "--Tỉnh / TP--")
+                if (String.Compare(truong, "") != 0 && tinh != "--Tỉnh / TP--" )
                 {
-                    SQL = String.Format("Select TenTruong From Truong Where (TenTruong LIKE N'%" + truong + "') AND (TinhThanh=N'" + tinh + "');");
+                    SQL = String.Format("Select TenTruong From Truong Where (TenTruong LIKE N'%"+truong+"%') AND (TinhThanh=N'"+tinh+"');");
                 }
                 else if (String.Compare(truong, "") == 0 && tinh != "--Tỉnh / TP--")
                 {
@@ -135,7 +134,7 @@ namespace DAL
                 }
                 else if (String.Compare(truong, "") != 0 && tinh == "--Tỉnh / TP--")
                 {
-                    SQL = String.Format("Select TenTruong From Truong Where TenTruong LIKE N'%" + truong + "';");
+                    SQL = String.Format("Select TenTruong From Truong Where TenTruong LIKE N'%" + truong + "%';");
                 }
                 else
                 {
@@ -164,7 +163,7 @@ namespace DAL
             try
             {
                 _conn.Open();
-                string SQL = String.Format("Select MaTruong From Truong Where TenTruong=N'" + text + "';");
+                string SQL = String.Format("Select MaTruong From Truong Where TenTruong=N'"+text+"';");
                 Console.Write(SQL);
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -181,7 +180,7 @@ namespace DAL
             {
                 _conn.Close();
             }
-
+            
             return result;
         }
         public List<string> getListTinh()

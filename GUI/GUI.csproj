@@ -283,6 +283,12 @@
   <ItemGroup>
     <None Include="Resources\if_icon-42-note-add_315164.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-111-search_314384.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_property-78-3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

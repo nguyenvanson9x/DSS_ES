@@ -108,8 +108,7 @@
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
-            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(136)))), ((int)(((byte)(209)))));
+            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -122,6 +121,7 @@
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Visible = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // cbTinh
@@ -133,6 +133,7 @@
             this.cbTinh.Name = "cbTinh";
             this.cbTinh.Size = new System.Drawing.Size(211, 29);
             this.cbTinh.TabIndex = 7;
+            this.cbTinh.SelectedIndexChanged += new System.EventHandler(this.cbTinhChanged);
             // 
             // lbSearchFor
             // 
@@ -143,7 +144,7 @@
             this.lbSearchFor.Name = "lbSearchFor";
             this.lbSearchFor.Size = new System.Drawing.Size(215, 35);
             this.lbSearchFor.TabIndex = 6;
-            this.lbSearchFor.Text = "Tìm kiếm theo Tỉnh / TP";
+            this.lbSearchFor.Text = "Tìm kiếm theo";
             this.lbSearchFor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cbSort
@@ -152,7 +153,7 @@
             this.cbSort.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSort.FormattingEnabled = true;
             this.cbSort.Items.AddRange(new object[] {
-            "-Sắp xếp theo-",
+            "--Sắp xếp theo--",
             "Thứ tự ABC",
             "Không theo thứ tự ABC"});
             this.cbSort.Location = new System.Drawing.Point(404, 142);
@@ -211,12 +212,12 @@
             // txtSearch
             // 
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(190, 19);
-            this.txtSearch.Multiline = true;
+            this.txtSearch.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(190, 23);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(422, 35);
+            this.txtSearch.Size = new System.Drawing.Size(422, 29);
             this.txtSearch.TabIndex = 1;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtChanged);
             // 
             // pnRight
             // 
@@ -244,10 +245,10 @@
             this.MaNganh,
             this.TenNganh,
             this.DiemChuan});
-            this.dgv.Location = new System.Drawing.Point(9, 99);
+            this.dgv.Location = new System.Drawing.Point(11, 94);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(621, 422);
+            this.dgv.Size = new System.Drawing.Size(613, 427);
             this.dgv.TabIndex = 7;
             // 
             // MaNganh
@@ -270,10 +271,9 @@
             // 
             // lbName
             // 
-            this.lbName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbName.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(108)))));
-            this.lbName.Location = new System.Drawing.Point(114, 18);
+            this.lbName.Location = new System.Drawing.Point(115, 18);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(338, 35);
             this.lbName.TabIndex = 6;
@@ -283,7 +283,7 @@
             // 
             this.lbTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTruong.ForeColor = System.Drawing.Color.Black;
-            this.lbTruong.Location = new System.Drawing.Point(23, 18);
+            this.lbTruong.Location = new System.Drawing.Point(24, 18);
             this.lbTruong.Name = "lbTruong";
             this.lbTruong.Size = new System.Drawing.Size(85, 35);
             this.lbTruong.TabIndex = 5;
