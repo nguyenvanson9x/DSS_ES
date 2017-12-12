@@ -51,7 +51,9 @@
             // 
             // dgvResult
             // 
+            this.dgvResult.AllowUserToAddRows = false;
             this.dgvResult.AllowUserToDeleteRows = false;
+            this.dgvResult.AllowUserToResizeRows = false;
             this.dgvResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -115,40 +117,40 @@
             // txtMaTruong
             // 
             this.txtMaTruong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaTruong.Location = new System.Drawing.Point(124, 49);
+            this.txtMaTruong.Location = new System.Drawing.Point(111, 49);
             this.txtMaTruong.Name = "txtMaTruong";
-            this.txtMaTruong.Size = new System.Drawing.Size(140, 27);
+            this.txtMaTruong.Size = new System.Drawing.Size(180, 27);
             this.txtMaTruong.TabIndex = 15;
             // 
             // txtTenTruong
             // 
             this.txtTenTruong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenTruong.Location = new System.Drawing.Point(124, 96);
+            this.txtTenTruong.Location = new System.Drawing.Point(111, 96);
             this.txtTenTruong.Name = "txtTenTruong";
-            this.txtTenTruong.Size = new System.Drawing.Size(140, 27);
+            this.txtTenTruong.Size = new System.Drawing.Size(180, 27);
             this.txtTenTruong.TabIndex = 16;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(369, 49);
+            this.txtDiaChi.Location = new System.Drawing.Point(392, 49);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(140, 27);
+            this.txtDiaChi.Size = new System.Drawing.Size(180, 27);
             this.txtDiaChi.TabIndex = 17;
             // 
             // txtWebsite
             // 
             this.txtWebsite.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWebsite.Location = new System.Drawing.Point(369, 94);
+            this.txtWebsite.Location = new System.Drawing.Point(392, 94);
             this.txtWebsite.Name = "txtWebsite";
-            this.txtWebsite.Size = new System.Drawing.Size(140, 27);
+            this.txtWebsite.Size = new System.Drawing.Size(180, 27);
             this.txtWebsite.TabIndex = 18;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 52);
+            this.label1.Location = new System.Drawing.Point(19, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 19);
             this.label1.TabIndex = 19;
@@ -158,7 +160,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 101);
+            this.label2.Location = new System.Drawing.Point(19, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 19);
             this.label2.TabIndex = 20;
@@ -168,7 +170,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(297, 52);
+            this.label3.Location = new System.Drawing.Point(320, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 19);
             this.label3.TabIndex = 21;
@@ -178,7 +180,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(297, 99);
+            this.label4.Location = new System.Drawing.Point(320, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 19);
             this.label4.TabIndex = 22;
@@ -194,7 +196,7 @@
             this.btn_thoat.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thoat.Image = global::GUI.Properties.Resources.icons8_close_pane_24;
             this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_thoat.Location = new System.Drawing.Point(861, 85);
+            this.btn_thoat.Location = new System.Drawing.Point(861, 58);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(90, 50);
             this.btn_thoat.TabIndex = 23;
@@ -213,7 +215,7 @@
             this.btn_xoa.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xoa.Image = global::GUI.Properties.Resources.icons8_delete_document_24;
             this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_xoa.Location = new System.Drawing.Point(733, 85);
+            this.btn_xoa.Location = new System.Drawing.Point(733, 58);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(80, 50);
             this.btn_xoa.TabIndex = 14;
@@ -232,7 +234,7 @@
             this.btn_sua.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sua.Image = global::GUI.Properties.Resources.icons8_edit_property_24;
             this.btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_sua.Location = new System.Drawing.Point(600, 85);
+            this.btn_sua.Location = new System.Drawing.Point(600, 58);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(85, 50);
             this.btn_sua.TabIndex = 13;

@@ -121,5 +121,10 @@ namespace GUI
             dgvInfo.DataSource = bus.search(text);
         }
 
+        private void dgvInfo_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvInfo_CellContentClick(sender, e);
+        }
+
     }
 }

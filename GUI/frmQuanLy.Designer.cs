@@ -72,8 +72,8 @@
             // tbContainer
             // 
             this.tbContainer.ColumnCount = 2;
-            this.tbContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tbContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77F));
+            this.tbContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tbContainer.Controls.Add(this.tbButton, 0, 0);
             this.tbContainer.Controls.Add(this.pnSubSystem, 1, 0);
             this.tbContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -106,7 +106,7 @@
             this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tbButton.Size = new System.Drawing.Size(291, 535);
+            this.tbButton.Size = new System.Drawing.Size(253, 535);
             this.tbButton.TabIndex = 0;
             // 
             // btnTuyenSinh
@@ -127,9 +127,9 @@
             this.btnTuyenSinh.Location = new System.Drawing.Point(0, 214);
             this.btnTuyenSinh.Margin = new System.Windows.Forms.Padding(0);
             this.btnTuyenSinh.Name = "btnTuyenSinh";
-            this.btnTuyenSinh.Size = new System.Drawing.Size(291, 107);
+            this.btnTuyenSinh.Size = new System.Drawing.Size(253, 107);
             this.btnTuyenSinh.TabIndex = 3;
-            this.btnTuyenSinh.Text = "Thông tin Tuyển sinh";
+            this.btnTuyenSinh.Text = "        Thông tin Tuyển sinh";
             this.btnTuyenSinh.UseVisualStyleBackColor = false;
             this.btnTuyenSinh.Click += new System.EventHandler(this.btnTuyenSinh_Click);
             // 
@@ -151,7 +151,7 @@
             this.btnTruong.Location = new System.Drawing.Point(0, 107);
             this.btnTruong.Margin = new System.Windows.Forms.Padding(0);
             this.btnTruong.Name = "btnTruong";
-            this.btnTruong.Size = new System.Drawing.Size(291, 107);
+            this.btnTruong.Size = new System.Drawing.Size(253, 107);
             this.btnTruong.TabIndex = 2;
             this.btnTruong.Text = "Thông tin Trường";
             this.btnTruong.UseVisualStyleBackColor = false;
@@ -175,7 +175,7 @@
             this.btnThemDuLieu.Location = new System.Drawing.Point(0, 321);
             this.btnThemDuLieu.Margin = new System.Windows.Forms.Padding(0);
             this.btnThemDuLieu.Name = "btnThemDuLieu";
-            this.btnThemDuLieu.Size = new System.Drawing.Size(291, 107);
+            this.btnThemDuLieu.Size = new System.Drawing.Size(253, 107);
             this.btnThemDuLieu.TabIndex = 4;
             this.btnThemDuLieu.Text = "Thêm dữ liệu";
             this.btnThemDuLieu.UseVisualStyleBackColor = false;
@@ -185,10 +185,10 @@
             // 
             this.pnSubSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pnSubSystem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnSubSystem.Location = new System.Drawing.Point(291, 0);
+            this.pnSubSystem.Location = new System.Drawing.Point(253, 0);
             this.pnSubSystem.Margin = new System.Windows.Forms.Padding(0);
             this.pnSubSystem.Name = "pnSubSystem";
-            this.pnSubSystem.Size = new System.Drawing.Size(977, 535);
+            this.pnSubSystem.Size = new System.Drawing.Size(1015, 535);
             this.pnSubSystem.TabIndex = 1;
             // 
             // lbTitle

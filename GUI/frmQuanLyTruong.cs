@@ -112,12 +112,14 @@ namespace GUI
             DataTable bang = new DataTable();
             bang = (DataTable)dgvResult.DataSource;
             chiso = dgvResult.SelectedCells[0].RowIndex;
-            DataRow hang = bang.Rows[chiso];
-
-            txtMaTruong.Text = hang["MaTruong"].ToString();
-            txtTenTruong.Text = hang["TenTruong"].ToString();
-            txtDiaChi.Text = hang["DiaChi"].ToString();
-            txtWebsite.Text = hang["Website"].ToString();
+            if (chiso > 0)
+            {
+                DataRow hang = bang.Rows[chiso];
+                txtMaTruong.Text = hang["MaTruong"].ToString();
+                txtTenTruong.Text = hang["TenTruong"].ToString();
+                txtDiaChi.Text = hang["DiaChi"].ToString();
+                txtWebsite.Text = hang["Website"].ToString();
+            }
         }
     }
 }
