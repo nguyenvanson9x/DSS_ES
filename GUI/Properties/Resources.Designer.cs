@@ -67,6 +67,83 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap icons8_add_property_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-property-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_close_pane_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-pane-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_close_pane_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-pane-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_day_view_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-day-view-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_delete_document_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-document-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_edit_property_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-edit-property-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_microsoft_excel_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-microsoft-excel-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_save_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-save-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_search_property_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-search-property-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_show_property_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-show-property-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap icons8_undo_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-undo-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap if_circle_check_430087 {
             get {
                 object obj = ResourceManager.GetObject("if_circle-check_430087", resourceCulture);
