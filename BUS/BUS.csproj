@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_Demo.cs" />
+    <Compile Include="BUS_ThemDuLieu.cs" />
     <Compile Include="BUS_Truong.cs" />
     <Compile Include="BUS_TuVan.cs" />
     <Compile Include="BUS_TuyenSinh.cs" />

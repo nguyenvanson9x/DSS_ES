@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_Demo.cs" />
+    <Compile Include="DAL_ThemDuLieu.cs" />
     <Compile Include="DAL_Truong.cs" />
     <Compile Include="DAL_TuVan.cs" />
     <Compile Include="DAL_TuyenSinh.cs" />

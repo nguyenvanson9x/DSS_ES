@@ -40,7 +40,7 @@ namespace GUI
 
         private void frmQuanLy_Load(object sender, EventArgs e)
         {
-
+            btnThemDuLieu_Click(sender, e);
         }
 
         private void add_form_to_panel(Form f)

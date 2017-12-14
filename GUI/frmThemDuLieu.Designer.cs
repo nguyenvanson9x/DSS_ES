@@ -45,19 +45,20 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtTinhThanh = new System.Windows.Forms.TextBox();
+            this.txtDvChuquan = new System.Windows.Forms.TextBox();
+            this.txtMaNganh = new System.Windows.Forms.TextBox();
+            this.txtTenNganh = new System.Windows.Forms.TextBox();
+            this.txtDiemChuan = new System.Windows.Forms.TextBox();
+            this.txtChiTieu = new System.Windows.Forms.TextBox();
+            this.txtDaTuyen = new System.Windows.Forms.TextBox();
+            this.txtNamDaoTao = new System.Windows.Forms.TextBox();
+            this.txtSoCanBo = new System.Windows.Forms.TextBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
             this.pnInput = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.pnInput.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -250,92 +251,92 @@
             this.label13.TabIndex = 44;
             this.label13.Text = "Tỉnh / TP";
             // 
-            // textBox1
+            // txtTinhThanh
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(454, 102);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 27);
-            this.textBox1.TabIndex = 45;
+            this.txtTinhThanh.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTinhThanh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTinhThanh.Location = new System.Drawing.Point(454, 102);
+            this.txtTinhThanh.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTinhThanh.Name = "txtTinhThanh";
+            this.txtTinhThanh.Size = new System.Drawing.Size(150, 27);
+            this.txtTinhThanh.TabIndex = 45;
             // 
-            // textBox2
+            // txtDvChuquan
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(795, 101);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 27);
-            this.textBox2.TabIndex = 46;
+            this.txtDvChuquan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDvChuquan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDvChuquan.Location = new System.Drawing.Point(795, 101);
+            this.txtDvChuquan.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDvChuquan.Name = "txtDvChuquan";
+            this.txtDvChuquan.Size = new System.Drawing.Size(150, 27);
+            this.txtDvChuquan.TabIndex = 46;
             // 
-            // textBox3
+            // txtMaNganh
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(106, 186);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 27);
-            this.textBox3.TabIndex = 47;
+            this.txtMaNganh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNganh.Location = new System.Drawing.Point(106, 186);
+            this.txtMaNganh.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaNganh.Name = "txtMaNganh";
+            this.txtMaNganh.Size = new System.Drawing.Size(150, 27);
+            this.txtMaNganh.TabIndex = 47;
             // 
-            // textBox4
+            // txtTenNganh
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(454, 186);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 27);
-            this.textBox4.TabIndex = 48;
+            this.txtTenNganh.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTenNganh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNganh.Location = new System.Drawing.Point(454, 186);
+            this.txtTenNganh.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenNganh.Name = "txtTenNganh";
+            this.txtTenNganh.Size = new System.Drawing.Size(150, 27);
+            this.txtTenNganh.TabIndex = 48;
             // 
-            // textBox5
+            // txtDiemChuan
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(795, 185);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 27);
-            this.textBox5.TabIndex = 49;
+            this.txtDiemChuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDiemChuan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiemChuan.Location = new System.Drawing.Point(795, 185);
+            this.txtDiemChuan.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiemChuan.Name = "txtDiemChuan";
+            this.txtDiemChuan.Size = new System.Drawing.Size(150, 27);
+            this.txtDiemChuan.TabIndex = 49;
             // 
-            // textBox6
+            // txtChiTieu
             // 
-            this.textBox6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(106, 270);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 27);
-            this.textBox6.TabIndex = 50;
+            this.txtChiTieu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChiTieu.Location = new System.Drawing.Point(106, 270);
+            this.txtChiTieu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtChiTieu.Name = "txtChiTieu";
+            this.txtChiTieu.Size = new System.Drawing.Size(150, 27);
+            this.txtChiTieu.TabIndex = 50;
             // 
-            // textBox7
+            // txtDaTuyen
             // 
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(106, 345);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 27);
-            this.textBox7.TabIndex = 51;
+            this.txtDaTuyen.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDaTuyen.Location = new System.Drawing.Point(106, 345);
+            this.txtDaTuyen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDaTuyen.Name = "txtDaTuyen";
+            this.txtDaTuyen.Size = new System.Drawing.Size(150, 27);
+            this.txtDaTuyen.TabIndex = 51;
             // 
-            // textBox8
+            // txtNamDaoTao
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(454, 345);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 27);
-            this.textBox8.TabIndex = 52;
+            this.txtNamDaoTao.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNamDaoTao.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNamDaoTao.Location = new System.Drawing.Point(454, 345);
+            this.txtNamDaoTao.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNamDaoTao.Name = "txtNamDaoTao";
+            this.txtNamDaoTao.Size = new System.Drawing.Size(150, 27);
+            this.txtNamDaoTao.TabIndex = 52;
             // 
-            // textBox9
+            // txtSoCanBo
             // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(454, 270);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(150, 27);
-            this.textBox9.TabIndex = 53;
+            this.txtSoCanBo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtSoCanBo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoCanBo.Location = new System.Drawing.Point(454, 270);
+            this.txtSoCanBo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoCanBo.Name = "txtSoCanBo";
+            this.txtSoCanBo.Size = new System.Drawing.Size(150, 27);
+            this.txtSoCanBo.TabIndex = 53;
             // 
             // btnThem
             // 
@@ -378,30 +379,31 @@
             // 
             // pnInput
             // 
-            this.pnInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnInput.Controls.Add(this.btnThoat);
             this.pnInput.Controls.Add(this.btnSave);
             this.pnInput.Controls.Add(this.label1);
             this.pnInput.Controls.Add(this.txtMaTruong);
-            this.pnInput.Controls.Add(this.textBox9);
+            this.pnInput.Controls.Add(this.txtSoCanBo);
             this.pnInput.Controls.Add(this.txtTenTruong);
-            this.pnInput.Controls.Add(this.textBox8);
+            this.pnInput.Controls.Add(this.txtNamDaoTao);
             this.pnInput.Controls.Add(this.txtDiaChi);
-            this.pnInput.Controls.Add(this.textBox7);
+            this.pnInput.Controls.Add(this.txtDaTuyen);
             this.pnInput.Controls.Add(this.txtWebsite);
-            this.pnInput.Controls.Add(this.textBox6);
+            this.pnInput.Controls.Add(this.txtChiTieu);
             this.pnInput.Controls.Add(this.label2);
-            this.pnInput.Controls.Add(this.textBox5);
+            this.pnInput.Controls.Add(this.txtDiemChuan);
             this.pnInput.Controls.Add(this.label3);
-            this.pnInput.Controls.Add(this.textBox4);
+            this.pnInput.Controls.Add(this.txtTenNganh);
             this.pnInput.Controls.Add(this.label4);
-            this.pnInput.Controls.Add(this.textBox3);
+            this.pnInput.Controls.Add(this.txtMaNganh);
             this.pnInput.Controls.Add(this.label6);
-            this.pnInput.Controls.Add(this.textBox2);
+            this.pnInput.Controls.Add(this.txtDvChuquan);
             this.pnInput.Controls.Add(this.label5);
-            this.pnInput.Controls.Add(this.textBox1);
+            this.pnInput.Controls.Add(this.txtTinhThanh);
             this.pnInput.Controls.Add(this.label8);
             this.pnInput.Controls.Add(this.label13);
             this.pnInput.Controls.Add(this.label7);
@@ -427,12 +429,32 @@
             this.btnSave.Location = new System.Drawing.Point(674, 295);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(110, 49);
+            this.btnSave.Size = new System.Drawing.Size(116, 49);
             this.btnSave.TabIndex = 54;
             this.btnSave.Text = "Lưu";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Image = global::GUI.Properties.Resources.icons8_close_pane_48;
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(821, 295);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(124, 49);
+            this.btnThoat.TabIndex = 55;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoatClick);
             // 
             // frmThemDuLieu
             // 
@@ -474,18 +496,19 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtTinhThanh;
+        private System.Windows.Forms.TextBox txtDvChuquan;
+        private System.Windows.Forms.TextBox txtMaNganh;
+        private System.Windows.Forms.TextBox txtTenNganh;
+        private System.Windows.Forms.TextBox txtDiemChuan;
+        private System.Windows.Forms.TextBox txtChiTieu;
+        private System.Windows.Forms.TextBox txtDaTuyen;
+        private System.Windows.Forms.TextBox txtNamDaoTao;
+        private System.Windows.Forms.TextBox txtSoCanBo;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Panel pnInput;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnThoat;
 
     }
 }

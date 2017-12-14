@@ -36,12 +36,6 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.dgvInfo = new System.Windows.Forms.DataGridView();
-            this.clTenTruong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clMaTruong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clMaNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clDiemChuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clChiTieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSLDaTuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnRight = new System.Windows.Forms.Panel();
             this.txtTenTruong = new System.Windows.Forms.TextBox();
             this.lbTentruong = new System.Windows.Forms.Label();
@@ -52,12 +46,18 @@
             this.txtChiTieu = new System.Windows.Forms.TextBox();
             this.txtDiemChuan = new System.Windows.Forms.TextBox();
             this.txtMaNganh = new System.Windows.Forms.TextBox();
-            this.txtMaTruong = new System.Windows.Forms.TextBox();
+            this.txtTenNganh = new System.Windows.Forms.TextBox();
             this.lbSLDaTuyen = new System.Windows.Forms.Label();
             this.lbChiTieu = new System.Windows.Forms.Label();
             this.lbDiemChuan = new System.Windows.Forms.Label();
             this.lbMaNganh = new System.Windows.Forms.Label();
-            this.lbMaTruong = new System.Windows.Forms.Label();
+            this.lbTenNganh = new System.Windows.Forms.Label();
+            this.clTenTruong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTenNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clMaNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDiemChuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clChiTieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSLDaTuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbContainer.SuspendLayout();
             this.pnLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).BeginInit();
@@ -127,9 +127,9 @@
             // 
             this.dgvInfo.AllowUserToAddRows = false;
             this.dgvInfo.AllowUserToDeleteRows = false;
-            this.dgvInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfo.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -143,7 +143,7 @@
             this.dgvInfo.ColumnHeadersHeight = 26;
             this.dgvInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clTenTruong,
-            this.clMaTruong,
+            this.clTenNganh,
             this.clMaNganh,
             this.clDiemChuan,
             this.clChiTieu,
@@ -166,50 +166,8 @@
             this.dgvInfo.ShowEditingIcon = false;
             this.dgvInfo.Size = new System.Drawing.Size(718, 435);
             this.dgvInfo.TabIndex = 0;
-            this.dgvInfo.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfo_RowEnter);
             this.dgvInfo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfo_CellContentClick);
-            // 
-            // clTenTruong
-            // 
-            this.clTenTruong.DataPropertyName = "TenTruong";
-            this.clTenTruong.HeaderText = "Tên Trường";
-            this.clTenTruong.Name = "clTenTruong";
-            this.clTenTruong.ReadOnly = true;
-            // 
-            // clMaTruong
-            // 
-            this.clMaTruong.DataPropertyName = "MaTruong";
-            this.clMaTruong.HeaderText = "Mã trường";
-            this.clMaTruong.Name = "clMaTruong";
-            this.clMaTruong.ReadOnly = true;
-            // 
-            // clMaNganh
-            // 
-            this.clMaNganh.DataPropertyName = "MaNganh";
-            this.clMaNganh.HeaderText = "Mã ngành";
-            this.clMaNganh.Name = "clMaNganh";
-            this.clMaNganh.ReadOnly = true;
-            // 
-            // clDiemChuan
-            // 
-            this.clDiemChuan.DataPropertyName = "DiemChuan";
-            this.clDiemChuan.HeaderText = "Điểm chuẩn";
-            this.clDiemChuan.Name = "clDiemChuan";
-            this.clDiemChuan.ReadOnly = true;
-            // 
-            // clChiTieu
-            // 
-            this.clChiTieu.DataPropertyName = "ChiTieu";
-            this.clChiTieu.HeaderText = "Chỉ tiêu";
-            this.clChiTieu.Name = "clChiTieu";
-            this.clChiTieu.ReadOnly = true;
-            // 
-            // clSLDaTuyen
-            // 
-            this.clSLDaTuyen.DataPropertyName = "SLDaTuyen";
-            this.clSLDaTuyen.HeaderText = "Đã tuyển";
-            this.clSLDaTuyen.Name = "clSLDaTuyen";
-            this.clSLDaTuyen.ReadOnly = true;
+            this.dgvInfo.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfo_RowEnter);
             // 
             // pnRight
             // 
@@ -223,12 +181,12 @@
             this.pnRight.Controls.Add(this.txtChiTieu);
             this.pnRight.Controls.Add(this.txtDiemChuan);
             this.pnRight.Controls.Add(this.txtMaNganh);
-            this.pnRight.Controls.Add(this.txtMaTruong);
+            this.pnRight.Controls.Add(this.txtTenNganh);
             this.pnRight.Controls.Add(this.lbSLDaTuyen);
             this.pnRight.Controls.Add(this.lbChiTieu);
             this.pnRight.Controls.Add(this.lbDiemChuan);
             this.pnRight.Controls.Add(this.lbMaNganh);
-            this.pnRight.Controls.Add(this.lbMaTruong);
+            this.pnRight.Controls.Add(this.lbTenNganh);
             this.pnRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnRight.Location = new System.Drawing.Point(722, 0);
             this.pnRight.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
@@ -238,8 +196,8 @@
             // 
             // txtTenTruong
             // 
-            this.txtTenTruong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenTruong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenTruong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenTruong.Location = new System.Drawing.Point(26, 48);
             this.txtTenTruong.Name = "txtTenTruong";
@@ -312,8 +270,8 @@
             // 
             // txtSLDaTuyen
             // 
-            this.txtSLDaTuyen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSLDaTuyen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSLDaTuyen.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSLDaTuyen.Location = new System.Drawing.Point(26, 370);
             this.txtSLDaTuyen.Name = "txtSLDaTuyen";
@@ -322,8 +280,8 @@
             // 
             // txtChiTieu
             // 
-            this.txtChiTieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtChiTieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtChiTieu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChiTieu.Location = new System.Drawing.Point(26, 305);
             this.txtChiTieu.Name = "txtChiTieu";
@@ -332,8 +290,8 @@
             // 
             // txtDiemChuan
             // 
-            this.txtDiemChuan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDiemChuan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiemChuan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiemChuan.Location = new System.Drawing.Point(26, 242);
             this.txtDiemChuan.Name = "txtDiemChuan";
@@ -342,23 +300,23 @@
             // 
             // txtMaNganh
             // 
-            this.txtMaNganh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaNganh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMaNganh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNganh.Location = new System.Drawing.Point(26, 176);
             this.txtMaNganh.Name = "txtMaNganh";
             this.txtMaNganh.Size = new System.Drawing.Size(190, 27);
             this.txtMaNganh.TabIndex = 6;
             // 
-            // txtMaTruong
+            // txtTenNganh
             // 
-            this.txtMaTruong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaTruong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaTruong.Location = new System.Drawing.Point(26, 112);
-            this.txtMaTruong.Name = "txtMaTruong";
-            this.txtMaTruong.Size = new System.Drawing.Size(190, 27);
-            this.txtMaTruong.TabIndex = 5;
+            this.txtTenNganh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenNganh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNganh.Location = new System.Drawing.Point(26, 112);
+            this.txtTenNganh.Name = "txtTenNganh";
+            this.txtTenNganh.Size = new System.Drawing.Size(190, 27);
+            this.txtTenNganh.TabIndex = 5;
             // 
             // lbSLDaTuyen
             // 
@@ -400,15 +358,57 @@
             this.lbMaNganh.TabIndex = 1;
             this.lbMaNganh.Text = "Mã ngành";
             // 
-            // lbMaTruong
+            // lbTenNganh
             // 
-            this.lbMaTruong.AutoSize = true;
-            this.lbMaTruong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaTruong.Location = new System.Drawing.Point(23, 83);
-            this.lbMaTruong.Name = "lbMaTruong";
-            this.lbMaTruong.Size = new System.Drawing.Size(79, 19);
-            this.lbMaTruong.TabIndex = 0;
-            this.lbMaTruong.Text = "Mã trường";
+            this.lbTenNganh.AutoSize = true;
+            this.lbTenNganh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenNganh.Location = new System.Drawing.Point(23, 83);
+            this.lbTenNganh.Name = "lbTenNganh";
+            this.lbTenNganh.Size = new System.Drawing.Size(78, 19);
+            this.lbTenNganh.TabIndex = 0;
+            this.lbTenNganh.Text = "Tên Ngành";
+            // 
+            // clTenTruong
+            // 
+            this.clTenTruong.DataPropertyName = "TenTruong";
+            this.clTenTruong.HeaderText = "Tên Trường";
+            this.clTenTruong.Name = "clTenTruong";
+            this.clTenTruong.ReadOnly = true;
+            // 
+            // clTenNganh
+            // 
+            this.clTenNganh.DataPropertyName = "TenChuyenNganh";
+            this.clTenNganh.HeaderText = "Tên Ngành";
+            this.clTenNganh.Name = "clTenNganh";
+            this.clTenNganh.ReadOnly = true;
+            // 
+            // clMaNganh
+            // 
+            this.clMaNganh.DataPropertyName = "MaNganh";
+            this.clMaNganh.HeaderText = "Mã ngành";
+            this.clMaNganh.Name = "clMaNganh";
+            this.clMaNganh.ReadOnly = true;
+            // 
+            // clDiemChuan
+            // 
+            this.clDiemChuan.DataPropertyName = "DiemChuan";
+            this.clDiemChuan.HeaderText = "Điểm chuẩn";
+            this.clDiemChuan.Name = "clDiemChuan";
+            this.clDiemChuan.ReadOnly = true;
+            // 
+            // clChiTieu
+            // 
+            this.clChiTieu.DataPropertyName = "ChiTieu";
+            this.clChiTieu.HeaderText = "Chỉ tiêu";
+            this.clChiTieu.Name = "clChiTieu";
+            this.clChiTieu.ReadOnly = true;
+            // 
+            // clSLDaTuyen
+            // 
+            this.clSLDaTuyen.DataPropertyName = "SLDaTuyen";
+            this.clSLDaTuyen.HeaderText = "Đã tuyển";
+            this.clSLDaTuyen.Name = "clSLDaTuyen";
+            this.clSLDaTuyen.ReadOnly = true;
             // 
             // frmQuanLyTuyenSinh
             // 
@@ -445,8 +445,8 @@
         private System.Windows.Forms.Label lbChiTieu;
         private System.Windows.Forms.Label lbDiemChuan;
         private System.Windows.Forms.Label lbMaNganh;
-        private System.Windows.Forms.Label lbMaTruong;
-        private System.Windows.Forms.TextBox txtMaTruong;
+        private System.Windows.Forms.Label lbTenNganh;
+        private System.Windows.Forms.TextBox txtTenNganh;
         private System.Windows.Forms.TextBox txtMaNganh;
         private System.Windows.Forms.TextBox txtSLDaTuyen;
         private System.Windows.Forms.TextBox txtChiTieu;
@@ -454,14 +454,14 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.TextBox txtTenTruong;
+        private System.Windows.Forms.Label lbTentruong;
         private System.Windows.Forms.DataGridViewTextBoxColumn clTenTruong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clMaTruong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTenNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn clMaNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn clDiemChuan;
         private System.Windows.Forms.DataGridViewTextBoxColumn clChiTieu;
         private System.Windows.Forms.DataGridViewTextBoxColumn clSLDaTuyen;
-        private System.Windows.Forms.TextBox txtTenTruong;
-        private System.Windows.Forms.Label lbTentruong;
 
     }
 }

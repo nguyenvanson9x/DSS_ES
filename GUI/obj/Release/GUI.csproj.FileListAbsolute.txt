@@ -75,3 +75,6 @@ E:\DSS_ES\GUI\bin\Release\GUI.exe.config
 E:\DSS_ES\GUI\obj\Release\GUI.exe
 E:\DSS_ES\GUI\obj\Release\GUI.pdb
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmThemDuLieu.resources
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\Microsoft.Office.Interop.Excel.dll
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\Microsoft.Vbe.Interop.dll
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\office.dll

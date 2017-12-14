@@ -24,6 +24,10 @@ namespace BUS
         {
             return dalTuyenSinh.excuteSQL(SQL);
         }
+        public string getMaTruong(string TenTruong)
+        {
+            return dalTuyenSinh.getMaTruong(TenTruong);
+        }
         public bool themTuyenSinh(DTO_TuyenSinh tv)
         {
             return dalTuyenSinh.themTuyenSinh(tv);
@@ -34,9 +38,9 @@ namespace BUS
             return dalTuyenSinh.suaTuyenSinh(tv);
         }
 
-        public bool xoaTuyenSinh(string MaTruong)
+        public bool xoaTuyenSinh(string MaTruong,string manganh)
         {
-            return dalTuyenSinh.xoaTuyenSinh(MaTruong);
+            return dalTuyenSinh.xoaTuyenSinh(MaTruong, manganh);
         }
     }
 }

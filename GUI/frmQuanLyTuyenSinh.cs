@@ -35,7 +35,7 @@ namespace GUI
         private void btnThem_Click(object sender, EventArgs e)
         {
             string tentruong = txtTenTruong.Text;
-            string matruong = txtMaTruong.Text;
+            string matruong = txtTenNganh.Text;
             string manganh = txtMaNganh.Text;
             string sql = String.Format("SELECT * FROM Truong,TruongNganh,ChuyenNganh,TuyenSinh WHERE Truong.MaTruong=TruongNganh.MaTruong AND Truong.MaTruong=TuyenSinh.MaTruong AND TruongNganh.MaNganh=ChuyenNganh.MaNganh AND TruongNganh.MaNganh=TuyenSinh.MaNganh AND TuyenSinh.MaTruong=N'"+matruong+"' AND TuyenSinh.MaTruong=N'"+manganh+"'");
             bool isAdd = bus.excuteSQL(sql);
@@ -66,7 +66,7 @@ namespace GUI
         private void btnSua_Click(object sender, EventArgs e)
         {
             string tentruong = txtTenTruong.Text;
-            string matruong = txtMaTruong.Text;
+            string matruong = bus.getMaTruong(tentruong);
             string manganh = txtMaNganh.Text;
             if (matruong == "" || tentruong == "" || manganh == "" || txtChiTieu.Text == "" || txtDiemChuan.Text == "" || txtSLDaTuyen.Text == "")
             {
@@ -80,12 +80,13 @@ namespace GUI
                 DTO_TuyenSinh ts = new DTO_TuyenSinh(matruong, manganh, diemchuan, chitieu, sldatuyen);
                 bus.suaTuyenSinh(ts);
             }
+            dgvInfo.DataSource = bus.getTuyenSinh();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string matruong = txtMaTruong.Text;
-            bus.xoaTuyenSinh(matruong);
+            string matruong = bus.getMaTruong(txtTenTruong.Text);
+            bus.xoaTuyenSinh(matruong, txtMaNganh.Text);
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -93,7 +94,7 @@ namespace GUI
             txtChiTieu.ResetText();
             txtDiemChuan.ResetText();
             txtMaNganh.ResetText();
-            txtMaTruong.ResetText();
+            txtTenNganh.ResetText();
             txtSLDaTuyen.ResetText();
             txtTenTruong.ResetText();
         }
@@ -101,11 +102,11 @@ namespace GUI
         private void dgvInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
-            if (!(index < 0))
+            if (!(index <0))
             {
                 DataGridViewRow row = dgvInfo.Rows[index];
                 txtTenTruong.Text = row.Cells["clTenTruong"].Value.ToString();
-                txtMaTruong.Text = row.Cells["clMaTruong"].Value.ToString();
+                txtTenNganh.Text = row.Cells["clTenNganh"].Value.ToString();
                 txtMaNganh.Text = row.Cells["clMaNganh"].Value.ToString();
                 txtChiTieu.Text = row.Cells["clChiTieu"].Value.ToString();
                 txtDiemChuan.Text = row.Cells["clDiemChuan"].Value.ToString();
@@ -117,7 +118,6 @@ namespace GUI
         private void txtSearchChanged(object sender, EventArgs e)
         {
             string text = txtTimKiem.Text;
-            Console.Write("as" + text);
             dgvInfo.DataSource = bus.search(text);
         }
 
