@@ -53,7 +53,6 @@ namespace GUI
                 frm.KhuVuc = cbTinhThanh.Text;
                 frm.ShowDialog(); 
             }
-            
         }
 
         private void btnTuVan_Click(object sender, EventArgs e)
@@ -93,12 +92,19 @@ namespace GUI
 
         private void frmTuVan_Nganh_Load(object sender, EventArgs e)
         {
-            bus.myconnect();
+            try
+            {
+                bus.myconnect();
 
-            string sqlTinhThanh = "select distinct truong.TinhThanh from truong";
-            cbTinhThanh.DataSource = bus.getTruong(sqlTinhThanh);
-            cbTinhThanh.DisplayMember = "TinhThanh";
-            cbTinhThanh.SelectedIndex = -1;
+                string sqlTinhThanh = "select distinct truong.TinhThanh from truong";
+                cbTinhThanh.DataSource = bus.getTruong(sqlTinhThanh);
+                cbTinhThanh.DisplayMember = "TinhThanh";
+                cbTinhThanh.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
     }

@@ -67,11 +67,18 @@ namespace GUI
                 string sqlChuyenNganh = @"INSERT INTO ChuyenNganh(MaNganh,NhomNganh) VALUES(N'" + manganh + "'," + group + ");";
                 string sqlTruongNganh = @"INSERT INTO TruongNganh(MaTruong,MaNganh,NamDT,SoCB) VALUES(N'" + matruong + "',N'" + manganh + "'," + namdaotao + "," + slNv + ");";
                 string sqlTuyenSinh = @"INSERT INTO TuyenSinh(MaTruong,MaNganh,DiemChuan,ChiTieu,SLDaTuyen) VALUES(N'" + matruong + "',N'" + manganh + "'," + diemchuan + "," + chitieu + "," + sldatuyen + ");";
-                bus.excuteSQL(sqlTruong);
-                bus.excuteSQL(sqlNhomNganh);
-                bus.excuteSQL(sqlChuyenNganh);
-                bus.excuteSQL(sqlTruongNganh);
-                bus.excuteSQL(sqlTuyenSinh);
+                try
+                {
+                    bus.excuteSQL(sqlTruong);
+                    bus.excuteSQL(sqlNhomNganh);
+                    bus.excuteSQL(sqlChuyenNganh);
+                    bus.excuteSQL(sqlTruongNganh);
+                    bus.excuteSQL(sqlTuyenSinh);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else {
                 MessageBox.Show("Vui lòng nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

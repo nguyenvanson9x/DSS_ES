@@ -22,14 +22,28 @@ namespace GUI
 
         private void frmQuanLyTuyenSinh_Load(object sender, EventArgs e)
         {
-            dgvInfo.DataSource = bus.getTuyenSinh();
+            try
+            {
+                dgvInfo.DataSource = bus.getTuyenSinh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            string text = txtTimKiem.Text;
-            dgvInfo.DataSource = bus.search(text);
-            txtTimKiem.ResetText();
+            try
+            {
+                string text = txtTimKiem.Text;
+                dgvInfo.DataSource = bus.search(text);
+                txtTimKiem.ResetText();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -38,55 +52,75 @@ namespace GUI
             string matruong = txtTenNganh.Text;
             string manganh = txtMaNganh.Text;
             string sql = String.Format("SELECT * FROM Truong,TruongNganh,ChuyenNganh,TuyenSinh WHERE Truong.MaTruong=TruongNganh.MaTruong AND Truong.MaTruong=TuyenSinh.MaTruong AND TruongNganh.MaNganh=ChuyenNganh.MaNganh AND TruongNganh.MaNganh=TuyenSinh.MaNganh AND TuyenSinh.MaTruong=N'"+matruong+"' AND TuyenSinh.MaTruong=N'"+manganh+"'");
-            bool isAdd = bus.excuteSQL(sql);
-            if (matruong == "" || tentruong == "" || manganh == "" || txtChiTieu.Text == "" || txtDiemChuan.Text == "" || txtSLDaTuyen.Text == "")
+            try
             {
-                MessageBox.Show("Chưa nhập đủ thông tin, vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bool isAdd = bus.excuteSQL(sql);
+                if (matruong == "" || tentruong == "" || manganh == "" || txtChiTieu.Text == "" || txtDiemChuan.Text == "" || txtSLDaTuyen.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập đủ thông tin, vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    if (isAdd)
+                    {
+                        int chitieu = Convert.ToInt32(txtChiTieu.Text);
+                        double diemchuan = Convert.ToDouble(txtDiemChuan.Text);
+                        int sldatuyen = Convert.ToInt32(txtSLDaTuyen.Text);
+                        DTO_TuyenSinh ts = new DTO_TuyenSinh(matruong, manganh, diemchuan, chitieu, sldatuyen);
+                        busTr.them(matruong, tentruong, "", "");
+                        bus.themTuyenSinh(ts);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Trường đã tồn tại trên hệ thống, Xin Cảm Ơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                }
             }
-            else
+            catch (Exception ex)
             {
-                if (isAdd)
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tentruong = txtTenTruong.Text;
+                string matruong = bus.getMaTruong(tentruong);
+                string manganh = txtMaNganh.Text;
+                if (matruong == "" || tentruong == "" || manganh == "" || txtChiTieu.Text == "" || txtDiemChuan.Text == "" || txtSLDaTuyen.Text == "")
+                {
+                    MessageBox.Show("Chưa nhập đủ thông tin, vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
                 {
                     int chitieu = Convert.ToInt32(txtChiTieu.Text);
                     double diemchuan = Convert.ToDouble(txtDiemChuan.Text);
                     int sldatuyen = Convert.ToInt32(txtSLDaTuyen.Text);
                     DTO_TuyenSinh ts = new DTO_TuyenSinh(matruong, manganh, diemchuan, chitieu, sldatuyen);
-                    busTr.them(matruong, tentruong, "", "");
-                    bus.themTuyenSinh(ts);
+                    bus.suaTuyenSinh(ts);
                 }
-                else
-                {
-                    MessageBox.Show("Trường đã tồn tại trên hệ thống, Xin Cảm Ơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
+                dgvInfo.DataSource = bus.getTuyenSinh();
             }
-
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            string tentruong = txtTenTruong.Text;
-            string matruong = bus.getMaTruong(tentruong);
-            string manganh = txtMaNganh.Text;
-            if (matruong == "" || tentruong == "" || manganh == "" || txtChiTieu.Text == "" || txtDiemChuan.Text == "" || txtSLDaTuyen.Text == "")
+            catch (Exception ex)
             {
-                MessageBox.Show("Chưa nhập đủ thông tin, vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-            {
-                int chitieu = Convert.ToInt32(txtChiTieu.Text);
-                double diemchuan = Convert.ToDouble(txtDiemChuan.Text);
-                int sldatuyen = Convert.ToInt32(txtSLDaTuyen.Text);
-                DTO_TuyenSinh ts = new DTO_TuyenSinh(matruong, manganh, diemchuan, chitieu, sldatuyen);
-                bus.suaTuyenSinh(ts);
-            }
-            dgvInfo.DataSource = bus.getTuyenSinh();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string matruong = bus.getMaTruong(txtTenTruong.Text);
-            bus.xoaTuyenSinh(matruong, txtMaNganh.Text);
+            try
+            {
+                string matruong = bus.getMaTruong(txtTenTruong.Text);
+                bus.xoaTuyenSinh(matruong, txtMaNganh.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -117,8 +151,15 @@ namespace GUI
 
         private void txtSearchChanged(object sender, EventArgs e)
         {
-            string text = txtTimKiem.Text;
-            dgvInfo.DataSource = bus.search(text);
+            try
+            {
+                string text = txtTimKiem.Text;
+                dgvInfo.DataSource = bus.search(text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void dgvInfo_RowEnter(object sender, DataGridViewCellEventArgs e)

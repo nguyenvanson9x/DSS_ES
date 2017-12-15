@@ -120,7 +120,7 @@ namespace DAL
             try
             {
                 _conn.Open();
-                string SQL = string.Format("DELETE FROM TuyenSinh WHERE MaTruong=N'{0}' AND MaNganh=N'{1}')",MaTruong,manganh);
+                string SQL = string.Format("DELETE FROM TuyenSinh WHERE MaTruong = '{0}' AND MaNganh = '{1}')",MaTruong,manganh);
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

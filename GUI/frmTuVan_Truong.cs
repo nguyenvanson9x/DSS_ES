@@ -23,9 +23,16 @@ namespace GUI
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string sqlTuVanTruong = bus.queryTruong(cbChuyenNganh.Text, txtTongDiem.Text, cbTinhThanh.Text);
-            frmDanhSachTruong frm = new frmDanhSachTruong(sqlTuVanTruong);
-            frm.ShowDialog();
+            try
+            {
+                string sqlTuVanTruong = bus.queryTruong(cbChuyenNganh.Text, txtTongDiem.Text, cbTinhThanh.Text);
+                frmDanhSachTruong frm = new frmDanhSachTruong(sqlTuVanTruong);
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -45,17 +52,24 @@ namespace GUI
 
         private void frmTuVan_Truong_Load(object sender, EventArgs e)
         {
-            bus.myconnect();
+            try
+            {
+                bus.myconnect();
 
-            string sqlChuyenNganh = "select nhomnganh.TenChuyenNganh from nhomnganh";
-            cbChuyenNganh.DataSource = bus.getTruong(sqlChuyenNganh);
-            cbChuyenNganh.DisplayMember = "TenChuyenNganh";
-            cbChuyenNganh.SelectedIndex = -1;
+                string sqlChuyenNganh = "select nhomnganh.TenChuyenNganh from nhomnganh";
+                cbChuyenNganh.DataSource = bus.getTruong(sqlChuyenNganh);
+                cbChuyenNganh.DisplayMember = "TenChuyenNganh";
+                cbChuyenNganh.SelectedIndex = -1;
 
-            string sqlTinhThanh = "select distinct truong.TinhThanh from truong";
-            cbTinhThanh.DataSource = bus.getTruong(sqlTinhThanh);
-            cbTinhThanh.DisplayMember = "TinhThanh";
-            cbTinhThanh.SelectedIndex = -1;
+                string sqlTinhThanh = "select distinct truong.TinhThanh from truong";
+                cbTinhThanh.DataSource = bus.getTruong(sqlTinhThanh);
+                cbTinhThanh.DisplayMember = "TinhThanh";
+                cbTinhThanh.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnReset_Click(object sender, EventArgs e)

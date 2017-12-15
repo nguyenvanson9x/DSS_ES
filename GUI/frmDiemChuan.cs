@@ -23,15 +23,21 @@ namespace GUI
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string truong = txtSearch.Text;
-            string tinh = cbTinh.GetItemText(cbTinh.SelectedItem);
-            List<string> list = bus.searchListTruong(truong,tinh);
-            listTruong.Items.Clear();
-            foreach (string li in list)
+            try
             {
-                listTruong.Items.Add(li);
+                string truong = txtSearch.Text;
+                string tinh = cbTinh.GetItemText(cbTinh.SelectedItem);
+                List<string> list = bus.searchListTruong(truong, tinh);
+                listTruong.Items.Clear();
+                foreach (string li in list)
+                {
+                    listTruong.Items.Add(li);
+                }
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             txtSearch.ResetText();
             cbTinh.ResetText();
             cbTinh.SelectedText = "--Tỉnh / TP--";
@@ -39,8 +45,15 @@ namespace GUI
 
         private void frmDiemChuan_Load(object sender, EventArgs e)
         {
-            getListTruong();
-            getListTinh();
+            try
+            {
+                getListTruong();
+                getListTinh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -54,10 +67,17 @@ namespace GUI
         }
         private void getListTruong()
         {
-            List<string> list = bus.getListTruong();
-            foreach (string li in list)
+            try
             {
-                listTruong.Items.Add(li);
+                List<string> list = bus.getListTruong();
+                foreach (string li in list)
+                {
+                    listTruong.Items.Add(li);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -72,8 +92,14 @@ namespace GUI
                 "and (NhomNganh.NhomNganh = chuyennganh.NhomNganh) " +
                 "and (chuyennganh.MaNganh = tuyensinh.MaNganh) and (truong.MaTruong='"+matruong+"')"
                 ;
-           
-            dgv.DataSource = bus.getTruong(sql);
+            try
+            {
+                dgv.DataSource = bus.getTruong(sql);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void cbSortClick(object sender, EventArgs e)
@@ -102,36 +128,56 @@ namespace GUI
 
         private void getListTinh()
         {
-            List<string> list = bus.getListTinh();
-            foreach (string li in list)
+            try
             {
-                cbTinh.Items.Add(li);
+                List<string> list = bus.getListTinh();
+                foreach (string li in list)
+                {
+                    cbTinh.Items.Add(li);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void txtChanged(object sender, EventArgs e)
         {
-            string truong = txtSearch.Text;
-            string tinh = cbTinh.Text;
-            List<string> list = bus.searchListTruong(truong, tinh);
-            listTruong.Items.Clear();
-            foreach (string li in list)
+            try
             {
-                listTruong.Items.Add(li);
+                string truong = txtSearch.Text;
+                string tinh = cbTinh.Text;
+                List<string> list = bus.searchListTruong(truong, tinh);
+                listTruong.Items.Clear();
+                foreach (string li in list)
+                {
+                    listTruong.Items.Add(li);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void cbTinhChanged(object sender, EventArgs e)
         {
-            string truong = txtSearch.Text;
-            string tinh = cbTinh.GetItemText(cbTinh.SelectedItem);
-            List<string> list = bus.searchListTruong(truong, tinh);
-            listTruong.Items.Clear();
-            foreach (string li in list)
+            try
             {
-                listTruong.Items.Add(li);
+                string truong = txtSearch.Text;
+                string tinh = cbTinh.GetItemText(cbTinh.SelectedItem);
+                List<string> list = bus.searchListTruong(truong, tinh);
+                listTruong.Items.Clear();
+                foreach (string li in list)
+                {
+                    listTruong.Items.Add(li);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

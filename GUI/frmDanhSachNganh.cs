@@ -30,12 +30,19 @@ namespace GUI
 
         private void frmDanhSachNganh_Load(object sender, EventArgs e)
         {
-            if (selected == 1)
-                load_tong_diem(TongDiem);
-            if (selected == 2)
-                load_khu_vuc(KhuVuc);
-            if (selected == 3)
-                load_tu_van();
+            try
+            {
+                if (selected == 1)
+                    load_tong_diem(TongDiem);
+                if (selected == 2)
+                    load_khu_vuc(KhuVuc);
+                if (selected == 3)
+                    load_tu_van();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void load_tu_van()
@@ -51,7 +58,7 @@ namespace GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -72,7 +79,7 @@ namespace GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -93,7 +100,7 @@ namespace GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
