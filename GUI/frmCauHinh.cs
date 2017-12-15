@@ -45,5 +45,20 @@ namespace GUI
             frm.content = l1 + l2 + l3 + l4 + l5 + l6 + l7;
             frm.ShowDialog();
         }
+
+        private void frmCauHinh_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                txtMayChu.Text = DBConnect.GetAppSetting("datasource");
+                txtCSDL.Text = DBConnect.GetAppSetting("database");
+                txtUsername.Text = DBConnect.GetAppSetting("username");
+                txtPassword.Text = DBConnect.GetAppSetting("password");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

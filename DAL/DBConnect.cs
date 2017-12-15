@@ -14,10 +14,14 @@ namespace DAL
         protected SqlConnection _conn;
         public DBConnect()
         {
-            database = "";
-            datasource = "";
-            username = "";
-            password = "";
+            if (!ConfigurationManager.AppSettings.AllKeys.Contains("datasource"))
+                AddAppSetting("datasource", @".\SQLEXPRESS");
+            if (!ConfigurationManager.AppSettings.AllKeys.Contains("database"))
+                AddAppSetting("database", "DSS_ES");
+            if (!ConfigurationManager.AppSettings.AllKeys.Contains("username"))
+                AddAppSetting("username", "");
+            if (!ConfigurationManager.AppSettings.AllKeys.Contains("password"))
+                AddAppSetting("password", "");
             _conn = GetDBConnection();
         }
         public SqlConnection GetDBConnection()
@@ -31,7 +35,11 @@ namespace DAL
                 return DBSQLServerUtils.GetDBConnection(datasource, database);
             else
                 return DBSQLServerUtils.GetDBConnection(datasource, database, username, password);
+        }
 
+        public static string GetAppSetting(string key)
+        {
+            return ConfigurationManager.AppSettings[key];
         }
 
         public static void EditAppSetting(string key, string value)
