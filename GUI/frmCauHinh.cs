@@ -35,7 +35,14 @@ namespace GUI
         {
             frmHuongDan frm = new frmHuongDan();
             frm.title = "Hướng dẫn cấu hình hệ thống";
-            frm.content = "Line 1\r\nLine 2\r\nLine 3";
+            string l1 = "Dùng chức năng này khi bị lỗi kết nối với cơ sở dữ liệu.\r\n\r\n";
+            string l2 = "- Nhập các thông số kết nối:\r\n";
+            string l3 = "   + Máy chủ:\tTên máy chủ quản lý cơ sở dữ liệu.\r\n";
+            string l4 = "   + Cơ sở dữ liệu:\tTên cơ sở dữ liệu.\r\n";
+            string l5 = "   + Tên đăng nhập:\tTài khoản kết nối tới cơ sở dữ liệu.\r\n";
+            string l6 = "   + Mật khẩu:\tMật khẩu truy cập cơ sở dữ liệu.\r\n\r\n";
+            string l7 = "- Nhấn nút Lưu để lưu các thông số.\r\n";
+            frm.content = l1 + l2 + l3 + l4 + l5 + l6 + l7;
             frm.ShowDialog();
         }
     }

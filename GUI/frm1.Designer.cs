@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm1));
             this.pnNav = new System.Windows.Forms.Panel();
             this.tbNav = new System.Windows.Forms.TableLayoutPanel();
-            this.lbLogo = new System.Windows.Forms.Label();
             this.pnSubSystem = new System.Windows.Forms.Panel();
             this.btnDiemChuan = new System.Windows.Forms.Button();
             this.btnCauHinh = new System.Windows.Forms.Button();
+            this.lbLogo = new System.Windows.Forms.Label();
             this.btnTuVan_Truong = new System.Windows.Forms.Button();
             this.btnQuanLy = new System.Windows.Forms.Button();
             this.btnTuVan_Nganh = new System.Windows.Forms.Button();
@@ -78,23 +78,6 @@
             this.tbNav.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tbNav.Size = new System.Drawing.Size(1274, 65);
             this.tbNav.TabIndex = 0;
-            // 
-            // lbLogo
-            // 
-            this.lbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(119)))), ((int)(((byte)(189)))));
-            this.lbLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbLogo.Location = new System.Drawing.Point(0, 0);
-            this.lbLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.lbLogo.Name = "lbLogo";
-            this.lbLogo.Size = new System.Drawing.Size(212, 65);
-            this.lbLogo.TabIndex = 0;
-            this.lbLogo.Text = "Hệ thống tư vấn chọn ngành CNTT";
-            this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnSubSystem
             // 
@@ -157,6 +140,23 @@
             this.btnCauHinh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCauHinh.UseVisualStyleBackColor = false;
             this.btnCauHinh.Click += new System.EventHandler(this.btnCauHinh_Click);
+            // 
+            // lbLogo
+            // 
+            this.lbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(119)))), ((int)(((byte)(189)))));
+            this.lbLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLogo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbLogo.Location = new System.Drawing.Point(0, 0);
+            this.lbLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.lbLogo.Name = "lbLogo";
+            this.lbLogo.Size = new System.Drawing.Size(212, 65);
+            this.lbLogo.TabIndex = 0;
+            this.lbLogo.Text = "Hệ thống tư vấn chọn ngành CNTT";
+            this.lbLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnTuVan_Truong
             // 

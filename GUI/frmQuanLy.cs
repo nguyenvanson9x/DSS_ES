@@ -33,8 +33,20 @@ namespace GUI
         private void btnHelp_Click(object sender, EventArgs e)
         {
             frmHuongDan frm = new frmHuongDan();
-            frm.title = "";
-            frm.content = "Line 1\r\nLine 2\r\nLine 3";
+            frm.title = "Quản lý nhập liệu thông tin trường và thông tin tuyển sinh";
+            frm.content =
+                "- Bấm vào nút Thông tin trường để quản lý thông tin của các trường đại học.\r\n"
+                + "\t+ Bấm vào 1 dòng trong bảng dữ liệu để hiển thị chi tiết Trường.\r\n"
+                + "\t+ Bấm vào các nút Sửa, Xóa để cập nhật hoặc xóa dữ liệu của trường đó.\r\n\r\n"
+                + "- Bấm vào nút Thông tin tuyển sinh để quản lý thông tin tuyển sinh đại học của các trường đại học.\r\n"
+                + "\t+ Bấm vào 1 dòng trong bảng dữ liệu để hiện thị chi tiết thông tin tuyển sinh\r\n"
+                + "\t+ Bấm vào nút Sửa, Xóa, Hủy để cập nhật, xóa dòng đã chọn\r\n"
+                + "\t+ Tìm kiếm dữ liệu: Hỗ trợ tìm kiếm theo tên trường, mã trường, mã ngành, tên ngành, điểm chuẩn, chỉ tiêu\r\n\r\n"
+                + "- Bấm vào nút Thêm dữ liệu để tiến hành nhập liệu thông tin.\r\n"
+                + "\t+ Bấm vào nút Thêm thủ công để nhập dữ liệu bằng tay.\r\n"
+                + "\t\t+ Sau khi nhập dữ liệu, bấm nút Lưu để lưu dữ liệu.\r\n"
+                + "\t+ Bấm vào nút Nhập Excel để nhập dữ liệu từ tệp excel.\r\n"
+                ;
             frm.ShowDialog();
         }
 

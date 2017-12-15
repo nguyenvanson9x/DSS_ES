@@ -22,13 +22,21 @@ namespace GUI
         {
             frmDanhSachNganh frm = new frmDanhSachNganh();
             frm.selected = 1;
-            if (txtTongDiem.Text == "")
+            try
             {
-                MessageBox.Show("Vui lòng nhập tổng điểm");
+                if (txtTongDiem.Text == "")
+                {
+                    MessageBox.Show(this, "Vui lòng nhập tổng điểm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    frm.TongDiem = Double.Parse(txtTongDiem.Text);
+                    frm.ShowDialog();
+                }
             }
-            else {
-                frm.TongDiem = Int32.Parse(txtTongDiem.Text);
-                frm.ShowDialog();
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Chỉ được nhập số", "Lỗi định dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -38,7 +46,7 @@ namespace GUI
             frm.selected = 2;
             if (cbTinhThanh.Text == "")
             {
-                MessageBox.Show("Vui lòng chọn tên tỉnh thành");
+                MessageBox.Show(this, "Vui lòng chọn tên tỉnh thành", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -52,15 +60,22 @@ namespace GUI
         {
             frmDanhSachNganh frm = new frmDanhSachNganh();
             frm.selected = 3;
-            if (cbTinhThanh.Text == ""||txtTongDiem.Text=="")
+            try
             {
-                MessageBox.Show("Vui lòng không để trống dữ liệu");
+                if (cbTinhThanh.Text == "" || txtTongDiem.Text == "")
+                {
+                    MessageBox.Show(this, "Vui lòng không để trống dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    frm.TongDiem = Double.Parse(txtTongDiem.Text);
+                    frm.KhuVuc = cbTinhThanh.Text;
+                    frm.ShowDialog();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                frm.TongDiem = Int32.Parse(txtTongDiem.Text);
-                frm.KhuVuc = cbTinhThanh.Text;
-                frm.ShowDialog();
+                MessageBox.Show(this, "Chỉ được nhập số", "Lỗi định dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -68,7 +83,11 @@ namespace GUI
         {
             frmHuongDan frm = new frmHuongDan();
             frm.title = "";
-            frm.content = "Line 1\r\nLine 2\r\nLine 3";
+            frm.content =
+                "- Nhập tổng điểm, bấm vào nút Tham Khảo để xem danh sách các ngành có số điểm phù hợp.\r\n\r\n"
+                + "- Lựa chọn Tỉnh/TP, bấm vào nút Tham khảo để xem danh sách các ngành phù hợp.\r\n\r\n"
+                + "- Bấm vào nút Tư vấn để xem danh sách các ngành phù hợp với cả hai tiêu chí Tổng điểm và Tỉnh/TP.\r\n\r\n"
+                ;
             frm.ShowDialog();
         }
 

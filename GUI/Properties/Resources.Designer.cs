@@ -60,6 +60,13 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _25396122_1430616430380922_2284000567599129050_n {
+            get {
+                object obj = ResourceManager.GetObject("25396122_1430616430380922_2284000567599129050_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap add_property_78_3 {
             get {
                 object obj = ResourceManager.GetObject("add_property-78-3", resourceCulture);

@@ -57,8 +57,8 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnExcel = new System.Windows.Forms.Button();
             this.pnInput = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.pnInput.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 103);
+            this.label4.Location = new System.Drawing.Point(19, 103);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 19);
@@ -78,7 +78,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(670, 25);
+            this.label3.Location = new System.Drawing.Point(665, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 19);
@@ -101,7 +101,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 20);
+            this.label1.Location = new System.Drawing.Point(19, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 19);
@@ -111,7 +111,7 @@
             // txtWebsite
             // 
             this.txtWebsite.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWebsite.Location = new System.Drawing.Point(106, 102);
+            this.txtWebsite.Location = new System.Drawing.Point(121, 102);
             this.txtWebsite.Margin = new System.Windows.Forms.Padding(4);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.Size = new System.Drawing.Size(150, 27);
@@ -121,7 +121,7 @@
             // 
             this.txtDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiaChi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(795, 17);
+            this.txtDiaChi.Location = new System.Drawing.Point(790, 17);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(150, 27);
@@ -140,7 +140,7 @@
             // txtMaTruong
             // 
             this.txtMaTruong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaTruong.Location = new System.Drawing.Point(106, 18);
+            this.txtMaTruong.Location = new System.Drawing.Point(121, 18);
             this.txtMaTruong.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaTruong.Name = "txtMaTruong";
             this.txtMaTruong.Size = new System.Drawing.Size(150, 27);
@@ -162,7 +162,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(4, 186);
+            this.label6.Location = new System.Drawing.Point(19, 186);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 19);
@@ -173,7 +173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(4, 269);
+            this.label7.Location = new System.Drawing.Point(19, 269);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 19);
@@ -185,7 +185,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(670, 185);
+            this.label8.Location = new System.Drawing.Point(665, 185);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 19);
@@ -208,7 +208,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(4, 352);
+            this.label10.Location = new System.Drawing.Point(19, 352);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 19);
@@ -232,7 +232,7 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(670, 102);
+            this.label12.Location = new System.Drawing.Point(665, 102);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 19);
@@ -265,7 +265,7 @@
             // 
             this.txtDvChuquan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDvChuquan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDvChuquan.Location = new System.Drawing.Point(795, 101);
+            this.txtDvChuquan.Location = new System.Drawing.Point(790, 101);
             this.txtDvChuquan.Margin = new System.Windows.Forms.Padding(4);
             this.txtDvChuquan.Name = "txtDvChuquan";
             this.txtDvChuquan.Size = new System.Drawing.Size(150, 27);
@@ -274,7 +274,7 @@
             // txtMaNganh
             // 
             this.txtMaNganh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNganh.Location = new System.Drawing.Point(106, 186);
+            this.txtMaNganh.Location = new System.Drawing.Point(121, 186);
             this.txtMaNganh.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNganh.Name = "txtMaNganh";
             this.txtMaNganh.Size = new System.Drawing.Size(150, 27);
@@ -294,7 +294,7 @@
             // 
             this.txtDiemChuan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiemChuan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiemChuan.Location = new System.Drawing.Point(795, 185);
+            this.txtDiemChuan.Location = new System.Drawing.Point(790, 185);
             this.txtDiemChuan.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiemChuan.Name = "txtDiemChuan";
             this.txtDiemChuan.Size = new System.Drawing.Size(150, 27);
@@ -303,7 +303,7 @@
             // txtChiTieu
             // 
             this.txtChiTieu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChiTieu.Location = new System.Drawing.Point(106, 270);
+            this.txtChiTieu.Location = new System.Drawing.Point(121, 270);
             this.txtChiTieu.Margin = new System.Windows.Forms.Padding(4);
             this.txtChiTieu.Name = "txtChiTieu";
             this.txtChiTieu.Size = new System.Drawing.Size(150, 27);
@@ -312,7 +312,7 @@
             // txtDaTuyen
             // 
             this.txtDaTuyen.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDaTuyen.Location = new System.Drawing.Point(106, 345);
+            this.txtDaTuyen.Location = new System.Drawing.Point(121, 345);
             this.txtDaTuyen.Margin = new System.Windows.Forms.Padding(4);
             this.txtDaTuyen.Name = "txtDaTuyen";
             this.txtDaTuyen.Size = new System.Drawing.Size(150, 27);
@@ -379,9 +379,9 @@
             // 
             // pnInput
             // 
-            this.pnInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.pnInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnInput.Controls.Add(this.btnThoat);
             this.pnInput.Controls.Add(this.btnSave);
@@ -416,26 +416,6 @@
             this.pnInput.Size = new System.Drawing.Size(960, 441);
             this.pnInput.TabIndex = 55;
             // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = global::GUI.Properties.Resources.icons8_save_48;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(674, 295);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(116, 49);
-            this.btnSave.TabIndex = 54;
-            this.btnSave.Text = "Lưu";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // btnThoat
             // 
             this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -446,7 +426,7 @@
             this.btnThoat.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Image = global::GUI.Properties.Resources.icons8_close_pane_48;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(821, 295);
+            this.btnThoat.Location = new System.Drawing.Point(816, 295);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(124, 49);
@@ -455,6 +435,26 @@
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoatClick);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Image = global::GUI.Properties.Resources.icons8_save_48;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(669, 295);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(116, 49);
+            this.btnSave.TabIndex = 54;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmThemDuLieu
             // 

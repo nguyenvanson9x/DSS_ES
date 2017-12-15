@@ -17,7 +17,7 @@ namespace GUI
         public frmHuongDan()
         {
             InitializeComponent();
-            
+            txtContent.TabStop = false;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

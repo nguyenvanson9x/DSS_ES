@@ -36,7 +36,10 @@ namespace GUI
 
             frmHuongDan frm = new frmHuongDan();
             frm.title = "";
-            frm.content = "Line 1\r\nLine 2\r\nLine 3";
+            frm.content = 
+                "Lựa chọn Chuyên ngành, Tỉnh thành và Nhập tổng điểm.\r\n\r\n" + 
+                "Bấm vào nút Tìm trường để xem danh sách các trường phù hợp.\r\n"
+                ;
             frm.ShowDialog();
         }
 

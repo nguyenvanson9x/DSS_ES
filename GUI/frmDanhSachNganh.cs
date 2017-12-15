@@ -14,7 +14,7 @@ namespace GUI
     public partial class frmDanhSachNganh : Form
     {
         public int selected = 1;
-        public int TongDiem = 0;
+        public double TongDiem = 0;
         public string KhuVuc = "";
 
         public frmDanhSachNganh()
@@ -80,7 +80,7 @@ namespace GUI
             }
         }
 
-        private void load_tong_diem(int TongDiem)
+        private void load_tong_diem(double TongDiem)
         {
             try
             {

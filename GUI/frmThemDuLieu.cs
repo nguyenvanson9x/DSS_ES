@@ -50,7 +50,10 @@ namespace GUI
                 pnInput.Visible = true;
             }
             else
+            {
+                btnExcel.Visible = true;
                 pnInput.Visible = false;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)

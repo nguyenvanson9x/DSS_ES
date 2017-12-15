@@ -31,15 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.lbTitle = new System.Windows.Forms.Label();
-            this.lb1 = new System.Windows.Forms.Label();
-            this.lbChuyenNganh = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
             this.TenTruong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaTruong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiemChuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbTitle = new System.Windows.Forms.Label();
+            this.lb1 = new System.Windows.Forms.Label();
+            this.lbChuyenNganh = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +81,41 @@
             this.dgv.Size = new System.Drawing.Size(960, 309);
             this.dgv.TabIndex = 8;
             this.dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_RowEnter);
+            // 
+            // TenTruong
+            // 
+            this.TenTruong.DataPropertyName = "TenTruong";
+            this.TenTruong.HeaderText = "Tên trường";
+            this.TenTruong.Name = "TenTruong";
+            this.TenTruong.ReadOnly = true;
+            // 
+            // MaTruong
+            // 
+            this.MaTruong.DataPropertyName = "MaTruong";
+            this.MaTruong.HeaderText = "Mã trường";
+            this.MaTruong.Name = "MaTruong";
+            this.MaTruong.ReadOnly = true;
+            // 
+            // MaNganh
+            // 
+            this.MaNganh.DataPropertyName = "MaNganh";
+            this.MaNganh.HeaderText = "Mã ngành";
+            this.MaNganh.Name = "MaNganh";
+            this.MaNganh.ReadOnly = true;
+            // 
+            // TenNganh
+            // 
+            this.TenNganh.DataPropertyName = "TenChuyenNganh";
+            this.TenNganh.HeaderText = "Tên ngành";
+            this.TenNganh.Name = "TenNganh";
+            this.TenNganh.ReadOnly = true;
+            // 
+            // DiemChuan
+            // 
+            this.DiemChuan.DataPropertyName = "DiemChuan";
+            this.DiemChuan.HeaderText = "Điểm chuẩn";
+            this.DiemChuan.Name = "DiemChuan";
+            this.DiemChuan.ReadOnly = true;
             // 
             // lbTitle
             // 
@@ -138,41 +173,6 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // TenTruong
-            // 
-            this.TenTruong.DataPropertyName = "TenTruong";
-            this.TenTruong.HeaderText = "Tên trường";
-            this.TenTruong.Name = "TenTruong";
-            this.TenTruong.ReadOnly = true;
-            // 
-            // MaTruong
-            // 
-            this.MaTruong.DataPropertyName = "MaTruong";
-            this.MaTruong.HeaderText = "Mã trường";
-            this.MaTruong.Name = "MaTruong";
-            this.MaTruong.ReadOnly = true;
-            // 
-            // MaNganh
-            // 
-            this.MaNganh.DataPropertyName = "MaNganh";
-            this.MaNganh.HeaderText = "Mã ngành";
-            this.MaNganh.Name = "MaNganh";
-            this.MaNganh.ReadOnly = true;
-            // 
-            // TenNganh
-            // 
-            this.TenNganh.DataPropertyName = "TenChuyenNganh";
-            this.TenNganh.HeaderText = "Tên ngành";
-            this.TenNganh.Name = "TenNganh";
-            this.TenNganh.ReadOnly = true;
-            // 
-            // DiemChuan
-            // 
-            this.DiemChuan.DataPropertyName = "DiemChuan";
-            this.DiemChuan.HeaderText = "Điểm chuẩn";
-            this.DiemChuan.Name = "DiemChuan";
-            this.DiemChuan.ReadOnly = true;
-            // 
             // frmDanhSachTruong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +186,7 @@
             this.Controls.Add(this.dgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDanhSachTruong";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tư vấn chọn trường";
