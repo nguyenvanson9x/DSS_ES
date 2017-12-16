@@ -37,9 +37,9 @@ namespace BUS
             dal.them(MaTruong, TenTruong, DiaChi, Website);
         }
 
-        public void sua(string MaTruong, String TenTruong, String DiaChi, String Website)
+        public void sua(string old, string MaTruong, String TenTruong, String DiaChi, String Website)
         {
-            dal.sua(MaTruong, TenTruong, DiaChi, Website);
+            dal.sua(old, MaTruong, TenTruong, DiaChi, Website);
         }
 
         public string queryTruong(string ChuyenNganh, string TongDiem, string TinhThanh)

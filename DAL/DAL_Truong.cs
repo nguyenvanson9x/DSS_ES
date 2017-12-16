@@ -35,9 +35,9 @@ namespace DAL
             scm.ExecuteNonQuery();
         }
 
-        public void sua(string MaTruong, string TenTruong, string DiaChi, string Website)
+        public void sua(string _ma_truong, string MaTruong, string TenTruong, string DiaChi, string Website)
         {
-            string sql = "update truong set TenTruong=N'" + TenTruong + "',DiaChi=N'" + DiaChi + "',Website='" + Website + "' where MaTruong = '" + MaTruong + "'";
+            string sql = "update truong set MaTruong = N'" + MaTruong + "', TenTruong=N'" + TenTruong + "',DiaChi=N'" + DiaChi + "',Website='" + Website + "' where MaTruong = '" + _ma_truong + "'";
             SqlCommand scm = new SqlCommand(sql, _conn);
             scm.ExecuteNonQuery();
         }

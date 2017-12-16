@@ -61,19 +61,25 @@ namespace GUI
             string matruong = txtMaTruong.Text, tentruong = txtTenTruong.Text, manganh = txtMaNganh.Text, tennganh = txtTenNganh.Text, group ="", diemchuan = txtDiemChuan.Text, chitieu = txtChiTieu.Text, diachi =txtDiaChi.Text, namdaotao = txtNamDaoTao.Text, sldatuyen = txtDaTuyen.Text, lienhe =txtWebsite.Text, slNv = txtSoCanBo.Text, dvchuquan = txtDvChuquan.Text, tinhthanh = txtTinhThanh.Text;
             if (matruong != "" && tentruong != "" && manganh != "" && tennganh != "" && diemchuan != "" && chitieu != "" && diachi != "" && namdaotao != "" && sldatuyen != "" && lienhe != "" && slNv != "" && dvchuquan != "" && tinhthanh != "")
             {
-                group = bus.getGroup(tennganh);
-                string sqlTruong = @"INSERT INTO Truong(MaTruong,TenTruong,DiaChi,Website,TinhThanh,DVChuquan) VALUES(N'" + matruong + "',N'" + tentruong + "',N'" + diachi + "',N'" + lienhe + "',N'" + tinhthanh + "',N'" + dvchuquan + "');";
-                string sqlNhomNganh = @"INSERT INTO NhomNganh(NhomNganh,TenChuyenNganh) VALUES(" + group + ",N'" + tennganh + "');";
-                string sqlChuyenNganh = @"INSERT INTO ChuyenNganh(MaNganh,NhomNganh) VALUES(N'" + manganh + "'," + group + ");";
-                string sqlTruongNganh = @"INSERT INTO TruongNganh(MaTruong,MaNganh,NamDT,SoCB) VALUES(N'" + matruong + "',N'" + manganh + "'," + namdaotao + "," + slNv + ");";
-                string sqlTuyenSinh = @"INSERT INTO TuyenSinh(MaTruong,MaNganh,DiemChuan,ChiTieu,SLDaTuyen) VALUES(N'" + matruong + "',N'" + manganh + "'," + diemchuan + "," + chitieu + "," + sldatuyen + ");";
                 try
                 {
+                    group = bus.getGroup(tennganh);
+                    MessageBox.Show(group);
+                    string sqlTruong = @"INSERT INTO Truong(MaTruong,TenTruong,DiaChi,Website,TinhThanh,DVChuquan) VALUES(N'" + matruong + "',N'" + tentruong + "',N'" + diachi + "',N'" + lienhe + "',N'" + tinhthanh + "',N'" + dvchuquan + "');";
+                    string sqlNhomNganh = @"INSERT INTO NhomNganh(NhomNganh,TenChuyenNganh) VALUES(" + group + ",N'" + tennganh + "');";
+                    string sqlChuyenNganh = @"INSERT INTO ChuyenNganh(MaNganh,NhomNganh) VALUES(N'" + manganh + "'," + group + ");";
+                    string sqlTruongNganh = @"INSERT INTO TruongNganh(MaTruong,MaNganh,NamDT,SoCB) VALUES(N'" + matruong + "',N'" + manganh + "'," + namdaotao + "," + slNv + ");";
+                    string sqlTuyenSinh = @"INSERT INTO TuyenSinh(MaTruong,MaNganh,DiemChuan,ChiTieu,SLDaTuyen) VALUES(N'" + matruong + "',N'" + manganh + "'," + diemchuan + "," + chitieu + "," + sldatuyen + ");";
+
                     bus.excuteSQL(sqlTruong);
                     bus.excuteSQL(sqlNhomNganh);
                     bus.excuteSQL(sqlChuyenNganh);
                     bus.excuteSQL(sqlTruongNganh);
                     bus.excuteSQL(sqlTuyenSinh);
+                }
+                catch (NullReferenceException ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
                 catch (Exception ex)
                 {

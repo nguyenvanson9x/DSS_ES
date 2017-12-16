@@ -30,7 +30,8 @@ namespace DAL
         }
         public string getGroup(string tennganh)
         {
-            string sql=String.Format("Select NhomNganh From NhomNganh Where TenChuyenNganh=N'"+tennganh+"';");
+            //string sql=String.Format("Select NhomNganh From NhomNganh Where TenChuyenNganh=N'"+tennganh+"';");
+            string sql = "Select NhomNganh From NhomNganh Where TenChuyenNganh=N'"+tennganh+"'";
             string group="";
             try
             {
@@ -40,11 +41,9 @@ namespace DAL
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                     group = reader.GetString(0);
-                    
             }
             catch (Exception e)
             {
-
             }
             finally
             {

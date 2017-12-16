@@ -13,6 +13,7 @@ namespace GUI
 {
     public partial class frmQuanLyTruong : Form
     {
+        private string _ma_truong = "";
         public frmQuanLyTruong()
         {
             InitializeComponent();
@@ -68,14 +69,14 @@ namespace GUI
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            string s = "select * from truong where MaTruong = '" + txtMaTruong.Text + "'";
+            string s = "select * from truong where MaTruong = '" + _ma_truong + "'";
             DataTable dt = new DataTable();
             try
             {
                 dt = bus.getTruong(s);
-                if (dt.Rows.Count != 0)
+                if (dt.Rows.Count > 0)
                 {
-                    bus.sua(txtMaTruong.Text, txtTenTruong.Text, txtDiaChi.Text, txtWebsite.Text);
+                    bus.sua(_ma_truong, txtMaTruong.Text, txtTenTruong.Text, txtDiaChi.Text, txtWebsite.Text);
 
                     txtMaTruong.ResetText();
                     txtTenTruong.ResetText();
@@ -130,19 +131,21 @@ namespace GUI
             bus.myclose();
         }
 
-        private void dgvResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvResult_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int chiso = -1;
             DataTable bang = new DataTable();
             bang = (DataTable)dgvResult.DataSource;
             chiso = dgvResult.SelectedCells[0].RowIndex;
-            if (chiso > 0)
+            if (chiso >= 0)
             {
                 DataRow hang = bang.Rows[chiso];
                 txtMaTruong.Text = hang["MaTruong"].ToString();
                 txtTenTruong.Text = hang["TenTruong"].ToString();
                 txtDiaChi.Text = hang["DiaChi"].ToString();
                 txtWebsite.Text = hang["Website"].ToString();
+
+                _ma_truong = hang["MaTruong"].ToString();
             }
         }
     }
