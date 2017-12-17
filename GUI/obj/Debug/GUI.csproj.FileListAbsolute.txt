@@ -79,3 +79,4 @@ D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\Microsoft.Office.Interop.Excel.dll
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\Microsoft.Vbe.Interop.dll
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Debug\office.dll
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmThemDuLieu.resources
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Debug\GUI.frmQuanLyChuyenNganh.resources

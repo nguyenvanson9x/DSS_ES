@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm1));
             this.pnNav = new System.Windows.Forms.Panel();
             this.tbNav = new System.Windows.Forms.TableLayoutPanel();
-            this.pnSubSystem = new System.Windows.Forms.Panel();
             this.btnDiemChuan = new System.Windows.Forms.Button();
             this.btnCauHinh = new System.Windows.Forms.Button();
             this.lbLogo = new System.Windows.Forms.Label();
             this.btnTuVan_Truong = new System.Windows.Forms.Button();
             this.btnQuanLy = new System.Windows.Forms.Button();
             this.btnTuVan_Nganh = new System.Windows.Forms.Button();
+            this.pnSubSystem = new System.Windows.Forms.Panel();
             this.pnNav.SuspendLayout();
             this.tbNav.SuspendLayout();
             this.SuspendLayout();
@@ -78,18 +78,6 @@
             this.tbNav.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tbNav.Size = new System.Drawing.Size(1274, 65);
             this.tbNav.TabIndex = 0;
-            // 
-            // pnSubSystem
-            // 
-            this.pnSubSystem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnSubSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.pnSubSystem.Location = new System.Drawing.Point(0, 65);
-            this.pnSubSystem.Margin = new System.Windows.Forms.Padding(0);
-            this.pnSubSystem.Name = "pnSubSystem";
-            this.pnSubSystem.Size = new System.Drawing.Size(1274, 627);
-            this.pnSubSystem.TabIndex = 1;
             // 
             // btnDiemChuan
             // 
@@ -232,6 +220,18 @@
             this.btnTuVan_Nganh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTuVan_Nganh.UseVisualStyleBackColor = false;
             this.btnTuVan_Nganh.Click += new System.EventHandler(this.btnTuVan_Nganh_Click);
+            // 
+            // pnSubSystem
+            // 
+            this.pnSubSystem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnSubSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.pnSubSystem.Location = new System.Drawing.Point(0, 65);
+            this.pnSubSystem.Margin = new System.Windows.Forms.Padding(0);
+            this.pnSubSystem.Name = "pnSubSystem";
+            this.pnSubSystem.Size = new System.Drawing.Size(1274, 627);
+            this.pnSubSystem.TabIndex = 1;
             // 
             // frm1
             // 

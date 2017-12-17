@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTuVan_Nganh));
             this.lbTitle = new System.Windows.Forms.Label();
             this.pnContainer = new System.Windows.Forms.Panel();
+            this.btnTuVan = new System.Windows.Forms.Button();
+            this.btnTinhThanh = new System.Windows.Forms.Button();
+            this.btnTongDiem = new System.Windows.Forms.Button();
             this.txtTongDiem = new System.Windows.Forms.TextBox();
             this.cbTinhThanh = new System.Windows.Forms.ComboBox();
             this.lbTinhThanh = new System.Windows.Forms.Label();
             this.lnTongDiem = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.btnTuVan = new System.Windows.Forms.Button();
-            this.btnTinhThanh = new System.Windows.Forms.Button();
-            this.btnTongDiem = new System.Windows.Forms.Button();
             this.pnContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,66 +72,6 @@
             this.pnContainer.Name = "pnContainer";
             this.pnContainer.Size = new System.Drawing.Size(1268, 535);
             this.pnContainer.TabIndex = 2;
-            // 
-            // txtTongDiem
-            // 
-            this.txtTongDiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongDiem.Location = new System.Drawing.Point(532, 151);
-            this.txtTongDiem.Name = "txtTongDiem";
-            this.txtTongDiem.Size = new System.Drawing.Size(217, 29);
-            this.txtTongDiem.TabIndex = 3;
-            // 
-            // cbTinhThanh
-            // 
-            this.cbTinhThanh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbTinhThanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTinhThanh.FormattingEnabled = true;
-            this.cbTinhThanh.Items.AddRange(new object[] {
-            "--Tỉnh / TP--"});
-            this.cbTinhThanh.Location = new System.Drawing.Point(532, 234);
-            this.cbTinhThanh.Name = "cbTinhThanh";
-            this.cbTinhThanh.Size = new System.Drawing.Size(217, 29);
-            this.cbTinhThanh.TabIndex = 2;
-            // 
-            // lbTinhThanh
-            // 
-            this.lbTinhThanh.AutoSize = true;
-            this.lbTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTinhThanh.Location = new System.Drawing.Point(370, 237);
-            this.lbTinhThanh.Name = "lbTinhThanh";
-            this.lbTinhThanh.Size = new System.Drawing.Size(108, 23);
-            this.lbTinhThanh.TabIndex = 1;
-            this.lbTinhThanh.Text = "Tỉnh / Thành";
-            // 
-            // lnTongDiem
-            // 
-            this.lnTongDiem.AutoSize = true;
-            this.lnTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnTongDiem.Location = new System.Drawing.Point(370, 154);
-            this.lnTongDiem.Name = "lnTongDiem";
-            this.lnTongDiem.Size = new System.Drawing.Size(137, 23);
-            this.lnTongDiem.TabIndex = 0;
-            this.lnTongDiem.Text = "Nhập tổng điểm";
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHelp.FlatAppearance.BorderSize = 0;
-            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.Image = global::GUI.Properties.Resources.if_question_2625632__1_;
-            this.btnHelp.Location = new System.Drawing.Point(1229, 24);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(33, 33);
-            this.btnHelp.TabIndex = 4;
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnTuVan
             // 
@@ -197,6 +137,66 @@
             this.btnTongDiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTongDiem.UseVisualStyleBackColor = false;
             this.btnTongDiem.Click += new System.EventHandler(this.btnTongDiem_Click);
+            // 
+            // txtTongDiem
+            // 
+            this.txtTongDiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTongDiem.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongDiem.Location = new System.Drawing.Point(532, 151);
+            this.txtTongDiem.Name = "txtTongDiem";
+            this.txtTongDiem.Size = new System.Drawing.Size(217, 29);
+            this.txtTongDiem.TabIndex = 3;
+            // 
+            // cbTinhThanh
+            // 
+            this.cbTinhThanh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbTinhThanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTinhThanh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTinhThanh.FormattingEnabled = true;
+            this.cbTinhThanh.Items.AddRange(new object[] {
+            "--Tỉnh / TP--"});
+            this.cbTinhThanh.Location = new System.Drawing.Point(532, 234);
+            this.cbTinhThanh.Name = "cbTinhThanh";
+            this.cbTinhThanh.Size = new System.Drawing.Size(217, 29);
+            this.cbTinhThanh.TabIndex = 2;
+            // 
+            // lbTinhThanh
+            // 
+            this.lbTinhThanh.AutoSize = true;
+            this.lbTinhThanh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTinhThanh.Location = new System.Drawing.Point(370, 237);
+            this.lbTinhThanh.Name = "lbTinhThanh";
+            this.lbTinhThanh.Size = new System.Drawing.Size(108, 23);
+            this.lbTinhThanh.TabIndex = 1;
+            this.lbTinhThanh.Text = "Tỉnh / Thành";
+            // 
+            // lnTongDiem
+            // 
+            this.lnTongDiem.AutoSize = true;
+            this.lnTongDiem.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnTongDiem.Location = new System.Drawing.Point(370, 154);
+            this.lnTongDiem.Name = "lnTongDiem";
+            this.lnTongDiem.Size = new System.Drawing.Size(137, 23);
+            this.lnTongDiem.TabIndex = 0;
+            this.lnTongDiem.Text = "Nhập tổng điểm";
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Image = global::GUI.Properties.Resources.if_question_2625632__1_;
+            this.btnHelp.Location = new System.Drawing.Point(1229, 24);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(33, 33);
+            this.btnHelp.TabIndex = 4;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // frmTuVan_Nganh
             // 

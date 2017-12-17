@@ -78,3 +78,7 @@ D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\Microsoft.Office.Interop.Excel.dll
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\Microsoft.Vbe.Interop.dll
 D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\office.dll
 D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.frmQuanLyChuyenNganh.resources
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\GUI.exe.manifest
+D:\NguyenVanSon\Coding\DSS\GUI\bin\Release\GUI.application
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.exe.manifest
+D:\NguyenVanSon\Coding\DSS\GUI\obj\Release\GUI.application
