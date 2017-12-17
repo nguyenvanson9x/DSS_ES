@@ -22,16 +22,22 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void frmQuanLyTuyenSinh_Load(object sender, EventArgs e)
+        private void load_data()
         {
             try
             {
                 dgvInfo.DataSource = bus.getTuyenSinh();
+                lbSum.Text = dgvInfo.RowCount.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void frmQuanLyTuyenSinh_Load(object sender, EventArgs e)
+        {
+            load_data();
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
@@ -40,6 +46,7 @@ namespace GUI
             {
                 string text = txtTimKiem.Text;
                 dgvInfo.DataSource = bus.search(text);
+                lbSum.Text = dgvInfo.RowCount.ToString();
                 txtTimKiem.ResetText();
             }
             catch (Exception ex)
@@ -106,7 +113,7 @@ namespace GUI
                     DTO_TuyenSinh ts = new DTO_TuyenSinh(matruong, manganh, diemchuan, chitieu, sldatuyen);
                     bus.suaTuyenSinh(ts,tentruong,matruong,current_Manganh,group,tenganh);
                 }
-                dgvInfo.DataSource = bus.getTuyenSinh();
+                load_data();
             }
             catch (Exception ex)
             {
@@ -120,7 +127,7 @@ namespace GUI
             {
                 string matruong = bus.getMaTruong(txtTenTruong.Text);
                 bus.xoaTuyenSinh(matruong, txtMaNganh.Text);
-                dgvInfo.DataSource = bus.getTuyenSinh();
+                load_data();
             }
             catch (Exception ex)
             {
@@ -164,6 +171,7 @@ namespace GUI
             {
                 string text = txtTimKiem.Text;
                 dgvInfo.DataSource = bus.search(text);
+                lbSum.Text = dgvInfo.RowCount.ToString();
             }
             catch (Exception ex)
             {

@@ -20,22 +20,23 @@ namespace GUI
         }
 
         BUS_Truong bus = new BUS_Truong();
-        string sql = "select truong.MaTruong, truong.TenTruong, truong.DiaChi, truong.Website from truong";
+        string sql = "select truong.MaTruong, truong.TenTruong, truong.DiaChi, truong.Website, truong.DVChuquan from truong";
 
         private void frmQuanLyTruong_Load(object sender, EventArgs e)
         {
-            try
-            {
-                bus.myconnect();
-                dgvResult.DataSource = bus.getTruong(sql);
-            }
-            catch(Exception ex) {
-                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            load_data();
         }
 
         private void load_data(){
-            dgvResult.DataSource = bus.getTruong(sql);
+            try
+            {
+                dgvResult.DataSource = bus.getTruong(sql);
+                lbSum.Text = dgvResult.RowCount.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Lỗi kết nối cơ sở dữ liệu. Vào phần Cấu hình để thiết lập thông số", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btn_them_Click(object sender, EventArgs e)

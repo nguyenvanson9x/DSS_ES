@@ -32,12 +32,12 @@
             this.btnHelp = new System.Windows.Forms.Button();
             this.tbContainer = new System.Windows.Forms.TableLayoutPanel();
             this.tbButton = new System.Windows.Forms.TableLayoutPanel();
-            this.btnTuyenSinh = new System.Windows.Forms.Button();
-            this.btnTruong = new System.Windows.Forms.Button();
-            this.btnThemDuLieu = new System.Windows.Forms.Button();
             this.pnSubSystem = new System.Windows.Forms.Panel();
             this.lbTitle = new System.Windows.Forms.Label();
             this.btnChuyenNganh = new System.Windows.Forms.Button();
+            this.btnThemDuLieu = new System.Windows.Forms.Button();
+            this.btnTruong = new System.Windows.Forms.Button();
+            this.btnTuyenSinh = new System.Windows.Forms.Button();
             this.pnContainer.SuspendLayout();
             this.tbContainer.SuspendLayout();
             this.tbButton.SuspendLayout();
@@ -91,97 +91,23 @@
             this.tbButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
             this.tbButton.ColumnCount = 1;
             this.tbButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tbButton.Controls.Add(this.btnTuyenSinh, 0, 2);
-            this.tbButton.Controls.Add(this.btnTruong, 0, 1);
-            this.tbButton.Controls.Add(this.btnThemDuLieu, 0, 3);
-            this.tbButton.Controls.Add(this.btnChuyenNganh, 0, 0);
+            this.tbButton.Controls.Add(this.btnThemDuLieu, 0, 4);
+            this.tbButton.Controls.Add(this.btnTuyenSinh, 0, 3);
+            this.tbButton.Controls.Add(this.btnTruong, 0, 2);
+            this.tbButton.Controls.Add(this.btnChuyenNganh, 0, 1);
             this.tbButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbButton.Location = new System.Drawing.Point(0, 0);
             this.tbButton.Margin = new System.Windows.Forms.Padding(0);
             this.tbButton.Name = "tbButton";
-            this.tbButton.RowCount = 5;
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbButton.RowCount = 6;
+            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tbButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tbButton.Size = new System.Drawing.Size(253, 535);
             this.tbButton.TabIndex = 0;
-            // 
-            // btnTuyenSinh
-            // 
-            this.btnTuyenSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTuyenSinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnTuyenSinh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTuyenSinh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTuyenSinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTuyenSinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTuyenSinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTuyenSinh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTuyenSinh.ForeColor = System.Drawing.Color.Black;
-            this.btnTuyenSinh.Image = global::GUI.Properties.Resources.if_education_school_learn_study_02_2125360;
-            this.btnTuyenSinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTuyenSinh.Location = new System.Drawing.Point(0, 214);
-            this.btnTuyenSinh.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTuyenSinh.Name = "btnTuyenSinh";
-            this.btnTuyenSinh.Size = new System.Drawing.Size(253, 107);
-            this.btnTuyenSinh.TabIndex = 3;
-            this.btnTuyenSinh.Text = "        Thông tin Tuyển sinh";
-            this.btnTuyenSinh.UseVisualStyleBackColor = false;
-            this.btnTuyenSinh.Click += new System.EventHandler(this.btnTuyenSinh_Click);
-            // 
-            // btnTruong
-            // 
-            this.btnTruong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTruong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnTruong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTruong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTruong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTruong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnTruong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTruong.ForeColor = System.Drawing.Color.Black;
-            this.btnTruong.Image = global::GUI.Properties.Resources.if_education_school_learn_study_06_2125344;
-            this.btnTruong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTruong.Location = new System.Drawing.Point(0, 107);
-            this.btnTruong.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTruong.Name = "btnTruong";
-            this.btnTruong.Size = new System.Drawing.Size(253, 107);
-            this.btnTruong.TabIndex = 2;
-            this.btnTruong.Text = "Thông tin Trường";
-            this.btnTruong.UseVisualStyleBackColor = false;
-            this.btnTruong.Click += new System.EventHandler(this.btnTruong_Click);
-            // 
-            // btnThemDuLieu
-            // 
-            this.btnThemDuLieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemDuLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnThemDuLieu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemDuLieu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnThemDuLieu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnThemDuLieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnThemDuLieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemDuLieu.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemDuLieu.ForeColor = System.Drawing.Color.Black;
-            this.btnThemDuLieu.Image = global::GUI.Properties.Resources.if_notes_add_103660;
-            this.btnThemDuLieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDuLieu.Location = new System.Drawing.Point(0, 321);
-            this.btnThemDuLieu.Margin = new System.Windows.Forms.Padding(0);
-            this.btnThemDuLieu.Name = "btnThemDuLieu";
-            this.btnThemDuLieu.Size = new System.Drawing.Size(253, 107);
-            this.btnThemDuLieu.TabIndex = 4;
-            this.btnThemDuLieu.Text = "Thêm dữ liệu";
-            this.btnThemDuLieu.UseVisualStyleBackColor = false;
-            this.btnThemDuLieu.Click += new System.EventHandler(this.btnThemDuLieu_Click);
             // 
             // pnSubSystem
             // 
@@ -222,14 +148,86 @@
             this.btnChuyenNganh.ForeColor = System.Drawing.Color.Black;
             this.btnChuyenNganh.Image = global::GUI.Properties.Resources.if_education_school_learn_study_10_2125348;
             this.btnChuyenNganh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChuyenNganh.Location = new System.Drawing.Point(0, 0);
+            this.btnChuyenNganh.Location = new System.Drawing.Point(0, 89);
             this.btnChuyenNganh.Margin = new System.Windows.Forms.Padding(0);
             this.btnChuyenNganh.Name = "btnChuyenNganh";
-            this.btnChuyenNganh.Size = new System.Drawing.Size(253, 107);
+            this.btnChuyenNganh.Size = new System.Drawing.Size(253, 89);
             this.btnChuyenNganh.TabIndex = 5;
             this.btnChuyenNganh.Text = "Chuyên Ngành";
             this.btnChuyenNganh.UseVisualStyleBackColor = false;
             this.btnChuyenNganh.Click += new System.EventHandler(this.btnChuyenNganh_Click);
+            // 
+            // btnThemDuLieu
+            // 
+            this.btnThemDuLieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemDuLieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnThemDuLieu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemDuLieu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnThemDuLieu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnThemDuLieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnThemDuLieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemDuLieu.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemDuLieu.ForeColor = System.Drawing.Color.Black;
+            this.btnThemDuLieu.Image = global::GUI.Properties.Resources.if_notes_add_103660;
+            this.btnThemDuLieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemDuLieu.Location = new System.Drawing.Point(0, 356);
+            this.btnThemDuLieu.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThemDuLieu.Name = "btnThemDuLieu";
+            this.btnThemDuLieu.Size = new System.Drawing.Size(253, 89);
+            this.btnThemDuLieu.TabIndex = 4;
+            this.btnThemDuLieu.Text = "Thêm dữ liệu";
+            this.btnThemDuLieu.UseVisualStyleBackColor = false;
+            this.btnThemDuLieu.Click += new System.EventHandler(this.btnThemDuLieu_Click);
+            // 
+            // btnTruong
+            // 
+            this.btnTruong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTruong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnTruong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTruong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTruong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTruong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTruong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTruong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTruong.ForeColor = System.Drawing.Color.Black;
+            this.btnTruong.Image = global::GUI.Properties.Resources.if_education_school_learn_study_06_2125344;
+            this.btnTruong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTruong.Location = new System.Drawing.Point(0, 178);
+            this.btnTruong.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTruong.Name = "btnTruong";
+            this.btnTruong.Size = new System.Drawing.Size(253, 89);
+            this.btnTruong.TabIndex = 2;
+            this.btnTruong.Text = "Thông tin Trường";
+            this.btnTruong.UseVisualStyleBackColor = false;
+            this.btnTruong.Click += new System.EventHandler(this.btnTruong_Click);
+            // 
+            // btnTuyenSinh
+            // 
+            this.btnTuyenSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTuyenSinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnTuyenSinh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTuyenSinh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTuyenSinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTuyenSinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnTuyenSinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTuyenSinh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuyenSinh.ForeColor = System.Drawing.Color.Black;
+            this.btnTuyenSinh.Image = global::GUI.Properties.Resources.if_education_school_learn_study_02_2125360;
+            this.btnTuyenSinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTuyenSinh.Location = new System.Drawing.Point(0, 267);
+            this.btnTuyenSinh.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTuyenSinh.Name = "btnTuyenSinh";
+            this.btnTuyenSinh.Size = new System.Drawing.Size(253, 89);
+            this.btnTuyenSinh.TabIndex = 3;
+            this.btnTuyenSinh.Text = "        Thông tin Tuyển sinh";
+            this.btnTuyenSinh.UseVisualStyleBackColor = false;
+            this.btnTuyenSinh.Click += new System.EventHandler(this.btnTuyenSinh_Click);
             // 
             // frmQuanLy
             // 
@@ -257,11 +255,11 @@
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.TableLayoutPanel tbContainer;
         private System.Windows.Forms.TableLayoutPanel tbButton;
-        private System.Windows.Forms.Button btnTruong;
-        private System.Windows.Forms.Button btnTuyenSinh;
         private System.Windows.Forms.Panel pnSubSystem;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnThemDuLieu;
+        private System.Windows.Forms.Button btnTuyenSinh;
+        private System.Windows.Forms.Button btnTruong;
         private System.Windows.Forms.Button btnChuyenNganh;
     }
 }
