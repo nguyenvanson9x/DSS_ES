@@ -103,6 +103,12 @@
     <Compile Include="frmQuanLy.Designer.cs">
       <DependentUpon>frmQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLyChuyenNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyChuyenNganh.Designer.cs">
+      <DependentUpon>frmQuanLyChuyenNganh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyTruong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLy.resx">
       <DependentUpon>frmQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyChuyenNganh.resx">
+      <DependentUpon>frmQuanLyChuyenNganh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyTruong.resx">
       <DependentUpon>frmQuanLyTruong.cs</DependentUpon>
@@ -335,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\25396122_1430616430380922_2284000567599129050_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-property-24 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

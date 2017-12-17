@@ -37,6 +37,7 @@
             this.btnThemDuLieu = new System.Windows.Forms.Button();
             this.pnSubSystem = new System.Windows.Forms.Panel();
             this.lbTitle = new System.Windows.Forms.Label();
+            this.btnChuyenNganh = new System.Windows.Forms.Button();
             this.pnContainer.SuspendLayout();
             this.tbContainer.SuspendLayout();
             this.tbButton.SuspendLayout();
@@ -93,6 +94,7 @@
             this.tbButton.Controls.Add(this.btnTuyenSinh, 0, 2);
             this.tbButton.Controls.Add(this.btnTruong, 0, 1);
             this.tbButton.Controls.Add(this.btnThemDuLieu, 0, 3);
+            this.tbButton.Controls.Add(this.btnChuyenNganh, 0, 0);
             this.tbButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbButton.Location = new System.Drawing.Point(0, 0);
             this.tbButton.Margin = new System.Windows.Forms.Padding(0);
@@ -205,6 +207,30 @@
             this.lbTitle.Text = "QUẢN LÝ THÔNG TIN";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnChuyenNganh
+            // 
+            this.btnChuyenNganh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnChuyenNganh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnChuyenNganh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChuyenNganh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnChuyenNganh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnChuyenNganh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnChuyenNganh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChuyenNganh.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChuyenNganh.ForeColor = System.Drawing.Color.Black;
+            this.btnChuyenNganh.Image = global::GUI.Properties.Resources.if_education_school_learn_study_10_2125348;
+            this.btnChuyenNganh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChuyenNganh.Location = new System.Drawing.Point(0, 0);
+            this.btnChuyenNganh.Margin = new System.Windows.Forms.Padding(0);
+            this.btnChuyenNganh.Name = "btnChuyenNganh";
+            this.btnChuyenNganh.Size = new System.Drawing.Size(253, 107);
+            this.btnChuyenNganh.TabIndex = 5;
+            this.btnChuyenNganh.Text = "Chuyên Ngành";
+            this.btnChuyenNganh.UseVisualStyleBackColor = false;
+            this.btnChuyenNganh.Click += new System.EventHandler(this.btnChuyenNganh_Click);
+            // 
             // frmQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,5 +262,6 @@
         private System.Windows.Forms.Panel pnSubSystem;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnThemDuLieu;
+        private System.Windows.Forms.Button btnChuyenNganh;
     }
 }

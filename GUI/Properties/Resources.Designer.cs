@@ -74,6 +74,13 @@ namespace GUI.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap icons8_add_property_24__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-property-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap icons8_add_property_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-add-property-48", resourceCulture);

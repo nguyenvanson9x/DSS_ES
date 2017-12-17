@@ -98,5 +98,12 @@ namespace GUI
             frmThemDuLieu frm = new frmThemDuLieu();
             add_form_to_panel(frm);
         }
+
+        private void btnChuyenNganh_Click(object sender, EventArgs e)
+        {
+            change_color(btnChuyenNganh);
+            frmQuanLyChuyenNganh frm = new frmQuanLyChuyenNganh();
+            add_form_to_panel(frm);
+        }
     }
 }
