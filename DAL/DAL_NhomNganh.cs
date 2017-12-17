@@ -16,7 +16,7 @@ namespace DAL
             {
                 _conn.Open();
 
-                string SQL = string.Format("INSERT INTO NhomNganh(TenChuyenNganh) VALUES ('{1}')", ten_nhom_nganh);
+                string SQL = string.Format("INSERT INTO NhomNganh(TenChuyenNganh) VALUES (N'{0}')", ten_nhom_nganh);
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
