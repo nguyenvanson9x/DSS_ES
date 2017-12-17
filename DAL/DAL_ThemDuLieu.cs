@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
@@ -28,11 +29,33 @@ namespace DAL
             }
 
         }
-        public string getGroup(string tennganh)
+        public bool checkSQL(string SQL)
         {
-            //string sql=String.Format("Select NhomNganh From NhomNganh Where TenChuyenNganh=N'"+tennganh+"';");
-            string sql = "Select NhomNganh From NhomNganh Where TenChuyenNganh=N'"+tennganh+"'";
-            string group="";
+            int count = 0;
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand(SQL, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                    count++;
+                if (count > 0)
+                    return false;
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return true;
+        }
+        public int getGroup(string tennganh)
+        {
+            string sql=String.Format("Select NhomNganh From NhomNganh Where TenChuyenNganh=N'"+tennganh+"';");
+            int group = 0;
             try
             {
                 _conn.Open();
@@ -40,16 +63,69 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand(sql, _conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
-                    group = reader.GetString(0);
+                    group = reader.GetInt32(0);
+                    
             }
             catch (Exception e)
             {
+
             }
             finally
             {
                 _conn.Close();
             }
             return group;
+        }
+        public int getNumberRow()
+        {
+            string sql = String.Format("Select COUNT(NhomNganh) From NhomNganh");
+            int row = 0;
+            try
+            {
+                _conn.Open();
+
+                SqlCommand cmd = new SqlCommand(sql, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                    row=reader.GetInt32(0);
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return row;
+        }
+
+        public List<String> auto_complete(string type)
+        {
+            string sql = "select " + type + " from NhomNganh";
+            List<string> auto = new List<string>();
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader != null)
+                {
+                    while (reader.Read())
+                    {
+                        auto.Add(reader[type].ToString());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return auto;
         }
     }
 }

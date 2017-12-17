@@ -32,10 +32,13 @@ namespace BUS
         {
             return dalTuyenSinh.themTuyenSinh(tv);
         }
-
-        public bool suaTuyenSinh(DTO_TuyenSinh tv)
+        public int getGroup(string tennganh)
         {
-            return dalTuyenSinh.suaTuyenSinh(tv);
+            return dalTuyenSinh.getGroup(tennganh);
+        }
+        public bool suaTuyenSinh(DTO_TuyenSinh tv, string tentruong, string matruong, string manganh,int group,string tennganh)
+        {
+            return dalTuyenSinh.suaTuyenSinh(tv, tentruong, matruong, manganh, group, tennganh);
         }
 
         public bool xoaTuyenSinh(string MaTruong,string manganh)

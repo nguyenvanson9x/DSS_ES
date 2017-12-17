@@ -14,9 +14,11 @@ namespace GUI
     {
         BUS_TuyenSinh bus;
         BUS_Truong busTr;
+        private string current_Manganh = "", current_TenTruong = "", current_TenNganh="";
         public frmQuanLyTuyenSinh()
         {
             bus = new BUS_TuyenSinh();
+            busTr = new BUS_Truong();
             InitializeComponent();
         }
 
@@ -88,9 +90,11 @@ namespace GUI
             try
             {
                 string tentruong = txtTenTruong.Text;
-                string matruong = bus.getMaTruong(tentruong);
+                string matruong = bus.getMaTruong(current_TenTruong);
                 string manganh = txtMaNganh.Text;
-                if (matruong == "" || tentruong == "" || manganh == "" || txtChiTieu.Text == "" || txtDiemChuan.Text == "" || txtSLDaTuyen.Text == "")
+                string tenganh = txtTenNganh.Text;
+                int group = bus.getGroup(current_TenNganh);
+                if (tenganh == "" || tentruong == "" || manganh == "" || txtChiTieu.Text == "" || txtDiemChuan.Text == "" || txtSLDaTuyen.Text == "")
                 {
                     MessageBox.Show("Chưa nhập đủ thông tin, vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -100,7 +104,7 @@ namespace GUI
                     double diemchuan = Convert.ToDouble(txtDiemChuan.Text);
                     int sldatuyen = Convert.ToInt32(txtSLDaTuyen.Text);
                     DTO_TuyenSinh ts = new DTO_TuyenSinh(matruong, manganh, diemchuan, chitieu, sldatuyen);
-                    bus.suaTuyenSinh(ts);
+                    bus.suaTuyenSinh(ts,tentruong,matruong,current_Manganh,group,tenganh);
                 }
                 dgvInfo.DataSource = bus.getTuyenSinh();
             }
@@ -116,6 +120,7 @@ namespace GUI
             {
                 string matruong = bus.getMaTruong(txtTenTruong.Text);
                 bus.xoaTuyenSinh(matruong, txtMaNganh.Text);
+                dgvInfo.DataSource = bus.getTuyenSinh();
             }
             catch (Exception ex)
             {
@@ -139,12 +144,16 @@ namespace GUI
             if (!(index <0))
             {
                 DataGridViewRow row = dgvInfo.Rows[index];
-                txtTenTruong.Text = row.Cells["clTenTruong"].Value.ToString();
-                txtTenNganh.Text = row.Cells["clTenNganh"].Value.ToString();
-                txtMaNganh.Text = row.Cells["clMaNganh"].Value.ToString();
+                
+                current_TenTruong = row.Cells["clTenTruong"].Value.ToString();
+                current_TenNganh = row.Cells["clTenNganh"].Value.ToString();
+                 current_Manganh= row.Cells["clMaNganh"].Value.ToString();
                 txtChiTieu.Text = row.Cells["clChiTieu"].Value.ToString();
                 txtDiemChuan.Text = row.Cells["clDiemChuan"].Value.ToString();
                 txtSLDaTuyen.Text = row.Cells["clSLDaTuyen"].Value.ToString();
+                txtTenTruong.Text = current_TenTruong;
+                txtTenNganh.Text = current_TenNganh;
+                txtMaNganh.Text = current_Manganh;
             }
             dgvInfo.Focus();
         }

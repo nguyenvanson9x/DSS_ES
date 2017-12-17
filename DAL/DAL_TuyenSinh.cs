@@ -5,7 +5,6 @@ using System.Text;
 using System.Data.SqlClient;
 using DTO;
 using System.Data;
-
 namespace DAL
 {
     public class DAL_TuyenSinh : DBConnect
@@ -93,14 +92,24 @@ namespace DAL
             }
             return false;
         }
-        public bool suaTuyenSinh(DTO_TuyenSinh ts)
+        public bool suaTuyenSinh(DTO_TuyenSinh ts, string tentruong, string matruong, string manganh, int group, string tennganh)
         {
             try
             {
                 _conn.Open();
-                string SQL = string.Format("UPDATE TuyenSinh SET MaTruong = '{0}', MaNganh = '{1}', DiemChuan = {2},ChiTieu={3},SLDaTuyen={4}  WHERE MaTruong = '{5}' AND MaNganh='{6}' ", ts.MaTruong, ts.MaNganh, ts.DiemChuan, ts.ChiTieu, ts.SLDaTuyen, ts.MaTruong, ts.MaNganh);
-                SqlCommand cmd = new SqlCommand(SQL, _conn);
-                if (cmd.ExecuteNonQuery() > 0)
+                Console.Write(ts.MaNganh);
+                string sqlChuyenNganh = string.Format("UPDATE ChuyenNganh SET  MaNganh =N'{0}' WHERE  MaNganh='{1}'", ts.MaNganh, manganh);
+                string sqlTruongNganh = string.Format("UPDATE TruongNganh SET  MaNganh =N'{0}' WHERE MaTruong='{1}' AND MaNganh='{2}'", ts.MaNganh, matruong,manganh);
+                string sqlNhomNganh = string.Format("UPDATE NhomNganh SET  TenChuyenNganh=N'{0}' WHERE NhomNganh='{1}'",tennganh,group);
+                string sqlTruong = string.Format("UPDATE Truong SET  TenTruong=N'{0}' WHERE MaTruong='{1}'", tentruong, matruong);
+                string sqlTuyenSinh = string.Format("UPDATE TuyenSinh SET MaNganh=N'{0}',DiemChuan={1},ChiTieu={2},SLDaTuyen={3} WHERE MaNganh='{4}'", ts.MaNganh, ts.DiemChuan, ts.ChiTieu, ts.SLDaTuyen, manganh);
+                SqlCommand cmd_Truong = new SqlCommand(sqlTruong, _conn);
+                SqlCommand cmd_NhomNganh = new SqlCommand(sqlNhomNganh, _conn);
+                SqlCommand cmd_ChuyenNganh = new SqlCommand(sqlChuyenNganh, _conn);
+                SqlCommand cmd_TruongNganh = new SqlCommand(sqlTruongNganh, _conn);
+                SqlCommand cmd_TuyenSinh = new SqlCommand(sqlTuyenSinh, _conn);
+
+                if (cmd_Truong.ExecuteNonQuery() > 0 && cmd_TruongNganh.ExecuteNonQuery() > 0 && cmd_ChuyenNganh.ExecuteNonQuery() > 0 && cmd_NhomNganh.ExecuteNonQuery() > 0 && cmd_TuyenSinh.ExecuteNonQuery() > 0)
                     return true;
  
             }
@@ -115,20 +124,47 @@ namespace DAL
  
             return false;
         }
+        public int getGroup(string tennganh)
+        {
+            string sql = String.Format("Select NhomNganh From NhomNganh Where TenChuyenNganh=N'" + tennganh + "';");
+            int group = 0;
+            try
+            {
+                _conn.Open();
+
+                SqlCommand cmd = new SqlCommand(sql, _conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                    group = reader.GetInt32(0);
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return group;
+        }
         public bool xoaTuyenSinh(string MaTruong, string manganh)
         {
             try
             {
                 _conn.Open();
-                string SQL = string.Format("DELETE FROM TuyenSinh WHERE MaTruong = '{0}' AND MaNganh = '{1}')",MaTruong,manganh);
-                SqlCommand cmd = new SqlCommand(SQL, _conn);
-                if (cmd.ExecuteNonQuery() > 0)
+                string SQLTS = string.Format("DELETE FROM TuyenSinh WHERE TuyenSinh.MaTruong = '"+MaTruong+"' AND TuyenSinh.MaNganh='"+manganh+"'");
+                string SQLTN = string.Format("DELETE FROM TruongNganh WHERE TruongNganh.MaTruong = '" + MaTruong + "' AND TruongNganh.MaNganh='" + manganh + "'");
+            
+                SqlCommand cmd = new SqlCommand(SQLTS, _conn);
+                SqlCommand _cmd = new SqlCommand(SQLTN, _conn);
+                if (cmd.ExecuteNonQuery() > 0 && _cmd.ExecuteNonQuery() > 0)
                     return true;
  
             }
             catch (Exception e)
             {
- 
+
             }
             finally
             {

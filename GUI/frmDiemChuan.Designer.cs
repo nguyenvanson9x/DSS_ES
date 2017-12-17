@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbTitle = new System.Windows.Forms.Label();
             this.tbContainer = new System.Windows.Forms.TableLayoutPanel();
             this.pnLeft = new System.Windows.Forms.Panel();
@@ -127,13 +127,13 @@
             // 
             // cbTinh
             // 
-            this.cbTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTinh.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinh.FormattingEnabled = true;
             this.cbTinh.Location = new System.Drawing.Point(404, 250);
             this.cbTinh.Name = "cbTinh";
             this.cbTinh.Size = new System.Drawing.Size(211, 29);
             this.cbTinh.TabIndex = 7;
+            this.cbTinh.Text = "--Tỉnh / TP--";
             this.cbTinh.SelectedIndexChanged += new System.EventHandler(this.cbTinhChanged);
             // 
             // lbSearchFor
@@ -150,7 +150,6 @@
             // 
             // cbSort
             // 
-            this.cbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSort.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSort.FormattingEnabled = true;
             this.cbSort.Items.AddRange(new object[] {
@@ -161,6 +160,7 @@
             this.cbSort.Name = "cbSort";
             this.cbSort.Size = new System.Drawing.Size(211, 29);
             this.cbSort.TabIndex = 5;
+            this.cbSort.Text = "--Sắp xếp theo--";
             this.cbSort.SelectedIndexChanged += new System.EventHandler(this.cbSortClick);
             // 
             // lbSort
@@ -244,14 +244,14 @@
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNganh,
@@ -263,8 +263,8 @@
             this.dgv.ReadOnly = true;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv.Size = new System.Drawing.Size(613, 427);
             this.dgv.TabIndex = 7;
             // 

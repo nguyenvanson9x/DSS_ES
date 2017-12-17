@@ -115,7 +115,7 @@
             this.txtWebsite.Margin = new System.Windows.Forms.Padding(4);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.Size = new System.Drawing.Size(150, 27);
-            this.txtWebsite.TabIndex = 30;
+            this.txtWebsite.TabIndex = 3;
             // 
             // txtDiaChi
             // 
@@ -125,7 +125,7 @@
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(150, 27);
-            this.txtDiaChi.TabIndex = 29;
+            this.txtDiaChi.TabIndex = 2;
             // 
             // txtTenTruong
             // 
@@ -135,7 +135,7 @@
             this.txtTenTruong.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenTruong.Name = "txtTenTruong";
             this.txtTenTruong.Size = new System.Drawing.Size(150, 27);
-            this.txtTenTruong.TabIndex = 28;
+            this.txtTenTruong.TabIndex = 1;
             // 
             // txtMaTruong
             // 
@@ -144,7 +144,7 @@
             this.txtMaTruong.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaTruong.Name = "txtMaTruong";
             this.txtMaTruong.Size = new System.Drawing.Size(150, 27);
-            this.txtMaTruong.TabIndex = 27;
+            this.txtMaTruong.TabIndex = 0;
             // 
             // label5
             // 
@@ -259,7 +259,7 @@
             this.txtTinhThanh.Margin = new System.Windows.Forms.Padding(4);
             this.txtTinhThanh.Name = "txtTinhThanh";
             this.txtTinhThanh.Size = new System.Drawing.Size(150, 27);
-            this.txtTinhThanh.TabIndex = 45;
+            this.txtTinhThanh.TabIndex = 4;
             // 
             // txtDvChuquan
             // 
@@ -269,7 +269,7 @@
             this.txtDvChuquan.Margin = new System.Windows.Forms.Padding(4);
             this.txtDvChuquan.Name = "txtDvChuquan";
             this.txtDvChuquan.Size = new System.Drawing.Size(150, 27);
-            this.txtDvChuquan.TabIndex = 46;
+            this.txtDvChuquan.TabIndex = 5;
             // 
             // txtMaNganh
             // 
@@ -278,7 +278,7 @@
             this.txtMaNganh.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNganh.Name = "txtMaNganh";
             this.txtMaNganh.Size = new System.Drawing.Size(150, 27);
-            this.txtMaNganh.TabIndex = 47;
+            this.txtMaNganh.TabIndex = 6;
             // 
             // txtTenNganh
             // 
@@ -288,7 +288,7 @@
             this.txtTenNganh.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNganh.Name = "txtTenNganh";
             this.txtTenNganh.Size = new System.Drawing.Size(150, 27);
-            this.txtTenNganh.TabIndex = 48;
+            this.txtTenNganh.TabIndex = 7;
             // 
             // txtDiemChuan
             // 
@@ -298,7 +298,7 @@
             this.txtDiemChuan.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiemChuan.Name = "txtDiemChuan";
             this.txtDiemChuan.Size = new System.Drawing.Size(150, 27);
-            this.txtDiemChuan.TabIndex = 49;
+            this.txtDiemChuan.TabIndex = 8;
             // 
             // txtChiTieu
             // 
@@ -307,7 +307,7 @@
             this.txtChiTieu.Margin = new System.Windows.Forms.Padding(4);
             this.txtChiTieu.Name = "txtChiTieu";
             this.txtChiTieu.Size = new System.Drawing.Size(150, 27);
-            this.txtChiTieu.TabIndex = 50;
+            this.txtChiTieu.TabIndex = 9;
             // 
             // txtDaTuyen
             // 
@@ -316,7 +316,7 @@
             this.txtDaTuyen.Margin = new System.Windows.Forms.Padding(4);
             this.txtDaTuyen.Name = "txtDaTuyen";
             this.txtDaTuyen.Size = new System.Drawing.Size(150, 27);
-            this.txtDaTuyen.TabIndex = 51;
+            this.txtDaTuyen.TabIndex = 11;
             // 
             // txtNamDaoTao
             // 
@@ -326,7 +326,7 @@
             this.txtNamDaoTao.Margin = new System.Windows.Forms.Padding(4);
             this.txtNamDaoTao.Name = "txtNamDaoTao";
             this.txtNamDaoTao.Size = new System.Drawing.Size(150, 27);
-            this.txtNamDaoTao.TabIndex = 52;
+            this.txtNamDaoTao.TabIndex = 12;
             // 
             // txtSoCanBo
             // 
@@ -336,7 +336,7 @@
             this.txtSoCanBo.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoCanBo.Name = "txtSoCanBo";
             this.txtSoCanBo.Size = new System.Drawing.Size(150, 27);
-            this.txtSoCanBo.TabIndex = 53;
+            this.txtSoCanBo.TabIndex = 10;
             // 
             // btnThem
             // 
@@ -414,7 +414,7 @@
             this.pnInput.Location = new System.Drawing.Point(0, 99);
             this.pnInput.Name = "pnInput";
             this.pnInput.Size = new System.Drawing.Size(960, 441);
-            this.pnInput.TabIndex = 55;
+            this.pnInput.TabIndex = 1;
             // 
             // btnThoat
             // 
@@ -430,7 +430,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(124, 49);
-            this.btnThoat.TabIndex = 55;
+            this.btnThoat.TabIndex = 14;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -450,7 +450,7 @@
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(116, 49);
-            this.btnSave.TabIndex = 54;
+            this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Lưu";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
@@ -470,6 +470,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmThemDuLieu";
             this.Text = "frmThemDuLieu";
+            this.Load += new System.EventHandler(this.frmThemDuLieu_Load);
             this.pnInput.ResumeLayout(false);
             this.pnInput.PerformLayout();
             this.ResumeLayout(false);
