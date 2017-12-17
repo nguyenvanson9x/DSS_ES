@@ -24,7 +24,8 @@ namespace GUI
             string ten_nhom_nganh = txtChuyenNganh.Text;
             try
             {
-                bus.add(ten_nhom_nganh);
+                if (!bus.add(ten_nhom_nganh))
+                    MessageBox.Show(this, "Không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
@@ -44,7 +45,8 @@ namespace GUI
             try
             {
                 int id = Int32.Parse(ma_nhom_nganh);
-                bus.edit(id, txtChuyenNganh.Text);
+                if (!bus.edit(id, txtChuyenNganh.Text))
+                    MessageBox.Show(this, "Không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
@@ -58,7 +60,8 @@ namespace GUI
             try
             {
                 int id = Int32.Parse(ma_nhom_nganh);
-                bus.delete(id);
+                if (!bus.delete(id))
+                    MessageBox.Show(this, "Không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
